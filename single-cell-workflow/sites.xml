@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitecatalog xmlns="http://pegasus.isi.edu/schema/sitecatalog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pegasus.isi.edu/schema/sitecatalog http://pegasus.isi.edu/schema/sc-4.1.xsd" version="4.1">
+
+    <!-- The local site contains information about the submit host -->
+    <site handle="local" arch="x86_64" os="LINUX">
+	<!-- This is where intermediate data will be stored -->
+	<directory type="shared-scratch" path="/scratch/pegasus-scratch">
+	    <file-server operation="all" url="file:///scratch/pegasus-scratch"/>
+        </directory>
+        <!-- This is where output data will be stored -->
+        <directory type="shared-storage" path="/scratch/pegasus-scratch/output">
+            <file-server operation="all" url="file:///scratch/pegasus-scratch/output"/>
+        </directory>
+
+    </site>
+
+
+    <site handle="compute" arch="x86_64" os="LINUX">
+        <!-- These profiles tell Pegasus that the site is a plain Condor pool -->
+        <profile namespace="pegasus" key="style">condor</profile>
+        <profile namespace="condor" key="universe">vanilla</profile>
+
+    </site>
+
+
+</sitecatalog>

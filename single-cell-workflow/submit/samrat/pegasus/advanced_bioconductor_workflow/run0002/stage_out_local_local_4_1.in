@@ -1,0 +1,37 @@
+[
+ { "type": "transfer",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/pca-tissue-sex.jpg" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/pca-tissue-sex.jpg" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/pca-normalized.jpg" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/pca-normalized.jpg" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 3,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/phase-assignment-1.jpg" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/phase-assignment-1.jpg" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 4,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/var.out.1.RData" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/var.out.1.RData" }
+   ] }
+]

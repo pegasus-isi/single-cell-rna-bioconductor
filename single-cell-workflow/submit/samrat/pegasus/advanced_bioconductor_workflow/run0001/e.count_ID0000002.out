@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2016-07-29T15:48:02.300-07:00" duration="85.967" transformation="e.count" derivation="ID0000002" resource="local" wf-label="advanced_bioconductor_workflow" wf-stamp="2016-07-29T15:45:59-07:00" interface="eth0" hostaddr="128.9.132.56" hostname="dragonfly.isi.edu" pid="11931" uid="6577" user="samrat" gid="627" group="pegasus" umask="0022">
+  <mainjob start="2016-07-29T15:48:02.334-07:00" duration="85.920" pid="11932">
+    <usage utime="56.137" stime="7.573" maxrss="3263100" minflt="818895" majflt="764" nswap="0" inblock="52600" outblock="24" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="1402" nivcsw="7309"/>
+    <status raw="15"><signalled signal="15" corefile="false">Terminated</signalled></status>
+    <statcall error="0">
+      <file name="/scratch/r-home/advanced_workflow/count-loading.R">23212F7573722F62696E2F5273637269</file>
+      <statinfo mode="0100755" size="2183" inode="1197791" nlink="1" blksize="4096" blocks="8" mtime="2016-07-26T13:31:26-07:00" atime="2016-07-29T10:59:39-07:00" ctime="2016-07-26T13:31:26-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+    </statcall>
+    <argument-vector>
+      <arg nr="1">count-loading-sce-dimensions.csv</arg>
+      <arg nr="2">sce-countLoading.RData</arg>
+    </argument-vector>
+  </mainjob>
+  <jobids condor="170516.0"/>
+  <cwd>/scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001</cwd>
+  <usage utime="0.004" stime="0.026" maxrss="1236" minflt="1005" majflt="6" nswap="0" inblock="464" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="12" nivcsw="8"/>
+  <machine page-size="4096">
+    <stamp>2016-07-29T15:48:02.300-07:00</stamp>
+    <uname system="linux" nodename="dragonfly.isi.edu" release="2.6.32-642.1.1.el6.x86_64" machine="x86_64">#1 SMP Tue May 31 21:57:07 UTC 2016</uname>
+    <linux>
+      <ram total="3921792" free="1953036" shared="0" buffer="43012"/>
+      <swap total="4063228" free="3707016"/>
+      <boot idle="12467.870">2016-07-29T14:29:19.900-07:00</boot>
+      <cpu count="4" speed="2403" vendor="GenuineIntel">Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz</cpu>
+      <load min1="1.72" min5="2.18" min15="2.45"/>
+      <procs total="222" running="1" sleeping="221" vmsize="20461812" rss="693044"/>
+      <task total="370" running="1" sleeping="369"/>
+    </linux>
+  </machine>
+  <statcall error="2" id="final" lfn="count-loading-sce-dimensions.csv">
+    <file name="count-loading-sce-dimensions.csv"/>
+  </statcall>
+  <statcall error="2" id="final" lfn="sce-countLoading.RData">
+    <file name="sce-countLoading.RData"/>
+  </statcall>
+  <statcall error="0" id="stdin">
+    <file name="/dev/null"/>
+    <statinfo mode="020666" size="0" inode="3857" nlink="1" blksize="4096" blocks="0" mtime="2016-07-29T14:29:27-07:00" atime="2016-07-29T14:29:27-07:00" ctime="2016-07-29T14:29:27-07:00" uid="0" user="root" gid="0" group="root"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_11928/ks.out.ZYfcvT" descriptor="3"/>
+    <statinfo mode="0100600" size="0" inode="2115137" nlink="1" blksize="4096" blocks="0" mtime="2016-07-29T15:48:02-07:00" atime="2016-07-29T15:48:02-07:00" ctime="2016-07-29T15:48:02-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_11928/ks.err.J7QUYg" descriptor="4"/>
+    <statinfo mode="0100600" size="3102" inode="2115138" nlink="1" blksize="4096" blocks="8" mtime="2016-07-29T15:48:11-07:00" atime="2016-07-29T15:48:02-07:00" ctime="2016-07-29T15:48:11-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+    <data>Loading required package: BiocParallel
+Loading required package: methods
+Loading required package: scater
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: &apos;BiocGenerics&apos;
+
+The following objects are masked from &apos;package:parallel&apos;:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from &apos;package:stats&apos;:
+
+    IQR, mad, xtabs
+
+The following objects are masked from &apos;package:base&apos;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, append,
+    as.data.frame, cbind, colnames, do.call, duplicated, eval, evalq,
+    get, grep, grepl, intersect, is.unsorted, lapply, lengths, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int, rank,
+    rbind, rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &apos;browseVignettes()&apos;. To cite Bioconductor, see
+    &apos;citation(&quot;Biobase&quot;)&apos;, and for packages &apos;citation(&quot;pkgname&quot;)&apos;.
+
+Loading required package: ggplot2
+
+Attaching package: &apos;scater&apos;
+
+The following object is masked from &apos;package:stats&apos;:
+
+    filter
+
+Loading required package: limma
+
+Attaching package: &apos;limma&apos;
+
+The following object is masked from &apos;package:scater&apos;:
+
+    plotMDS
+
+The following object is masked from &apos;package:BiocGenerics&apos;:
+
+    plotMA
+
+
+Attaching package: &apos;edgeR&apos;
+
+The following object is masked from &apos;package:scater&apos;:
+
+    cpm
+
+Loading required package: sgeostat
+sROC 0.1-2 loaded
+
+Attaching package: &apos;gplots&apos;
+
+The following object is masked from &apos;package:stats&apos;:
+
+    lowess
+
+Loading required package: R.oo
+Loading required package: R.methodsS3
+R.methodsS3 v1.7.1 (2016-02-15) successfully loaded. See ?R.methodsS3 for help.
+R.oo v1.20.0 (2016-02-17) successfully loaded. See ?R.oo for help.
+
+Attaching package: &apos;R.oo&apos;
+
+The following objects are masked from &apos;package:methods&apos;:
+
+    getClasses, getMethods
+
+The following objects are masked from &apos;package:base&apos;:
+
+    attach, detach, gc, load, save
+
+R.utils v2.3.0 (2016-04-13) successfully loaded. See ?R.utils for help.
+
+Attaching package: &apos;R.utils&apos;
+
+The following object is masked from &apos;package:utils&apos;:
+
+    timestamp
+
+The following objects are masked from &apos;package:base&apos;:
+
+    cat, commandArgs, getOption, inherits, isOpen, parse, warnings
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: &apos;S4Vectors&apos;
+
+The following object is masked from &apos;package:gplots&apos;:
+
+    space
+
+The following object is masked from &apos;package:scater&apos;:
+
+    rename
+
+The following objects are masked from &apos;package:base&apos;:
+
+    colMeans, colSums, expand.grid, rowMeans, rowSums
+
+
+Attaching package: &apos;IRanges&apos;
+
+The following object is masked from &apos;package:R.oo&apos;:
+
+    trim
+
+
+Loading required package: GenomicFeatures
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+</data>
+  </statcall>
+  <statcall error="2" id="kickstart">
+    <!-- ignore above error -->
+    <file name="condor_exec.exe"/>
+  </statcall>
+  <statcall error="0" id="logfile">
+    <descriptor number="1"/>
+    <statinfo mode="0100644" size="4096" inode="1195937" nlink="1" blksize="4096" blocks="8" mtime="2016-07-29T15:49:28-07:00" atime="2016-07-29T15:48:01-07:00" ctime="2016-07-29T15:49:28-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+  <environment>
+    <env key="_CONDOR_ANCESTOR_3037">11928:1469832482:2997337504</env>
+    <env key="_CONDOR_ANCESTOR_2901">3037:1469827796:893765645</env>
+    <env key="_CONDOR_ANCESTOR_11928">11931:1469832482:2829009881</env>
+    <env key="CONDOR_JOBID">170516.0</env>
+    <env key="TEMP">/var/lib/condor/spool/local_univ_execute/dir_11928</env>
+    <env key="_CONDOR_SCRATCH_DIR">/var/lib/condor/spool/local_univ_execute/dir_11928</env>
+    <env key="_CONDOR_SLOT"></env>
+    <env key="BATCH_SYSTEM">HTCondor</env>
+    <env key="TMPDIR">/var/lib/condor/spool/local_univ_execute/dir_11928</env>
+    <env key="PEGASUS_DAG_JOB_ID">e.count_ID0000002</env>
+    <env key="PEGASUS_SITE">local</env>
+    <env key="_CONDOR_JOB_PIDS"></env>
+    <env key="TMP">/var/lib/condor/spool/local_univ_execute/dir_11928</env>
+    <env key="PEGASUS_WF_LABEL">advanced_bioconductor_workflow</env>
+    <env key="_CONDOR_HIGHPORT">41000</env>
+    <env key="_CONDOR_JOB_AD">/var/lib/condor/spool/local_univ_execute/dir_11928/.job.ad</env>
+    <env key="_CONDOR_JOB_IWD">/scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001</env>
+    <env key="_CHIRP_DELAYED_UPDATE_PREFIX">Chirp*</env>
+    <env key="_CONDOR_LOWPORT">40000</env>
+    <env key="_CONDOR_MACHINE_AD">/var/lib/condor/spool/local_univ_execute/dir_11928/.machine.ad</env>
+    <env key="PEGASUS_WF_UUID">7fa97524-6389-4a78-842d-879f10d8d883</env>
+  </environment>
+  <resource>
+    <soft id="RLIMIT_CPU">unlimited</soft>
+    <hard id="RLIMIT_CPU">unlimited</hard>
+    <soft id="RLIMIT_FSIZE">unlimited</soft>
+    <hard id="RLIMIT_FSIZE">unlimited</hard>
+    <soft id="RLIMIT_DATA">unlimited</soft>
+    <hard id="RLIMIT_DATA">unlimited</hard>
+    <soft id="RLIMIT_STACK">unlimited</soft>
+    <hard id="RLIMIT_STACK">unlimited</hard>
+    <soft id="RLIMIT_CORE">0</soft>
+    <hard id="RLIMIT_CORE">0</hard>
+    <soft id="RESOURCE_5">unlimited</soft>
+    <hard id="RESOURCE_5">unlimited</hard>
+    <soft id="RLIMIT_NPROC">15222</soft>
+    <hard id="RLIMIT_NPROC">15222</hard>
+    <soft id="RLIMIT_NOFILE">4096</soft>
+    <hard id="RLIMIT_NOFILE">4096</hard>
+    <soft id="RLIMIT_MEMLOCK">65536</soft>
+    <hard id="RLIMIT_MEMLOCK">65536</hard>
+    <soft id="RLIMIT_AS">unlimited</soft>
+    <hard id="RLIMIT_AS">unlimited</hard>
+    <soft id="RLIMIT_LOCKS">unlimited</soft>
+    <hard id="RLIMIT_LOCKS">unlimited</hard>
+    <soft id="RLIMIT_SIGPENDING">15222</soft>
+    <hard id="RLIMIT_SIGPENDING">15222</hard>
+    <soft id="RLIMIT_MSGQUEUE">819200</soft>
+    <hard id="RLIMIT_MSGQUEUE">819200</hard>
+    <soft id="RLIMIT_NICE">0</soft>
+    <hard id="RLIMIT_NICE">0</hard>
+    <soft id="RLIMIT_RTPRIO">0</soft>
+    <hard id="RLIMIT_RTPRIO">0</hard>
+  </resource>
+</invocation>

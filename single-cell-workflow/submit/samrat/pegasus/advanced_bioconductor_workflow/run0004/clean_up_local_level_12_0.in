@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/ENSEMBL-identifiers.csv", "recursive": "False" } }
+]

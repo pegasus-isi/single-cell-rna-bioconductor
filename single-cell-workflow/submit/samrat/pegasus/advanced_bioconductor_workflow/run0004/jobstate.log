@@ -1,0 +1,55 @@
+1470072169 INTERNAL *** MONITORD_STARTED ***
+1470072160 INTERNAL *** DAGMAN_STARTED 170569.0 ***
+1470072164 create_dir_advanced_bioconductor_workflow_0_local SUBMIT 170570.0 local - 1
+1470072169 create_dir_advanced_bioconductor_workflow_0_local EXECUTE 170570.0 local - 1
+1470072174 create_dir_advanced_bioconductor_workflow_0_local JOB_TERMINATED 170570.0 local - 1
+1470072174 create_dir_advanced_bioconductor_workflow_0_local JOB_SUCCESS 0 local - 1
+1470072174 create_dir_advanced_bioconductor_workflow_0_local POST_SCRIPT_STARTED 170570.0 local - 1
+1470072179 create_dir_advanced_bioconductor_workflow_0_local POST_SCRIPT_TERMINATED 170570.0 local - 1
+1470072179 create_dir_advanced_bioconductor_workflow_0_local POST_SCRIPT_SUCCESS 0 local - 1
+1470072184 stage_in_remote_local_0_1 SUBMIT 170571.0 local - 2
+1470072189 stage_in_remote_local_0_1 EXECUTE 170571.0 local - 2
+1470072189 stage_in_remote_local_0_1 JOB_TERMINATED 170571.0 local - 2
+1470072189 stage_in_remote_local_0_1 JOB_SUCCESS 0 local - 2
+1470072189 stage_in_remote_local_0_1 POST_SCRIPT_STARTED 170571.0 local - 2
+1470072194 stage_in_remote_local_0_1 POST_SCRIPT_TERMINATED 170571.0 local - 2
+1470072194 stage_in_remote_local_0_1 POST_SCRIPT_SUCCESS 0 local - 2
+1470072194 stage_in_remote_local_0_0 SUBMIT 170572.0 local - 3
+1470072199 stage_in_remote_local_0_0 EXECUTE 170572.0 local - 3
+1470072199 stage_in_remote_local_0_0 JOB_TERMINATED 170572.0 local - 3
+1470072199 stage_in_remote_local_0_0 JOB_SUCCESS 0 local - 3
+1470072199 stage_in_remote_local_0_0 POST_SCRIPT_STARTED 170572.0 local - 3
+1470072205 stage_in_remote_local_0_0 POST_SCRIPT_TERMINATED 170572.0 local - 3
+1470072205 stage_in_remote_local_0_0 POST_SCRIPT_SUCCESS 0 local - 3
+1470072205 stage_in_remote_local_8_0 SUBMIT 170573.0 local - 4
+1470072210 stage_in_remote_local_8_0 EXECUTE 170573.0 local - 4
+1470072210 stage_in_remote_local_8_0 JOB_TERMINATED 170573.0 local - 4
+1470072210 stage_in_remote_local_8_0 JOB_SUCCESS 0 local - 4
+1470072210 stage_in_remote_local_8_0 POST_SCRIPT_STARTED 170573.0 local - 4
+1470072215 stage_in_remote_local_8_0 POST_SCRIPT_TERMINATED 170573.0 local - 4
+1470072215 stage_in_remote_local_8_0 POST_SCRIPT_SUCCESS 0 local - 4
+1470072215 stage_in_remote_local_7_0 SUBMIT 170574.0 local - 5
+1470072220 stage_in_remote_local_7_0 EXECUTE 170574.0 local - 5
+1470072220 stage_in_remote_local_7_0 JOB_TERMINATED 170574.0 local - 5
+1470072220 stage_in_remote_local_7_0 JOB_SUCCESS 0 local - 5
+1470072220 stage_in_remote_local_7_0 POST_SCRIPT_STARTED 170574.0 local - 5
+1470072225 stage_in_remote_local_7_0 POST_SCRIPT_TERMINATED 170574.0 local - 5
+1470072225 stage_in_remote_local_7_0 POST_SCRIPT_SUCCESS 0 local - 5
+1470072225 e.preprocess_ID0000001 SUBMIT 170575.0 local - 6
+1470072230 e.preprocess_ID0000001 EXECUTE 170575.0 local - 6
+1470072260 e.preprocess_ID0000001 JOB_TERMINATED 170575.0 local - 6
+1470072260 e.preprocess_ID0000001 JOB_SUCCESS 0 local - 6
+1470072260 e.preprocess_ID0000001 POST_SCRIPT_STARTED 170575.0 local - 6
+1470072266 e.preprocess_ID0000001 POST_SCRIPT_TERMINATED 170575.0 local - 6
+1470072266 e.preprocess_ID0000001 POST_SCRIPT_SUCCESS 0 local - 6
+1470072266 e.count_ID0000002 SUBMIT 170576.0 local - 7
+1470072271 e.count_ID0000002 EXECUTE 170576.0 local - 7
+1470072627 e.count_ID0000002 JOB_TERMINATED 170576.0 local - 7
+1470072627 e.count_ID0000002 JOB_SUCCESS 0 local - 7
+1470072627 e.count_ID0000002 POST_SCRIPT_STARTED 170576.0 local - 7
+1470072634 e.count_ID0000002 POST_SCRIPT_TERMINATED 170576.0 local - 7
+1470072634 e.count_ID0000002 POST_SCRIPT_SUCCESS 0 local - 7
+1470072634 e.qc1.1_ID0000003 SUBMIT 170577.0 local - 8
+1470072640 e.qc1.1_ID0000003 EXECUTE 170577.0 local - 8
+1470072663 INTERNAL *** DAGMAN_FINISHED 2 ***
+1470072667 INTERNAL *** MONITORD_FINISHED 0 ***

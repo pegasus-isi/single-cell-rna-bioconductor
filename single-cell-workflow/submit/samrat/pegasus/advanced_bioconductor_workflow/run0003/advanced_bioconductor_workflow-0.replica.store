@@ -1,0 +1,7 @@
+# file-based replica catalog: 2016-08-01T09:57:56.423-07:00
+GSE61533_HTSEQ_count_results.csv file:///scratch/r-home/advanced_workflow/GSE61533_HTSEQ_count_results.csv priority="100" site="local"
+expression_mito_17-Aug-2014.txt file:///scratch/r-home/advanced_workflow/expression_mito_17-Aug-2014.txt priority="100" site="local"
+counttable_es.csv file:///scratch/r-home/advanced_workflow/counttable_es.csv priority="100" site="local"
+expression_spikes_17-Aug-2014.txt file:///scratch/r-home/advanced_workflow/expression_spikes_17-Aug-2014.txt priority="100" site="local"
+expression_mRNA_17-Aug-2014.txt file:///scratch/r-home/advanced_workflow/expression_mRNA_17-Aug-2014.txt priority="100" site="local"
+nbt.3102-S7.xlsx file:///scratch/r-home/advanced_workflow/nbt.3102-S7.xlsx priority="100" site="local"

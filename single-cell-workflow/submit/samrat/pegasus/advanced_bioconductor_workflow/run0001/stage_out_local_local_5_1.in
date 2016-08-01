@@ -1,0 +1,55 @@
+[
+ { "type": "transfer",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001/correlated-genes-2.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/correlated-genes-2.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001/brain-hvg.tsv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/brain-hvg.tsv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 3,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001/gene-pairs-2.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/gene-pairs-2.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 4,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001/top-hvgs.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/top-hvgs.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 5,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001/normalized-log-expression.jpg" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/normalized-log-expression.jpg" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 6,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001/log-expression-1.jpg" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/log-expression-1.jpg" }
+   ] }
+]

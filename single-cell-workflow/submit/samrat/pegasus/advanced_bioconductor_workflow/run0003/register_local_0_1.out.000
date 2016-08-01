@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2016-08-01T10:04:20.448-07:00" duration="3.618" transformation="pegasus::rc-client" derivation="null" resource="local" wf-label="advanced_bioconductor_workflow" wf-stamp="2016-08-01T09:57:35-07:00" interface="eth0" hostaddr="128.9.132.56" hostname="dragonfly.isi.edu" pid="26967" uid="6577" user="samrat" gid="627" group="pegasus" umask="0022">
+  <mainjob start="2016-08-01T10:04:20.486-07:00" duration="3.580" pid="26969">
+    <usage utime="0.616" stime="0.158" maxrss="43924" minflt="11604" majflt="156" nswap="0" inblock="52408" outblock="88" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="1363" nivcsw="316"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/usr/bin/pegasus-rc-client">23212F62696E2F626173680A230A2320</file>
+      <statinfo mode="0100755" size="606" inode="1841581" nlink="1" blksize="4096" blocks="8" mtime="2016-04-21T20:01:32-07:00" atime="2016-07-29T12:12:16-07:00" ctime="2016-06-22T16:31:13-07:00" uid="0" user="root" gid="0" group="root"/>
+    </statcall>
+    <argument-vector>
+      <arg nr="1">--conf</arg>
+      <arg nr="2">/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/pegasus.7652148965149861770.properties</arg>
+      <arg nr="3">-v</arg>
+      <arg nr="4">--insert</arg>
+      <arg nr="5">/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/register_local_0_1.in</arg>
+    </argument-vector>
+  </mainjob>
+  <jobids condor="170544.0"/>
+  <cwd>/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003</cwd>
+  <usage utime="0.005" stime="0.022" maxrss="1288" minflt="955" majflt="0" nswap="0" inblock="8" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="3" nivcsw="13"/>
+  <machine page-size="4096">
+    <stamp>2016-08-01T10:04:20.448-07:00</stamp>
+    <uname system="linux" nodename="dragonfly.isi.edu" release="2.6.32-642.1.1.el6.x86_64" machine="x86_64">#1 SMP Tue May 31 21:57:07 UTC 2016</uname>
+    <linux>
+      <ram total="3921792" free="3000548" shared="0" buffer="17732"/>
+      <swap total="4063228" free="3915784"/>
+      <boot idle="948517.120">2016-07-29T15:58:58.908-07:00</boot>
+      <cpu count="4" speed="2403" vendor="GenuineIntel">Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz</cpu>
+      <load min1="3.88" min5="3.19" min15="1.66"/>
+      <procs total="227" running="4" sleeping="221" waiting="2" vmsize="17751416" rss="608616"/>
+      <task total="324" running="4" sleeping="318" waiting="2"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="stdin">
+    <file name="/dev/null"/>
+    <statinfo mode="020666" size="0" inode="3857" nlink="1" blksize="4096" blocks="0" mtime="2016-07-29T15:59:03-07:00" atime="2016-07-29T15:59:03-07:00" ctime="2016-07-29T15:59:03-07:00" uid="0" user="root" gid="0" group="root"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_26965/ks.out.6951aN" descriptor="3"/>
+    <statinfo mode="0100600" size="0" inode="2115137" nlink="1" blksize="4096" blocks="0" mtime="2016-08-01T10:04:20-07:00" atime="2016-08-01T10:04:20-07:00" ctime="2016-08-01T10:04:20-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_26965/ks.err.lt9wBR" descriptor="4"/>
+    <statinfo mode="0100600" size="76" inode="2115138" nlink="1" blksize="4096" blocks="8" mtime="2016-08-01T10:04:24-07:00" atime="2016-08-01T10:04:20-07:00" ctime="2016-08-01T10:04:24-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+    <data>#Successfully worked on    : 2 lines.
+#Worked on total number of : 2 lines.
+</data>
+  </statcall>
+</invocation>

@@ -1,0 +1,118 @@
+000 (170518.000.000) 07/29 16:20:48 Job submitted from host: <128.9.132.56:40683?addrs=128.9.132.56-40683>
+    DAG Node: create_dir_advanced_bioconductor_workflow_0_local
+    pool:local
+...
+001 (170518.000.000) 07/29 16:20:51 Job executing on host: <128.9.132.56:40533?addrs=128.9.132.56-40533>
+...
+005 (170518.000.000) 07/29 16:20:53 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (170519.000.000) 07/29 16:21:04 Job submitted from host: <128.9.132.56:40683?addrs=128.9.132.56-40683>
+    DAG Node: stage_in_remote_local_0_1
+    pool:local
+...
+001 (170519.000.000) 07/29 16:21:04 Job executing on host: <128.9.132.56:40392?addrs=128.9.132.56-40392>
+...
+005 (170519.000.000) 07/29 16:21:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (170520.000.000) 07/29 16:21:14 Job submitted from host: <128.9.132.56:40683?addrs=128.9.132.56-40683>
+    DAG Node: stage_in_remote_local_0_0
+    pool:local
+...
+001 (170520.000.000) 07/29 16:21:15 Job executing on host: <128.9.132.56:40167?addrs=128.9.132.56-40167>
+...
+005 (170520.000.000) 07/29 16:21:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (170521.000.000) 07/29 16:21:30 Job submitted from host: <128.9.132.56:40683?addrs=128.9.132.56-40683>
+    DAG Node: stage_in_remote_local_8_0
+    pool:local
+...
+001 (170521.000.000) 07/29 16:21:30 Job executing on host: <128.9.132.56:40656?addrs=128.9.132.56-40656>
+...
+005 (170521.000.000) 07/29 16:21:35 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (170522.000.000) 07/29 16:21:41 Job submitted from host: <128.9.132.56:40683?addrs=128.9.132.56-40683>
+    DAG Node: stage_in_remote_local_7_0
+    pool:local
+...
+001 (170522.000.000) 07/29 16:21:41 Job executing on host: <128.9.132.56:40073?addrs=128.9.132.56-40073>
+...
+005 (170522.000.000) 07/29 16:21:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (170523.000.000) 07/29 16:21:51 Job submitted from host: <128.9.132.56:40683?addrs=128.9.132.56-40683>
+    DAG Node: e.preprocess_ID0000001
+    pool:local
+...
+001 (170523.000.000) 07/29 16:21:51 Job executing on host: <128.9.132.56:40027?addrs=128.9.132.56-40027>
+...
+005 (170523.000.000) 07/29 16:22:25 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:18, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (170524.000.000) 07/29 16:22:31 Job submitted from host: <128.9.132.56:40683?addrs=128.9.132.56-40683>
+    DAG Node: e.count_ID0000002
+    pool:local
+...
+001 (170524.000.000) 07/29 16:22:32 Job executing on host: <128.9.132.56:40508?addrs=128.9.132.56-40508>
+...
+004 (170524.000.000) 07/29 16:25:35 Job was evicted.
+	(0) Job was not checkpointed.
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:56, Sys 0 00:00:08  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+009 (170524.000.000) 07/29 16:25:36 Job was aborted by the user.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 170517> fired when job (170517.0) was removed
+...

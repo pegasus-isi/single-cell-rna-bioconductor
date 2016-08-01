@@ -1,0 +1,10 @@
+[
+ { "type": "transfer",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/libSize-vs-sizeFactors-2.jpg" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/libSize-vs-sizeFactors-2.jpg" }
+   ] }
+]

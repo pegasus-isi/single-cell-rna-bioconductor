@@ -1,0 +1,3 @@
+normalize2-sce.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/normalize2-sce.RData site="local"
+size-factors.txt file:///scratch/advanced_bioconductor_workflow/output/size-factors.txt site="local"
+libSize-vs-sizeFactors-1.jpg file:///scratch/advanced_bioconductor_workflow/output/libSize-vs-sizeFactors-1.jpg site="local"

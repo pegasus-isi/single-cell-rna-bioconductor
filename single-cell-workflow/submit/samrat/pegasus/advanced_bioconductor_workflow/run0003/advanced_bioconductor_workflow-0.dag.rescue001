@@ -1,0 +1,125 @@
+# Rescue DAG file, created after running
+#   the advanced_bioconductor_workflow-0.dag DAG file
+# Created 8/1/2016 17:17:29 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 86
+# Nodes premarked DONE: 29
+# Nodes that failed: 7
+#   stage_out_local_local_1_0,e.normalize.2_ID0000012,stage_out_local_local_2_1,e.reduction_ID0000013,stage_out_local_local_3_0,e.cellCyc1.1_ID0000014,e.hvgs1_ID0000016,<ENDLIST>
+
+DONE create_dir_advanced_bioconductor_workflow_0_local
+RETRY create_dir_advanced_bioconductor_workflow_0_local 1
+DONE stage_in_remote_local_0_1
+RETRY stage_in_remote_local_0_1 1
+DONE stage_in_remote_local_0_0
+RETRY stage_in_remote_local_0_0 1
+DONE stage_in_remote_local_8_0
+RETRY stage_in_remote_local_8_0 1
+DONE stage_in_remote_local_7_0
+RETRY stage_in_remote_local_7_0 1
+DONE e.preprocess_ID0000001
+RETRY e.preprocess_ID0000001 1
+DONE e.count_ID0000002
+RETRY e.count_ID0000002 1
+DONE e.qc1.1_ID0000003
+RETRY e.qc1.1_ID0000003 1
+DONE e.qc2.1_ID0000005
+RETRY e.qc2.1_ID0000005 1
+DONE e.filters1.1_ID0000007
+RETRY e.filters1.1_ID0000007 1
+DONE stage_out_local_local_0_1
+RETRY stage_out_local_local_0_1 1
+DONE clean_up_local_level_3_1
+RETRY clean_up_local_level_3_1 1
+DONE e.filters1.2_ID0000008
+RETRY e.filters1.2_ID0000008 1
+DONE e.qc1.2_ID0000004
+RETRY e.qc1.2_ID0000004 1
+DONE clean_up_local_level_3_0
+RETRY clean_up_local_level_3_0 1
+DONE stage_out_local_local_0_0
+RETRY stage_out_local_local_0_0 1
+DONE e.qc2.2_ID0000006
+RETRY e.qc2.2_ID0000006 1
+DONE e.lowabundance1.1_ID0000009
+RETRY e.lowabundance1.1_ID0000009 1
+DONE register_local_0_1
+RETRY register_local_0_1 1
+DONE e.lowabundance1.1_ID0000010
+RETRY e.lowabundance1.1_ID0000010 1
+DONE register_local_0_0
+RETRY register_local_0_0 1
+DONE stage_out_local_local_1_1
+RETRY stage_out_local_local_1_1 1
+RETRY stage_out_local_local_1_0 1
+DONE clean_up_local_level_4_0
+RETRY clean_up_local_level_4_0 1
+DONE clean_up_local_level_4_1
+RETRY clean_up_local_level_4_1 1
+RETRY e.normalize.2_ID0000012 1
+DONE e.normalize.1_ID0000011
+RETRY e.normalize.1_ID0000011 1
+RETRY stage_out_local_local_2_1 1
+DONE stage_out_local_local_2_0
+RETRY stage_out_local_local_2_0 1
+DONE register_local_1_1
+RETRY register_local_1_1 1
+DONE clean_up_local_level_5_0
+RETRY clean_up_local_level_5_0 1
+RETRY register_local_1_0 1
+RETRY clean_up_local_level_5_1 1
+RETRY e.hvgs2_ID0000017 1
+RETRY stage_out_local_local_3_1 1
+RETRY e.cellCyc1.2_ID0000015 1
+RETRY e.reduction_ID0000013 1
+RETRY stage_out_local_local_3_0 1
+RETRY e.cellCyc1.1_ID0000014 1
+RETRY clean_up_local_level_6_0 1
+RETRY e.hvgs1_ID0000016 1
+RETRY register_local_2_1 1
+DONE register_local_2_0
+RETRY register_local_2_0 1
+RETRY clean_up_local_level_6_1 1
+RETRY e.logExp2_ID0000019 1
+RETRY register_local_3_1 1
+RETRY register_local_3_0 1
+RETRY stage_out_local_local_4_1 1
+RETRY stage_out_local_local_4_0 1
+RETRY clean_up_local_level_7_0 1
+RETRY e.logExp1_ID0000018 1
+RETRY e.corPairs2_ID0000021 1
+RETRY register_local_4_1 1
+RETRY register_local_4_0 1
+RETRY stage_out_local_local_5_1 1
+RETRY stage_out_local_local_5_0 1
+RETRY clean_up_local_level_8_0 1
+RETRY clean_up_local_level_8_1 1
+RETRY e.corPairs1_ID0000020 1
+RETRY e.log_ID0000025 1
+RETRY e.lrt_ID0000024 1
+RETRY register_local_5_1 1
+RETRY clean_up_local_level_9_0 1
+RETRY register_local_5_0 1
+RETRY stage_out_local_local_6_1 1
+RETRY stage_out_local_local_6_0 1
+RETRY e.cellBlock_ID0000022 1
+RETRY clean_up_local_level_9_1 1
+RETRY clean_up_local_level_10_1 1
+RETRY register_local_6_1 1
+RETRY register_local_6_0 1
+RETRY stage_out_local_local_7_1 1
+RETRY stage_out_local_local_7_0 1
+RETRY clean_up_local_level_10_0 1
+RETRY e.extract_ID0000023 1
+RETRY register_local_7_1 1
+RETRY clean_up_local_level_11_0 1
+RETRY register_local_7_0 1
+RETRY stage_out_local_local_8_0 1
+RETRY clean_up_local_level_11_1 1
+RETRY stage_out_local_local_8_1 1
+RETRY clean_up_local_level_12_0 1
+RETRY register_local_8_0 1
+RETRY clean_up_local_level_12_1 1
+RETRY register_local_8_1 1
+RETRY cleanup_advanced_bioconductor_workflow_0_local 1

@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/brain-marker-2.tsv", "recursive": "False" } }
+  ,
+  {
+    "id": 2,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/cell-cycle-removal.jpg", "recursive": "False" } }
+  ,
+  {
+    "id": 3,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/cluster2-heatmap.jpg", "recursive": "False" } }
+  ,
+  {
+    "id": 4,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/diffusion-map.jpg", "recursive": "False" } }
+  ,
+  {
+    "id": 5,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/markers.csv", "recursive": "False" } }
+  ,
+  {
+    "id": 6,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/phase-scores.jpg", "recursive": "False" } }
+  ,
+  {
+    "id": 7,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/normalization-vs-deconvolution.jpg", "recursive": "False" } }
+]

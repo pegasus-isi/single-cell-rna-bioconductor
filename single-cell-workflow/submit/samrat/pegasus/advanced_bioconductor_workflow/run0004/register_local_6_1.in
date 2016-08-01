@@ -1,0 +1,8 @@
+y.Rdata file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/y.Rdata site="local"
+cluster.Rdata file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/cluster.Rdata site="local"
+brain.heat.pdf file:///scratch/advanced_bioconductor_workflow/output/brain.heat.pdf site="local"
+fit.Rdata file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/fit.Rdata site="local"
+pair-wise-correlations.csv file:///scratch/advanced_bioconductor_workflow/output/pair-wise-correlations.csv site="local"
+hsc-cor.tsv file:///scratch/advanced_bioconductor_workflow/output/hsc-cor.tsv site="local"
+correlated-genes-1.csv file:///scratch/advanced_bioconductor_workflow/output/correlated-genes-1.csv site="local"
+pca-tSNE-plots.jpg file:///scratch/advanced_bioconductor_workflow/output/pca-tSNE-plots.jpg site="local"

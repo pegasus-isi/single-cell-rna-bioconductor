@@ -1,0 +1,19 @@
+[
+ { "type": "transfer",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/count-loading-sce-dimensions.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/count-loading-sce-dimensions.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/column-names.txt" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/column-names.txt" }
+   ] }
+]

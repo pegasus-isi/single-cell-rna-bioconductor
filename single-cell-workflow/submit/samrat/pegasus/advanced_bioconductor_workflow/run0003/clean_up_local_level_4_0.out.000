@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2016-08-01T10:10:14.708-07:00" duration="4.245" transformation="pegasus::cleanup" derivation="null" resource="local" wf-label="advanced_bioconductor_workflow" wf-stamp="2016-08-01T09:57:35-07:00" interface="eth0" hostaddr="128.9.132.56" hostname="dragonfly.isi.edu" pid="28053" uid="6577" user="samrat" gid="627" group="pegasus" umask="0022">
+  <mainjob start="2016-08-01T10:10:14.748-07:00" duration="4.205" pid="28054">
+    <usage utime="0.125" stime="0.057" maxrss="10508" minflt="13262" majflt="0" nswap="0" inblock="48" outblock="16" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="96" nivcsw="54"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/usr/bin/pegasus-transfer">23212F7573722F62696E2F707974686F</file>
+      <statinfo mode="0100755" size="123318" inode="1841592" nlink="1" blksize="4096" blocks="248" mtime="2016-04-21T20:20:33-07:00" atime="2016-08-01T09:58:04-07:00" ctime="2016-06-22T16:31:13-07:00" uid="0" user="root" gid="0" group="root"/>
+    </statcall>
+    <argument-vector/>
+  </mainjob>
+  <jobids condor="170550.0"/>
+  <cwd>/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003</cwd>
+  <usage utime="0.002" stime="0.020" maxrss="1232" minflt="933" majflt="0" nswap="0" inblock="0" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="4" nivcsw="7"/>
+  <machine page-size="4096">
+    <stamp>2016-08-01T10:10:14.708-07:00</stamp>
+    <uname system="linux" nodename="dragonfly.isi.edu" release="2.6.32-642.1.1.el6.x86_64" machine="x86_64">#1 SMP Tue May 31 21:57:07 UTC 2016</uname>
+    <linux>
+      <ram total="3921792" free="3582288" shared="0" buffer="7892"/>
+      <swap total="4063228" free="3907388"/>
+      <boot idle="949307.330">2016-07-29T15:58:58.908-07:00</boot>
+      <cpu count="4" speed="2403" vendor="GenuineIntel">Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz</cpu>
+      <load min1="2.26" min5="3.18" min15="2.25"/>
+      <procs total="219" running="1" sleeping="216" waiting="2" vmsize="16333708" rss="182492"/>
+      <task total="315" running="1" sleeping="312" waiting="2"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="stdin">
+    <descriptor number="0"/>
+    <statinfo mode="0100644" size="439" inode="1198054" nlink="1" blksize="4096" blocks="8" mtime="2016-08-01T09:57:56-07:00" atime="2016-08-01T09:57:56-07:00" ctime="2016-08-01T09:57:56-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_28051/ks.out.CnGhA3" descriptor="3"/>
+    <statinfo mode="0100600" size="950" inode="2115146" nlink="1" blksize="4096" blocks="8" mtime="2016-08-01T10:10:18-07:00" atime="2016-08-01T10:10:14-07:00" ctime="2016-08-01T10:10:18-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+    <data>2016-08-01 10:10:14,863    INFO:  Reading URL pairs from stdin
+2016-08-01 10:10:14,878    INFO:  2 transfers loaded
+2016-08-01 10:10:14,878    INFO:  PATH=/usr/bin:/bin
+2016-08-01 10:10:14,878    INFO:  LD_LIBRARY_PATH=
+2016-08-01 10:10:14,936    INFO:  --------------------------------------------------------------------------------
+2016-08-01 10:10:14,937    INFO:  Starting transfers - attempt 1
+2016-08-01 10:10:16,939    INFO:  /bin/rm -f &apos;/scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/sce-countLoading.RData&apos; 
+2016-08-01 10:10:17,106    INFO:  /bin/rm -f &apos;/scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/sce.RData&apos; 
+2016-08-01 10:10:18,938    INFO:  --------------------------------------------------------------------------------
+2016-08-01 10:10:18,938    INFO:  Stats: no local files in the transfer set
+2016-08-01 10:10:18,938    INFO:  All transfers completed successfully.
+</data>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_28051/ks.err.YBfi55" descriptor="4"/>
+    <statinfo mode="0100600" size="0" inode="2115147" nlink="1" blksize="4096" blocks="0" mtime="2016-08-01T10:10:14-07:00" atime="2016-08-01T10:10:14-07:00" ctime="2016-08-01T10:10:14-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+</invocation>

@@ -1,0 +1,52 @@
+2016-08-01 10:22:41,221:INFO:Pegasus.tools.properties(235): processing properties file /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/pegasus.4539901559891327210.properties... 
+
+2016-08-01T10:22:41-0700 - pegasus-monitord starting - pid 30350 ---------------
+
+Created Pegasus database in: sqlite:////scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/advanced_bioconductor_workflow-0.stampede.db
+1470072169 - 2016-08-01T10:22:49-0700 - MONITORD_STARTED  - 9ff49b0e-c6a8-4608-93e9-0e114b8641d3 - advanced_bioconductor_workflow-0
+2016-08-01 10:22:49,952:ERROR:Pegasus.db.modules.stampede_dashboard_loader.Analyzer(271): Connection problem during commit: (OperationalError) disk I/O error None None - reattempting batch
+2016-08-01 10:22:49,952:WARNING:Pegasus.monitoring.workflow(130): DASHBOARD DB NL-LOAD-ERROR --> 9ff49b0e-c6a8-4608-93e9-0e114b8641d3 - advanced_bioconductor_workflow-0
+2016-08-01 10:22:49,952:WARNING:Pegasus.monitoring.workflow(131): error sending event to dashboard db: xwf.start --> {'xwf__id': '9ff49b0e-c6a8-4608-93e9-0e114b8641d3', 'restart_count': 0, 'ts': 1470072160.0}
+2016-08-01 10:22:49,954:WARNING:Pegasus.monitoring.workflow(132): Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/Pegasus/monitoring/workflow.py", line 125, in output_to_dashboard_db
+    self._dashboard_sink.send(event, kwargs)
+  File "/usr/lib64/python2.6/site-packages/Pegasus/monitoring/event_output.py", line 190, in send
+    self._db.notify(d)
+  File "/usr/lib64/python2.6/site-packages/Pegasus/db/modules/__init__.py", line 146, in notify
+    raise ProcessException(str(err))
+ProcessException: (OperationalError) cannot rollback - no transaction is active None None
+
+2016-08-01 10:31:05,910:WARNING:pegasus-monitord(881): DAGMan was aborted for workflow running in directory /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004
+1470072667 - 2016-08-01T10:31:07-0700 - MONITORD_FINISHED - 9ff49b0e-c6a8-4608-93e9-0e114b8641d3 - advanced_bioconductor_workflow-0
+
+2016-08-01T10:31:07-0700 - pegasus-monitord ending - pid 30350 -----------------
+
+Final Command line options are ['-N', 'advanced_bioconductor_workflow-0.dag.dagman.out'] 
+2016-08-01T10:31:08-0700 - pegasus-monitord - DB flushing beginning ------------
+2016-08-01T10:31:11-0700 - pegasus-monitord - DB flushing ended ----------------
+2016-08-01T10:31:11-0700 - pegasus-monitord - DB flushing beginning ------------
+2016-08-01 10:31:11,797:WARNING:pegasus-monitord(216): could not call the finish method in the nl loader class... exiting anyway
+2016-08-01 10:31:12,071:WARNING:pegasus-monitord(217): Traceback (most recent call last):
+  File "/usr/bin/pegasus-monitord", line 213, in finish_stampede_loader
+    sink.close()
+  File "/usr/lib64/python2.6/site-packages/Pegasus/monitoring/event_output.py", line 196, in close
+    self._db.finish()
+  File "/usr/lib64/python2.6/site-packages/Pegasus/db/modules/stampede_dashboard_loader.py", line 450, in finish
+    self.hard_flush()
+  File "/usr/lib64/python2.6/site-packages/Pegasus/db/modules/stampede_dashboard_loader.py", line 243, in hard_flush
+    self.check_connection()
+  File "/usr/lib64/python2.6/site-packages/Pegasus/db/modules/stampede_dashboard_loader.py", line 213, in check_connection
+    self.session.connection().closed
+  File "/usr/lib64/pegasus/externals/python/sqlalchemy/orm/scoping.py", line 149, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/lib64/pegasus/externals/python/sqlalchemy/orm/session.py", line 797, in connection
+    close_with_result=close_with_result)
+  File "/usr/lib64/pegasus/externals/python/sqlalchemy/orm/session.py", line 801, in _connection_for_bind
+    return self.transaction._connection_for_bind(engine)
+  File "/usr/lib64/pegasus/externals/python/sqlalchemy/orm/session.py", line 280, in _connection_for_bind
+    self._assert_active()
+  File "/usr/lib64/pegasus/externals/python/sqlalchemy/orm/session.py", line 180, in _assert_active
+    "This session is in 'prepared' state; no further "
+InvalidRequestError: This session is in 'prepared' state; no further SQL can be emitted within this transaction.
+
+2016-08-01T10:31:12-0700 - pegasus-monitord - DB flushing ended ----------------

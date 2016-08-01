@@ -1,0 +1,4 @@
+brain-marker-2.tsv file:///scratch/advanced_bioconductor_workflow/output/brain-marker-2.tsv site="local"
+cluster2-heatmap.jpg file:///scratch/advanced_bioconductor_workflow/output/cluster2-heatmap.jpg site="local"
+cell-cycle-removal.jpg file:///scratch/advanced_bioconductor_workflow/output/cell-cycle-removal.jpg site="local"
+diffusion-map.jpg file:///scratch/advanced_bioconductor_workflow/output/diffusion-map.jpg site="local"

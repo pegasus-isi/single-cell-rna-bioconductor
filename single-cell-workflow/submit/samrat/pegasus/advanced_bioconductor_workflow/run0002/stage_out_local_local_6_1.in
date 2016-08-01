@@ -1,0 +1,46 @@
+[
+ { "type": "transfer",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/brain.heat.pdf" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/brain.heat.pdf" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/pair-wise-correlations.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/pair-wise-correlations.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 3,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/hsc-cor.tsv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/hsc-cor.tsv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 4,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/correlated-genes-1.csv" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/correlated-genes-1.csv" }
+   ] }
+ ,
+ { "type": "transfer",
+   "id": 5,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/pca-tSNE-plots.jpg" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/advanced_bioconductor_workflow/output/pca-tSNE-plots.jpg" }
+   ] }
+]

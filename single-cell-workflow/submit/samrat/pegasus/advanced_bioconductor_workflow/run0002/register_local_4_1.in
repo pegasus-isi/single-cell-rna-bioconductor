@@ -1,0 +1,7 @@
+var.out-2.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/var.out-2.RData site="local"
+var.fit-2.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/var.fit-2.RData site="local"
+pca-tissue-sex.jpg file:///scratch/advanced_bioconductor_workflow/output/pca-tissue-sex.jpg site="local"
+pca-normalized.jpg file:///scratch/advanced_bioconductor_workflow/output/pca-normalized.jpg site="local"
+phase-assignment-1.jpg file:///scratch/advanced_bioconductor_workflow/output/phase-assignment-1.jpg site="local"
+hvgs-setup-1.sce.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/hvgs-setup-1.sce.RData site="local"
+var.out.1.RData file:///scratch/advanced_bioconductor_workflow/output/var.out.1.RData site="local"

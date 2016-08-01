@@ -1,0 +1,1725 @@
+08/01/16 09:57:59 ******************************************************
+08/01/16 09:57:59 ** condor_scheduniv_exec.170525.0 (CONDOR_DAGMAN) STARTING UP
+08/01/16 09:57:59 ** /usr/bin/condor_dagman
+08/01/16 09:57:59 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+08/01/16 09:57:59 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+08/01/16 09:57:59 ** $CondorVersion: 8.4.7 Jun 03 2016 BuildID: 369249 $
+08/01/16 09:57:59 ** $CondorPlatform: x86_64_RedHat6 $
+08/01/16 09:57:59 ** PID = 25878
+08/01/16 09:57:59 ** Log last touched time unavailable (No such file or directory)
+08/01/16 09:57:59 ******************************************************
+08/01/16 09:57:59 Using config source: /etc/condor/condor_config
+08/01/16 09:57:59 Using local config sources: 
+08/01/16 09:57:59    /etc/condor/condor_config.local
+08/01/16 09:57:59 config Macros = 68, Sorted = 68, StringBytes = 2036, TablesBytes = 2496
+08/01/16 09:57:59 CLASSAD_CACHING is ENABLED
+08/01/16 09:57:59 Daemon Log is logging: D_ALWAYS D_ERROR
+08/01/16 09:57:59 DaemonCore: No command port requested.
+08/01/16 09:57:59 DAGMAN_USE_STRICT setting: 1
+08/01/16 09:57:59 DAGMAN_VERBOSITY setting: 3
+08/01/16 09:57:59 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+08/01/16 09:57:59 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+08/01/16 09:57:59 DAGMAN_SUBMIT_DELAY setting: 0
+08/01/16 09:57:59 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+08/01/16 09:57:59 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+08/01/16 09:57:59 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+08/01/16 09:57:59 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+08/01/16 09:57:59 DAGMAN_DEFAULT_PRIORITY setting: 0
+08/01/16 09:57:59 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+08/01/16 09:57:59 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+08/01/16 09:57:59 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+08/01/16 09:57:59 DAGMAN_RETRY_NODE_FIRST setting: False
+08/01/16 09:57:59 DAGMAN_MAX_JOBS_IDLE setting: 1000
+08/01/16 09:57:59 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+08/01/16 09:57:59 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+08/01/16 09:57:59 DAGMAN_MAX_POST_SCRIPTS setting: 20
+08/01/16 09:57:59 DAGMAN_ALLOW_LOG_ERROR setting: False
+08/01/16 09:57:59 DAGMAN_MUNGE_NODE_NAMES setting: True
+08/01/16 09:57:59 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+08/01/16 09:57:59 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+08/01/16 09:57:59 DAGMAN_ALWAYS_RUN_POST setting: True
+08/01/16 09:57:59 DAGMAN_ABORT_DUPLICATES setting: True
+08/01/16 09:57:59 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+08/01/16 09:57:59 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+08/01/16 09:57:59 DAGMAN_AUTO_RESCUE setting: True
+08/01/16 09:57:59 DAGMAN_MAX_RESCUE_NUM setting: 100
+08/01/16 09:57:59 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+08/01/16 09:57:59 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+08/01/16 09:57:59 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+08/01/16 09:57:59 DAGMAN_MAX_JOB_HOLDS setting: 100
+08/01/16 09:57:59 DAGMAN_HOLD_CLAIM_TIME setting: 20
+08/01/16 09:57:59 ALL_DEBUG setting: 
+08/01/16 09:57:59 DAGMAN_DEBUG setting: 
+08/01/16 09:57:59 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+08/01/16 09:57:59 argv[0] == "condor_scheduniv_exec.170525.0"
+08/01/16 09:57:59 argv[1] == "-Lockfile"
+08/01/16 09:57:59 argv[2] == "advanced_bioconductor_workflow-0.dag.lock"
+08/01/16 09:57:59 argv[3] == "-AutoRescue"
+08/01/16 09:57:59 argv[4] == "1"
+08/01/16 09:57:59 argv[5] == "-DoRescueFrom"
+08/01/16 09:57:59 argv[6] == "0"
+08/01/16 09:57:59 argv[7] == "-Dag"
+08/01/16 09:57:59 argv[8] == "advanced_bioconductor_workflow-0.dag"
+08/01/16 09:57:59 argv[9] == "-MaxPost"
+08/01/16 09:57:59 argv[10] == "20"
+08/01/16 09:57:59 argv[11] == "-Suppress_notification"
+08/01/16 09:57:59 argv[12] == "-CsdVersion"
+08/01/16 09:57:59 argv[13] == "$CondorVersion: 8.4.7 Jun 03 2016 BuildID: 369249 $"
+08/01/16 09:57:59 argv[14] == "-Dagman"
+08/01/16 09:57:59 argv[15] == "/usr/bin/condor_dagman"
+08/01/16 09:57:59 Warning: failed to get attribute DAGNodeName
+08/01/16 09:57:59 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+08/01/16 09:57:59 Default node log file is: </scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log>
+08/01/16 09:57:59 DAG Lockfile will be written to advanced_bioconductor_workflow-0.dag.lock
+08/01/16 09:57:59 DAG Input file is advanced_bioconductor_workflow-0.dag
+08/01/16 09:57:59 Parsing 1 dagfiles
+08/01/16 09:57:59 Parsing advanced_bioconductor_workflow-0.dag ...
+08/01/16 09:57:59 Warning: category stage-out has no throttle value set
+08/01/16 09:57:59 Warning: category stage-in has no throttle value set
+08/01/16 09:57:59 Dag contains 86 total jobs
+08/01/16 09:57:59 Sleeping for 3 seconds to ensure ProcessId uniqueness
+08/01/16 09:58:02 Bootstrapping...
+08/01/16 09:58:02 Number of pre-completed nodes: 0
+08/01/16 09:58:02 MultiLogFiles: truncating log file /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:02 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:02 Of 86 nodes total:
+08/01/16 09:58:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:02   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:02     0       0        0       0       1         85        0
+08/01/16 09:58:02 0 job proc(s) currently held
+08/01/16 09:58:02 Registering condor_event_timer...
+08/01/16 09:58:03 Submitting Condor Node create_dir_advanced_bioconductor_workflow_0_local job(s)...
+08/01/16 09:58:03 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:03 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:58:03 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:58:03 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'create_dir_advanced_bioconductor_workflow_0_local -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'create_dir_advanced_bioconductor_workflow_0_local -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never create_dir_advanced_bioconductor_workflow_0_local.sub
+08/01/16 09:58:03 From submit: Submitting job(s).
+08/01/16 09:58:03 From submit: 1 job(s) submitted to cluster 170526.
+08/01/16 09:58:03 	assigned Condor ID (170526.0.0)
+08/01/16 09:58:03 Just submitted 1 job this cycle...
+08/01/16 09:58:03 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:03 Reassigning the id of job create_dir_advanced_bioconductor_workflow_0_local from (170526.0.0) to (170526.0.0)
+08/01/16 09:58:03 Event: ULOG_SUBMIT for Condor Node create_dir_advanced_bioconductor_workflow_0_local (170526.0.0)
+08/01/16 09:58:03 Number of idle job procs: 1
+08/01/16 09:58:03 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:03 Of 86 nodes total:
+08/01/16 09:58:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:03   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:03     0       0        1       0       0         85        0
+08/01/16 09:58:03 0 job proc(s) currently held
+08/01/16 09:58:08 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:08 Event: ULOG_EXECUTE for Condor Node create_dir_advanced_bioconductor_workflow_0_local (170526.0.0)
+08/01/16 09:58:08 Number of idle job procs: 0
+08/01/16 09:58:08 Event: ULOG_JOB_TERMINATED for Condor Node create_dir_advanced_bioconductor_workflow_0_local (170526.0.0)
+08/01/16 09:58:08 Number of idle job procs: 0
+08/01/16 09:58:08 Node create_dir_advanced_bioconductor_workflow_0_local job proc (170526.0.0) completed successfully.
+08/01/16 09:58:08 Node create_dir_advanced_bioconductor_workflow_0_local job completed
+08/01/16 09:58:08 Running POST script of Node create_dir_advanced_bioconductor_workflow_0_local...
+08/01/16 09:58:08 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:58:08 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:08 Of 86 nodes total:
+08/01/16 09:58:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:08   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:08     0       0        0       1       0         85        0
+08/01/16 09:58:08 0 job proc(s) currently held
+08/01/16 09:58:08 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170526.0.0)
+08/01/16 09:58:13 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:13 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node create_dir_advanced_bioconductor_workflow_0_local (170526.0.0)
+08/01/16 09:58:13 POST Script of Node create_dir_advanced_bioconductor_workflow_0_local completed successfully.
+08/01/16 09:58:13 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:13 Of 86 nodes total:
+08/01/16 09:58:13  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:13   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:13     1       0        0       0       4         81        0
+08/01/16 09:58:13 0 job proc(s) currently held
+08/01/16 09:58:18 Submitting Condor Node stage_in_remote_local_0_1 job(s)...
+08/01/16 09:58:18 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:18 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:58:18 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:58:18 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_remote_local_0_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_remote_local_0_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"create_dir_advanced_bioconductor_workflow_0_local" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_in_remote_local_0_1.sub
+08/01/16 09:58:18 From submit: Submitting job(s).
+08/01/16 09:58:18 From submit: 1 job(s) submitted to cluster 170527.
+08/01/16 09:58:18 	assigned Condor ID (170527.0.0)
+08/01/16 09:58:18 Submitting Condor Node stage_in_remote_local_0_0 job(s)...
+08/01/16 09:58:18 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:18 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:58:18 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:58:18 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_remote_local_0_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_remote_local_0_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"create_dir_advanced_bioconductor_workflow_0_local" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_in_remote_local_0_0.sub
+08/01/16 09:58:19 From submit: Submitting job(s).
+08/01/16 09:58:19 From submit: 1 job(s) submitted to cluster 170528.
+08/01/16 09:58:19 	assigned Condor ID (170528.0.0)
+08/01/16 09:58:19 Submitting Condor Node stage_in_remote_local_8_0 job(s)...
+08/01/16 09:58:19 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:19 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:58:19 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:58:19 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_remote_local_8_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_remote_local_8_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"create_dir_advanced_bioconductor_workflow_0_local" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_in_remote_local_8_0.sub
+08/01/16 09:58:19 From submit: Submitting job(s).
+08/01/16 09:58:19 From submit: 1 job(s) submitted to cluster 170529.
+08/01/16 09:58:19 	assigned Condor ID (170529.0.0)
+08/01/16 09:58:19 Submitting Condor Node stage_in_remote_local_7_0 job(s)...
+08/01/16 09:58:19 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:19 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:58:19 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:58:19 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_in_remote_local_7_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_in_remote_local_7_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"create_dir_advanced_bioconductor_workflow_0_local" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_in_remote_local_7_0.sub
+08/01/16 09:58:19 From submit: Submitting job(s).
+08/01/16 09:58:19 From submit: 1 job(s) submitted to cluster 170530.
+08/01/16 09:58:19 	assigned Condor ID (170530.0.0)
+08/01/16 09:58:19 Just submitted 4 jobs this cycle...
+08/01/16 09:58:19 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:19 Reassigning the id of job stage_in_remote_local_0_1 from (170527.0.0) to (170527.0.0)
+08/01/16 09:58:19 Event: ULOG_SUBMIT for Condor Node stage_in_remote_local_0_1 (170527.0.0)
+08/01/16 09:58:19 Number of idle job procs: 1
+08/01/16 09:58:19 Event: ULOG_EXECUTE for Condor Node stage_in_remote_local_0_1 (170527.0.0)
+08/01/16 09:58:19 Number of idle job procs: 0
+08/01/16 09:58:19 Reassigning the id of job stage_in_remote_local_0_0 from (170528.0.0) to (170528.0.0)
+08/01/16 09:58:19 Event: ULOG_SUBMIT for Condor Node stage_in_remote_local_0_0 (170528.0.0)
+08/01/16 09:58:19 Number of idle job procs: 1
+08/01/16 09:58:19 Reassigning the id of job stage_in_remote_local_8_0 from (170529.0.0) to (170529.0.0)
+08/01/16 09:58:19 Event: ULOG_SUBMIT for Condor Node stage_in_remote_local_8_0 (170529.0.0)
+08/01/16 09:58:19 Number of idle job procs: 2
+08/01/16 09:58:19 Reassigning the id of job stage_in_remote_local_7_0 from (170530.0.0) to (170530.0.0)
+08/01/16 09:58:19 Event: ULOG_SUBMIT for Condor Node stage_in_remote_local_7_0 (170530.0.0)
+08/01/16 09:58:19 Number of idle job procs: 3
+08/01/16 09:58:19 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:19 Of 86 nodes total:
+08/01/16 09:58:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:19   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:19     1       0        4       0       0         81        0
+08/01/16 09:58:19 0 job proc(s) currently held
+08/01/16 09:58:24 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:24 Event: ULOG_JOB_TERMINATED for Condor Node stage_in_remote_local_0_1 (170527.0.0)
+08/01/16 09:58:24 Number of idle job procs: 3
+08/01/16 09:58:24 Node stage_in_remote_local_0_1 job proc (170527.0.0) completed successfully.
+08/01/16 09:58:24 Node stage_in_remote_local_0_1 job completed
+08/01/16 09:58:24 Running POST script of Node stage_in_remote_local_0_1...
+08/01/16 09:58:24 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:58:24 Event: ULOG_EXECUTE for Condor Node stage_in_remote_local_0_0 (170528.0.0)
+08/01/16 09:58:24 Number of idle job procs: 2
+08/01/16 09:58:24 Event: ULOG_EXECUTE for Condor Node stage_in_remote_local_7_0 (170530.0.0)
+08/01/16 09:58:24 Number of idle job procs: 1
+08/01/16 09:58:24 Event: ULOG_EXECUTE for Condor Node stage_in_remote_local_8_0 (170529.0.0)
+08/01/16 09:58:24 Number of idle job procs: 0
+08/01/16 09:58:24 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:24 Of 86 nodes total:
+08/01/16 09:58:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:24   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:24     1       0        3       1       0         81        0
+08/01/16 09:58:24 0 job proc(s) currently held
+08/01/16 09:58:24 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170527.0.0)
+08/01/16 09:58:29 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:29 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_in_remote_local_0_1 (170527.0.0)
+08/01/16 09:58:29 POST Script of Node stage_in_remote_local_0_1 completed successfully.
+08/01/16 09:58:29 Event: ULOG_JOB_TERMINATED for Condor Node stage_in_remote_local_7_0 (170530.0.0)
+08/01/16 09:58:29 Number of idle job procs: 0
+08/01/16 09:58:29 Node stage_in_remote_local_7_0 job proc (170530.0.0) completed successfully.
+08/01/16 09:58:29 Node stage_in_remote_local_7_0 job completed
+08/01/16 09:58:29 Running POST script of Node stage_in_remote_local_7_0...
+08/01/16 09:58:29 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:58:29 Event: ULOG_JOB_TERMINATED for Condor Node stage_in_remote_local_8_0 (170529.0.0)
+08/01/16 09:58:29 Number of idle job procs: 0
+08/01/16 09:58:29 Node stage_in_remote_local_8_0 job proc (170529.0.0) completed successfully.
+08/01/16 09:58:29 Node stage_in_remote_local_8_0 job completed
+08/01/16 09:58:29 Running POST script of Node stage_in_remote_local_8_0...
+08/01/16 09:58:29 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:58:29 Event: ULOG_JOB_TERMINATED for Condor Node stage_in_remote_local_0_0 (170528.0.0)
+08/01/16 09:58:29 Number of idle job procs: 0
+08/01/16 09:58:29 Node stage_in_remote_local_0_0 job proc (170528.0.0) completed successfully.
+08/01/16 09:58:29 Node stage_in_remote_local_0_0 job completed
+08/01/16 09:58:29 Running POST script of Node stage_in_remote_local_0_0...
+08/01/16 09:58:29 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:58:29 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:29 Of 86 nodes total:
+08/01/16 09:58:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:29   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:29     2       0        0       3       1         80        0
+08/01/16 09:58:29 0 job proc(s) currently held
+08/01/16 09:58:29 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170530.0.0)
+08/01/16 09:58:29 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170529.0.0)
+08/01/16 09:58:29 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170528.0.0)
+08/01/16 09:58:34 Submitting Condor Node e.preprocess_ID0000001 job(s)...
+08/01/16 09:58:34 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:34 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:58:34 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:58:34 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.preprocess_ID0000001 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.preprocess_ID0000001 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_in_remote_local_0_1" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.preprocess_ID0000001.sub
+08/01/16 09:58:34 From submit: Submitting job(s).
+08/01/16 09:58:34 From submit: 1 job(s) submitted to cluster 170531.
+08/01/16 09:58:34 	assigned Condor ID (170531.0.0)
+08/01/16 09:58:34 Just submitted 1 job this cycle...
+08/01/16 09:58:34 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:34 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_in_remote_local_7_0 (170530.0.0)
+08/01/16 09:58:34 POST Script of Node stage_in_remote_local_7_0 completed successfully.
+08/01/16 09:58:34 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_in_remote_local_8_0 (170529.0.0)
+08/01/16 09:58:34 POST Script of Node stage_in_remote_local_8_0 completed successfully.
+08/01/16 09:58:34 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_in_remote_local_0_0 (170528.0.0)
+08/01/16 09:58:34 POST Script of Node stage_in_remote_local_0_0 completed successfully.
+08/01/16 09:58:34 Reassigning the id of job e.preprocess_ID0000001 from (170531.0.0) to (170531.0.0)
+08/01/16 09:58:34 Event: ULOG_SUBMIT for Condor Node e.preprocess_ID0000001 (170531.0.0)
+08/01/16 09:58:34 Number of idle job procs: 1
+08/01/16 09:58:34 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:34 Of 86 nodes total:
+08/01/16 09:58:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:34   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:34     5       0        1       0       1         79        0
+08/01/16 09:58:34 0 job proc(s) currently held
+08/01/16 09:58:40 Submitting Condor Node e.count_ID0000002 job(s)...
+08/01/16 09:58:40 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:58:40 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:58:40 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:58:40 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.count_ID0000002 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.count_ID0000002 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_in_remote_local_0_1,stage_in_remote_local_0_0" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.count_ID0000002.sub
+08/01/16 09:58:40 From submit: Submitting job(s).
+08/01/16 09:58:40 From submit: 1 job(s) submitted to cluster 170532.
+08/01/16 09:58:40 	assigned Condor ID (170532.0.0)
+08/01/16 09:58:40 Just submitted 1 job this cycle...
+08/01/16 09:58:40 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:40 Event: ULOG_EXECUTE for Condor Node e.preprocess_ID0000001 (170531.0.0)
+08/01/16 09:58:40 Number of idle job procs: 0
+08/01/16 09:58:40 Reassigning the id of job e.count_ID0000002 from (170532.0.0) to (170532.0.0)
+08/01/16 09:58:40 Event: ULOG_SUBMIT for Condor Node e.count_ID0000002 (170532.0.0)
+08/01/16 09:58:40 Number of idle job procs: 1
+08/01/16 09:58:40 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:58:40 Of 86 nodes total:
+08/01/16 09:58:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:58:40   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:58:40     5       0        2       0       0         79        0
+08/01/16 09:58:40 0 job proc(s) currently held
+08/01/16 09:58:45 Currently monitoring 1 Condor log file(s)
+08/01/16 09:58:45 Event: ULOG_EXECUTE for Condor Node e.count_ID0000002 (170532.0.0)
+08/01/16 09:58:45 Number of idle job procs: 0
+08/01/16 09:59:10 Currently monitoring 1 Condor log file(s)
+08/01/16 09:59:10 Event: ULOG_JOB_TERMINATED for Condor Node e.preprocess_ID0000001 (170531.0.0)
+08/01/16 09:59:10 Number of idle job procs: 0
+08/01/16 09:59:10 Node e.preprocess_ID0000001 job proc (170531.0.0) completed successfully.
+08/01/16 09:59:10 Node e.preprocess_ID0000001 job completed
+08/01/16 09:59:10 Running POST script of Node e.preprocess_ID0000001...
+08/01/16 09:59:10 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:59:10 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:59:10 Of 86 nodes total:
+08/01/16 09:59:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:59:10   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:59:10     5       0        1       1       0         79        0
+08/01/16 09:59:10 0 job proc(s) currently held
+08/01/16 09:59:10 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170531.0.0)
+08/01/16 09:59:15 Currently monitoring 1 Condor log file(s)
+08/01/16 09:59:15 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.preprocess_ID0000001 (170531.0.0)
+08/01/16 09:59:15 POST Script of Node e.preprocess_ID0000001 completed successfully.
+08/01/16 09:59:15 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:59:15 Of 86 nodes total:
+08/01/16 09:59:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:59:15   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:59:15     6       0        1       0       5         74        0
+08/01/16 09:59:15 0 job proc(s) currently held
+08/01/16 09:59:20 Submitting Condor Node e.qc1.1_ID0000003 job(s)...
+08/01/16 09:59:20 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:59:20 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:59:20 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:59:20 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.qc1.1_ID0000003 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.qc1.1_ID0000003 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.preprocess_ID0000001" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.qc1.1_ID0000003.sub
+08/01/16 09:59:20 From submit: Submitting job(s).
+08/01/16 09:59:20 From submit: 1 job(s) submitted to cluster 170533.
+08/01/16 09:59:20 	assigned Condor ID (170533.0.0)
+08/01/16 09:59:20 Submitting Condor Node e.qc2.1_ID0000005 job(s)...
+08/01/16 09:59:20 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:59:20 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:59:20 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:59:20 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.qc2.1_ID0000005 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.qc2.1_ID0000005 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.preprocess_ID0000001" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.qc2.1_ID0000005.sub
+08/01/16 09:59:21 From submit: Submitting job(s).
+08/01/16 09:59:21 From submit: 1 job(s) submitted to cluster 170534.
+08/01/16 09:59:21 	assigned Condor ID (170534.0.0)
+08/01/16 09:59:21 Submitting Condor Node e.filters1.1_ID0000007 job(s)...
+08/01/16 09:59:21 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:59:21 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:59:21 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:59:21 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.filters1.1_ID0000007 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.filters1.1_ID0000007 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.preprocess_ID0000001" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.filters1.1_ID0000007.sub
+08/01/16 09:59:21 From submit: Submitting job(s).
+08/01/16 09:59:21 From submit: 1 job(s) submitted to cluster 170535.
+08/01/16 09:59:21 	assigned Condor ID (170535.0.0)
+08/01/16 09:59:21 Submitting Condor Node stage_out_local_local_0_1 job(s)...
+08/01/16 09:59:21 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:59:21 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:59:21 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:59:21 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_0_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_0_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.preprocess_ID0000001" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_0_1.sub
+08/01/16 09:59:21 From submit: Submitting job(s).
+08/01/16 09:59:21 From submit: 1 job(s) submitted to cluster 170536.
+08/01/16 09:59:21 	assigned Condor ID (170536.0.0)
+08/01/16 09:59:21 Submitting Condor Node clean_up_local_level_3_1 job(s)...
+08/01/16 09:59:21 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 09:59:21 Masking the events recorded in the DAGMAN workflow log
+08/01/16 09:59:21 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 09:59:21 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_3_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_3_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.preprocess_ID0000001" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never clean_up_local_level_3_1.sub
+08/01/16 09:59:21 From submit: Submitting job(s).
+08/01/16 09:59:21 From submit: 1 job(s) submitted to cluster 170537.
+08/01/16 09:59:21 	assigned Condor ID (170537.0.0)
+08/01/16 09:59:21 Just submitted 5 jobs this cycle...
+08/01/16 09:59:21 Currently monitoring 1 Condor log file(s)
+08/01/16 09:59:21 Reassigning the id of job e.qc1.1_ID0000003 from (170533.0.0) to (170533.0.0)
+08/01/16 09:59:21 Event: ULOG_SUBMIT for Condor Node e.qc1.1_ID0000003 (170533.0.0)
+08/01/16 09:59:21 Number of idle job procs: 1
+08/01/16 09:59:21 Event: ULOG_EXECUTE for Condor Node e.qc1.1_ID0000003 (170533.0.0)
+08/01/16 09:59:21 Number of idle job procs: 0
+08/01/16 09:59:21 Reassigning the id of job e.qc2.1_ID0000005 from (170534.0.0) to (170534.0.0)
+08/01/16 09:59:21 Event: ULOG_SUBMIT for Condor Node e.qc2.1_ID0000005 (170534.0.0)
+08/01/16 09:59:21 Number of idle job procs: 1
+08/01/16 09:59:21 Reassigning the id of job e.filters1.1_ID0000007 from (170535.0.0) to (170535.0.0)
+08/01/16 09:59:21 Event: ULOG_SUBMIT for Condor Node e.filters1.1_ID0000007 (170535.0.0)
+08/01/16 09:59:21 Number of idle job procs: 2
+08/01/16 09:59:21 Reassigning the id of job stage_out_local_local_0_1 from (170536.0.0) to (170536.0.0)
+08/01/16 09:59:21 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_0_1 (170536.0.0)
+08/01/16 09:59:21 Number of idle job procs: 3
+08/01/16 09:59:21 Reassigning the id of job clean_up_local_level_3_1 from (170537.0.0) to (170537.0.0)
+08/01/16 09:59:21 Event: ULOG_SUBMIT for Condor Node clean_up_local_level_3_1 (170537.0.0)
+08/01/16 09:59:21 Number of idle job procs: 4
+08/01/16 09:59:21 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:59:21 Of 86 nodes total:
+08/01/16 09:59:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:59:21   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:59:21     6       0        6       0       0         74        0
+08/01/16 09:59:21 0 job proc(s) currently held
+08/01/16 09:59:31 Currently monitoring 1 Condor log file(s)
+08/01/16 09:59:32 Event: ULOG_EXECUTE for Condor Node e.qc2.1_ID0000005 (170534.0.0)
+08/01/16 09:59:32 Number of idle job procs: 3
+08/01/16 09:59:32 Event: ULOG_EXECUTE for Condor Node clean_up_local_level_3_1 (170537.0.0)
+08/01/16 09:59:32 Number of idle job procs: 2
+08/01/16 09:59:32 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_0_1 (170536.0.0)
+08/01/16 09:59:32 Number of idle job procs: 1
+08/01/16 09:59:32 Event: ULOG_EXECUTE for Condor Node e.filters1.1_ID0000007 (170535.0.0)
+08/01/16 09:59:32 Number of idle job procs: 0
+08/01/16 09:59:37 Currently monitoring 1 Condor log file(s)
+08/01/16 09:59:38 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_0_1 (170536.0.0)
+08/01/16 09:59:38 Number of idle job procs: 0
+08/01/16 09:59:38 Node stage_out_local_local_0_1 job proc (170536.0.0) completed successfully.
+08/01/16 09:59:38 Node stage_out_local_local_0_1 job completed
+08/01/16 09:59:38 Running POST script of Node stage_out_local_local_0_1...
+08/01/16 09:59:38 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:59:39 Event: ULOG_JOB_TERMINATED for Condor Node clean_up_local_level_3_1 (170537.0.0)
+08/01/16 09:59:39 Number of idle job procs: 0
+08/01/16 09:59:39 Node clean_up_local_level_3_1 job proc (170537.0.0) completed successfully.
+08/01/16 09:59:39 Node clean_up_local_level_3_1 job completed
+08/01/16 09:59:39 Running POST script of Node clean_up_local_level_3_1...
+08/01/16 09:59:39 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 09:59:39 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:59:39 Of 86 nodes total:
+08/01/16 09:59:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:59:39   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:59:39     6       0        4       2       0         74        0
+08/01/16 09:59:39 0 job proc(s) currently held
+08/01/16 09:59:46 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170536.0.0)
+08/01/16 09:59:48 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170537.0.0)
+08/01/16 09:59:50 Currently monitoring 1 Condor log file(s)
+08/01/16 09:59:50 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_0_1 (170536.0.0)
+08/01/16 09:59:50 POST Script of Node stage_out_local_local_0_1 completed successfully.
+08/01/16 09:59:50 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node clean_up_local_level_3_1 (170537.0.0)
+08/01/16 09:59:50 POST Script of Node clean_up_local_level_3_1 completed successfully.
+08/01/16 09:59:50 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 09:59:50 Of 86 nodes total:
+08/01/16 09:59:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 09:59:50   ===     ===      ===     ===     ===        ===      ===
+08/01/16 09:59:50     8       0        4       0       0         74        0
+08/01/16 09:59:50 0 job proc(s) currently held
+08/01/16 10:00:47 Currently monitoring 1 Condor log file(s)
+08/01/16 10:00:47 Event: ULOG_JOB_TERMINATED for Condor Node e.qc1.1_ID0000003 (170533.0.0)
+08/01/16 10:00:47 Number of idle job procs: 0
+08/01/16 10:00:47 Node e.qc1.1_ID0000003 job proc (170533.0.0) completed successfully.
+08/01/16 10:00:47 Node e.qc1.1_ID0000003 job completed
+08/01/16 10:00:47 Running POST script of Node e.qc1.1_ID0000003...
+08/01/16 10:00:47 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:00:47 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:00:47 Of 86 nodes total:
+08/01/16 10:00:47  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:00:47   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:00:47     8       0        3       1       0         74        0
+08/01/16 10:00:47 0 job proc(s) currently held
+08/01/16 10:00:50 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170533.0.0)
+08/01/16 10:00:52 Currently monitoring 1 Condor log file(s)
+08/01/16 10:00:52 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.qc1.1_ID0000003 (170533.0.0)
+08/01/16 10:00:52 POST Script of Node e.qc1.1_ID0000003 completed successfully.
+08/01/16 10:00:52 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:00:52 Of 86 nodes total:
+08/01/16 10:00:52  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:00:52   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:00:52     9       0        3       0       0         74        0
+08/01/16 10:00:52 0 job proc(s) currently held
+08/01/16 10:01:14 Currently monitoring 1 Condor log file(s)
+08/01/16 10:01:14 Event: ULOG_JOB_TERMINATED for Condor Node e.qc2.1_ID0000005 (170534.0.0)
+08/01/16 10:01:14 Number of idle job procs: 0
+08/01/16 10:01:14 Node e.qc2.1_ID0000005 job proc (170534.0.0) completed successfully.
+08/01/16 10:01:14 Node e.qc2.1_ID0000005 job completed
+08/01/16 10:01:14 Running POST script of Node e.qc2.1_ID0000005...
+08/01/16 10:01:14 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:01:14 Event: ULOG_JOB_TERMINATED for Condor Node e.filters1.1_ID0000007 (170535.0.0)
+08/01/16 10:01:14 Number of idle job procs: 0
+08/01/16 10:01:14 Node e.filters1.1_ID0000007 job proc (170535.0.0) completed successfully.
+08/01/16 10:01:14 Node e.filters1.1_ID0000007 job completed
+08/01/16 10:01:14 Running POST script of Node e.filters1.1_ID0000007...
+08/01/16 10:01:14 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:01:14 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:01:14 Of 86 nodes total:
+08/01/16 10:01:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:01:14   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:01:14     9       0        1       2       0         74        0
+08/01/16 10:01:14 0 job proc(s) currently held
+08/01/16 10:01:14 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170534.0.0)
+08/01/16 10:01:14 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170535.0.0)
+08/01/16 10:01:19 Currently monitoring 1 Condor log file(s)
+08/01/16 10:01:19 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.qc2.1_ID0000005 (170534.0.0)
+08/01/16 10:01:19 POST Script of Node e.qc2.1_ID0000005 completed successfully.
+08/01/16 10:01:19 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.filters1.1_ID0000007 (170535.0.0)
+08/01/16 10:01:19 POST Script of Node e.filters1.1_ID0000007 completed successfully.
+08/01/16 10:01:19 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:01:19 Of 86 nodes total:
+08/01/16 10:01:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:01:19   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:01:19    11       0        1       0       1         73        0
+08/01/16 10:01:19 0 job proc(s) currently held
+08/01/16 10:01:24 Submitting Condor Node e.lowabundance1.1_ID0000009 job(s)...
+08/01/16 10:01:24 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:01:24 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:01:24 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:01:24 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.lowabundance1.1_ID0000009 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.lowabundance1.1_ID0000009 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.filters1.1_ID0000007" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.lowabundance1.1_ID0000009.sub
+08/01/16 10:01:26 From submit: Submitting job(s).
+08/01/16 10:01:26 From submit: 1 job(s) submitted to cluster 170538.
+08/01/16 10:01:26 	assigned Condor ID (170538.0.0)
+08/01/16 10:01:26 Just submitted 1 job this cycle...
+08/01/16 10:01:26 Currently monitoring 1 Condor log file(s)
+08/01/16 10:01:26 Reassigning the id of job e.lowabundance1.1_ID0000009 from (170538.0.0) to (170538.0.0)
+08/01/16 10:01:26 Event: ULOG_SUBMIT for Condor Node e.lowabundance1.1_ID0000009 (170538.0.0)
+08/01/16 10:01:26 Number of idle job procs: 1
+08/01/16 10:01:26 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:01:26 Of 86 nodes total:
+08/01/16 10:01:26  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:01:26   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:01:26    11       0        2       0       0         73        0
+08/01/16 10:01:26 0 job proc(s) currently held
+08/01/16 10:01:32 Currently monitoring 1 Condor log file(s)
+08/01/16 10:01:32 Event: ULOG_EXECUTE for Condor Node e.lowabundance1.1_ID0000009 (170538.0.0)
+08/01/16 10:01:32 Number of idle job procs: 0
+08/01/16 10:02:02 Currently monitoring 1 Condor log file(s)
+08/01/16 10:02:02 Event: ULOG_JOB_TERMINATED for Condor Node e.lowabundance1.1_ID0000009 (170538.0.0)
+08/01/16 10:02:02 Number of idle job procs: 0
+08/01/16 10:02:02 Node e.lowabundance1.1_ID0000009 job proc (170538.0.0) completed successfully.
+08/01/16 10:02:02 Node e.lowabundance1.1_ID0000009 job completed
+08/01/16 10:02:02 Running POST script of Node e.lowabundance1.1_ID0000009...
+08/01/16 10:02:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:02:02 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:02:02 Of 86 nodes total:
+08/01/16 10:02:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:02:02   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:02:02    11       0        1       1       0         73        0
+08/01/16 10:02:02 0 job proc(s) currently held
+08/01/16 10:02:02 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170538.0.0)
+08/01/16 10:02:07 Currently monitoring 1 Condor log file(s)
+08/01/16 10:02:07 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.lowabundance1.1_ID0000009 (170538.0.0)
+08/01/16 10:02:07 POST Script of Node e.lowabundance1.1_ID0000009 completed successfully.
+08/01/16 10:02:07 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:02:07 Of 86 nodes total:
+08/01/16 10:02:07  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:02:07   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:02:07    12       0        1       0       0         73        0
+08/01/16 10:02:07 0 job proc(s) currently held
+08/01/16 10:03:58 Currently monitoring 1 Condor log file(s)
+08/01/16 10:03:58 Event: ULOG_JOB_TERMINATED for Condor Node e.count_ID0000002 (170532.0.0)
+08/01/16 10:03:58 Number of idle job procs: 0
+08/01/16 10:03:58 Node e.count_ID0000002 job proc (170532.0.0) completed successfully.
+08/01/16 10:03:58 Node e.count_ID0000002 job completed
+08/01/16 10:03:58 Running POST script of Node e.count_ID0000002...
+08/01/16 10:03:58 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:03:58 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:03:58 Of 86 nodes total:
+08/01/16 10:03:58  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:03:58   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:03:58    12       0        0       1       0         73        0
+08/01/16 10:03:58 0 job proc(s) currently held
+08/01/16 10:03:59 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170532.0.0)
+08/01/16 10:04:03 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:03 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.count_ID0000002 (170532.0.0)
+08/01/16 10:04:03 POST Script of Node e.count_ID0000002 completed successfully.
+08/01/16 10:04:03 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:03 Of 86 nodes total:
+08/01/16 10:04:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:03   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:03    13       0        0       0       6         67        0
+08/01/16 10:04:03 0 job proc(s) currently held
+08/01/16 10:04:08 Submitting Condor Node e.filters1.2_ID0000008 job(s)...
+08/01/16 10:04:08 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:04:08 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:04:08 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:04:08 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.filters1.2_ID0000008 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.filters1.2_ID0000008 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.count_ID0000002" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.filters1.2_ID0000008.sub
+08/01/16 10:04:09 From submit: Submitting job(s).
+08/01/16 10:04:09 From submit: 1 job(s) submitted to cluster 170539.
+08/01/16 10:04:09 	assigned Condor ID (170539.0.0)
+08/01/16 10:04:09 Submitting Condor Node e.qc1.2_ID0000004 job(s)...
+08/01/16 10:04:09 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:04:09 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:04:09 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:04:09 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.qc1.2_ID0000004 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.qc1.2_ID0000004 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.count_ID0000002" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.qc1.2_ID0000004.sub
+08/01/16 10:04:10 From submit: Submitting job(s).
+08/01/16 10:04:10 From submit: 1 job(s) submitted to cluster 170540.
+08/01/16 10:04:10 	assigned Condor ID (170540.0.0)
+08/01/16 10:04:10 Submitting Condor Node clean_up_local_level_3_0 job(s)...
+08/01/16 10:04:10 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:04:10 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:04:10 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:04:10 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_3_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_3_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.count_ID0000002" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never clean_up_local_level_3_0.sub
+08/01/16 10:04:10 From submit: Submitting job(s).
+08/01/16 10:04:10 From submit: 1 job(s) submitted to cluster 170541.
+08/01/16 10:04:10 	assigned Condor ID (170541.0.0)
+08/01/16 10:04:10 Submitting Condor Node stage_out_local_local_0_0 job(s)...
+08/01/16 10:04:10 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:04:10 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:04:10 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:04:10 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_0_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_0_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.preprocess_ID0000001,e.count_ID0000002" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_0_0.sub
+08/01/16 10:04:10 From submit: Submitting job(s).
+08/01/16 10:04:10 From submit: 1 job(s) submitted to cluster 170542.
+08/01/16 10:04:10 	assigned Condor ID (170542.0.0)
+08/01/16 10:04:10 Submitting Condor Node e.qc2.2_ID0000006 job(s)...
+08/01/16 10:04:10 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:04:10 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:04:10 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:04:10 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.qc2.2_ID0000006 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.qc2.2_ID0000006 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.count_ID0000002" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.qc2.2_ID0000006.sub
+08/01/16 10:04:11 From submit: Submitting job(s).
+08/01/16 10:04:11 From submit: 1 job(s) submitted to cluster 170543.
+08/01/16 10:04:11 	assigned Condor ID (170543.0.0)
+08/01/16 10:04:11 Just submitted 5 jobs this cycle...
+08/01/16 10:04:11 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:11 Reassigning the id of job e.filters1.2_ID0000008 from (170539.0.0) to (170539.0.0)
+08/01/16 10:04:11 Event: ULOG_SUBMIT for Condor Node e.filters1.2_ID0000008 (170539.0.0)
+08/01/16 10:04:11 Number of idle job procs: 1
+08/01/16 10:04:11 Reassigning the id of job e.qc1.2_ID0000004 from (170540.0.0) to (170540.0.0)
+08/01/16 10:04:11 Event: ULOG_SUBMIT for Condor Node e.qc1.2_ID0000004 (170540.0.0)
+08/01/16 10:04:11 Number of idle job procs: 2
+08/01/16 10:04:11 Event: ULOG_EXECUTE for Condor Node e.filters1.2_ID0000008 (170539.0.0)
+08/01/16 10:04:11 Number of idle job procs: 1
+08/01/16 10:04:11 Reassigning the id of job clean_up_local_level_3_0 from (170541.0.0) to (170541.0.0)
+08/01/16 10:04:11 Event: ULOG_SUBMIT for Condor Node clean_up_local_level_3_0 (170541.0.0)
+08/01/16 10:04:11 Number of idle job procs: 2
+08/01/16 10:04:11 Reassigning the id of job stage_out_local_local_0_0 from (170542.0.0) to (170542.0.0)
+08/01/16 10:04:11 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_0_0 (170542.0.0)
+08/01/16 10:04:11 Number of idle job procs: 3
+08/01/16 10:04:11 Reassigning the id of job e.qc2.2_ID0000006 from (170543.0.0) to (170543.0.0)
+08/01/16 10:04:11 Event: ULOG_SUBMIT for Condor Node e.qc2.2_ID0000006 (170543.0.0)
+08/01/16 10:04:11 Number of idle job procs: 4
+08/01/16 10:04:11 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:11 Of 86 nodes total:
+08/01/16 10:04:11  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:11   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:11    13       0        5       0       1         67        0
+08/01/16 10:04:11 0 job proc(s) currently held
+08/01/16 10:04:16 Submitting Condor Node register_local_0_1 job(s)...
+08/01/16 10:04:16 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:04:16 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:04:16 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:04:16 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'register_local_0_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'register_local_0_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.count_ID0000002,stage_out_local_local_0_1" -a notification' '=' 'never register_local_0_1.sub
+08/01/16 10:04:16 From submit: Submitting job(s).
+08/01/16 10:04:16 From submit: 1 job(s) submitted to cluster 170544.
+08/01/16 10:04:16 	assigned Condor ID (170544.0.0)
+08/01/16 10:04:16 Just submitted 1 job this cycle...
+08/01/16 10:04:16 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:16 Event: ULOG_EXECUTE for Condor Node e.qc1.2_ID0000004 (170540.0.0)
+08/01/16 10:04:16 Number of idle job procs: 3
+08/01/16 10:04:16 Event: ULOG_EXECUTE for Condor Node e.qc2.2_ID0000006 (170543.0.0)
+08/01/16 10:04:16 Number of idle job procs: 2
+08/01/16 10:04:16 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_0_0 (170542.0.0)
+08/01/16 10:04:16 Number of idle job procs: 1
+08/01/16 10:04:16 Event: ULOG_EXECUTE for Condor Node clean_up_local_level_3_0 (170541.0.0)
+08/01/16 10:04:16 Number of idle job procs: 0
+08/01/16 10:04:16 Reassigning the id of job register_local_0_1 from (170544.0.0) to (170544.0.0)
+08/01/16 10:04:16 Event: ULOG_SUBMIT for Condor Node register_local_0_1 (170544.0.0)
+08/01/16 10:04:16 Number of idle job procs: 1
+08/01/16 10:04:16 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:16 Of 86 nodes total:
+08/01/16 10:04:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:16   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:16    13       0        6       0       0         67        0
+08/01/16 10:04:16 0 job proc(s) currently held
+08/01/16 10:04:21 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:21 Event: ULOG_EXECUTE for Condor Node register_local_0_1 (170544.0.0)
+08/01/16 10:04:21 Number of idle job procs: 0
+08/01/16 10:04:21 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_0_0 (170542.0.0)
+08/01/16 10:04:21 Number of idle job procs: 0
+08/01/16 10:04:21 Node stage_out_local_local_0_0 job proc (170542.0.0) completed successfully.
+08/01/16 10:04:21 Node stage_out_local_local_0_0 job completed
+08/01/16 10:04:21 Running POST script of Node stage_out_local_local_0_0...
+08/01/16 10:04:21 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:04:21 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:21 Of 86 nodes total:
+08/01/16 10:04:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:21   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:21    13       0        5       1       0         67        0
+08/01/16 10:04:21 0 job proc(s) currently held
+08/01/16 10:04:21 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170542.0.0)
+08/01/16 10:04:26 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:26 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_0_0 (170542.0.0)
+08/01/16 10:04:26 POST Script of Node stage_out_local_local_0_0 completed successfully.
+08/01/16 10:04:26 Event: ULOG_JOB_TERMINATED for Condor Node clean_up_local_level_3_0 (170541.0.0)
+08/01/16 10:04:26 Number of idle job procs: 0
+08/01/16 10:04:26 Node clean_up_local_level_3_0 job proc (170541.0.0) completed successfully.
+08/01/16 10:04:26 Node clean_up_local_level_3_0 job completed
+08/01/16 10:04:26 Running POST script of Node clean_up_local_level_3_0...
+08/01/16 10:04:26 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:04:26 Event: ULOG_JOB_TERMINATED for Condor Node register_local_0_1 (170544.0.0)
+08/01/16 10:04:26 Number of idle job procs: 0
+08/01/16 10:04:26 Node register_local_0_1 job proc (170544.0.0) completed successfully.
+08/01/16 10:04:26 Node register_local_0_1 job completed
+08/01/16 10:04:26 Running POST script of Node register_local_0_1...
+08/01/16 10:04:26 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:04:26 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:26 Of 86 nodes total:
+08/01/16 10:04:26  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:26   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:26    14       0        3       2       1         66        0
+08/01/16 10:04:26 0 job proc(s) currently held
+08/01/16 10:04:27 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170541.0.0)
+08/01/16 10:04:27 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170544.0.0)
+08/01/16 10:04:31 Submitting Condor Node register_local_0_0 job(s)...
+08/01/16 10:04:31 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:04:31 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:04:31 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:04:31 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'register_local_0_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'register_local_0_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.preprocess_ID0000001,stage_out_local_local_0_0" -a notification' '=' 'never register_local_0_0.sub
+08/01/16 10:04:31 From submit: Submitting job(s).
+08/01/16 10:04:31 From submit: 1 job(s) submitted to cluster 170545.
+08/01/16 10:04:31 	assigned Condor ID (170545.0.0)
+08/01/16 10:04:31 Just submitted 1 job this cycle...
+08/01/16 10:04:31 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:31 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node clean_up_local_level_3_0 (170541.0.0)
+08/01/16 10:04:31 POST Script of Node clean_up_local_level_3_0 completed successfully.
+08/01/16 10:04:31 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node register_local_0_1 (170544.0.0)
+08/01/16 10:04:31 POST Script of Node register_local_0_1 completed successfully.
+08/01/16 10:04:31 Reassigning the id of job register_local_0_0 from (170545.0.0) to (170545.0.0)
+08/01/16 10:04:31 Event: ULOG_SUBMIT for Condor Node register_local_0_0 (170545.0.0)
+08/01/16 10:04:31 Number of idle job procs: 1
+08/01/16 10:04:31 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:31 Of 86 nodes total:
+08/01/16 10:04:31  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:31   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:31    16       0        4       0       0         66        0
+08/01/16 10:04:31 0 job proc(s) currently held
+08/01/16 10:04:36 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:36 Event: ULOG_EXECUTE for Condor Node register_local_0_0 (170545.0.0)
+08/01/16 10:04:36 Number of idle job procs: 0
+08/01/16 10:04:36 Event: ULOG_JOB_TERMINATED for Condor Node register_local_0_0 (170545.0.0)
+08/01/16 10:04:36 Number of idle job procs: 0
+08/01/16 10:04:36 Node register_local_0_0 job proc (170545.0.0) completed successfully.
+08/01/16 10:04:36 Node register_local_0_0 job completed
+08/01/16 10:04:36 Running POST script of Node register_local_0_0...
+08/01/16 10:04:36 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:04:36 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:36 Of 86 nodes total:
+08/01/16 10:04:36  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:36   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:36    16       0        3       1       0         66        0
+08/01/16 10:04:36 0 job proc(s) currently held
+08/01/16 10:04:36 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170545.0.0)
+08/01/16 10:04:41 Currently monitoring 1 Condor log file(s)
+08/01/16 10:04:41 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node register_local_0_0 (170545.0.0)
+08/01/16 10:04:41 POST Script of Node register_local_0_0 completed successfully.
+08/01/16 10:04:41 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:04:41 Of 86 nodes total:
+08/01/16 10:04:41  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:04:41   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:04:41    17       0        3       0       0         66        0
+08/01/16 10:04:41 0 job proc(s) currently held
+08/01/16 10:07:02 Currently monitoring 1 Condor log file(s)
+08/01/16 10:07:02 Event: ULOG_JOB_TERMINATED for Condor Node e.qc1.2_ID0000004 (170540.0.0)
+08/01/16 10:07:02 Number of idle job procs: 0
+08/01/16 10:07:02 Node e.qc1.2_ID0000004 job proc (170540.0.0) completed successfully.
+08/01/16 10:07:02 Node e.qc1.2_ID0000004 job completed
+08/01/16 10:07:02 Running POST script of Node e.qc1.2_ID0000004...
+08/01/16 10:07:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:07:02 Event: ULOG_JOB_TERMINATED for Condor Node e.qc2.2_ID0000006 (170543.0.0)
+08/01/16 10:07:02 Number of idle job procs: 0
+08/01/16 10:07:02 Node e.qc2.2_ID0000006 job proc (170543.0.0) completed successfully.
+08/01/16 10:07:02 Node e.qc2.2_ID0000006 job completed
+08/01/16 10:07:02 Running POST script of Node e.qc2.2_ID0000006...
+08/01/16 10:07:02 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:07:02 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:07:02 Of 86 nodes total:
+08/01/16 10:07:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:07:02   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:07:02    17       0        1       2       0         66        0
+08/01/16 10:07:02 0 job proc(s) currently held
+08/01/16 10:07:05 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170540.0.0)
+08/01/16 10:07:05 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170543.0.0)
+08/01/16 10:07:07 Currently monitoring 1 Condor log file(s)
+08/01/16 10:07:07 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.qc1.2_ID0000004 (170540.0.0)
+08/01/16 10:07:07 POST Script of Node e.qc1.2_ID0000004 completed successfully.
+08/01/16 10:07:07 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.qc2.2_ID0000006 (170543.0.0)
+08/01/16 10:07:07 POST Script of Node e.qc2.2_ID0000006 completed successfully.
+08/01/16 10:07:07 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:07:07 Of 86 nodes total:
+08/01/16 10:07:07  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:07:07   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:07:07    19       0        1       0       2         64        0
+08/01/16 10:07:07 0 job proc(s) currently held
+08/01/16 10:07:12 Submitting Condor Node stage_out_local_local_1_0 job(s)...
+08/01/16 10:07:12 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:07:12 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:07:12 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:07:12 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_1_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_1_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.qc1.1_ID0000003,e.qc2.1_ID0000005,e.filters1.1_ID0000007,e.qc1.2_ID0000004,e.qc2.2_ID0000006" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_1_0.sub
+08/01/16 10:07:14 From submit: Submitting job(s).
+08/01/16 10:07:14 From submit: 1 job(s) submitted to cluster 170546.
+08/01/16 10:07:14 	assigned Condor ID (170546.0.0)
+08/01/16 10:07:14 Submitting Condor Node clean_up_local_level_4_1 job(s)...
+08/01/16 10:07:14 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:07:14 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:07:14 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:07:14 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_4_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_4_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"stage_out_local_local_0_1,stage_out_local_local_0_0,e.qc2.2_ID0000006" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never clean_up_local_level_4_1.sub
+08/01/16 10:07:15 From submit: Submitting job(s).
+08/01/16 10:07:15 From submit: 1 job(s) submitted to cluster 170547.
+08/01/16 10:07:15 	assigned Condor ID (170547.0.0)
+08/01/16 10:07:15 Just submitted 2 jobs this cycle...
+08/01/16 10:07:15 Currently monitoring 1 Condor log file(s)
+08/01/16 10:07:15 Reassigning the id of job stage_out_local_local_1_0 from (170546.0.0) to (170546.0.0)
+08/01/16 10:07:15 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_1_0 (170546.0.0)
+08/01/16 10:07:15 Number of idle job procs: 1
+08/01/16 10:07:15 Reassigning the id of job clean_up_local_level_4_1 from (170547.0.0) to (170547.0.0)
+08/01/16 10:07:15 Event: ULOG_SUBMIT for Condor Node clean_up_local_level_4_1 (170547.0.0)
+08/01/16 10:07:15 Number of idle job procs: 2
+08/01/16 10:07:15 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:07:15 Of 86 nodes total:
+08/01/16 10:07:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:07:15   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:07:15    19       0        3       0       0         64        0
+08/01/16 10:07:15 0 job proc(s) currently held
+08/01/16 10:07:20 Currently monitoring 1 Condor log file(s)
+08/01/16 10:07:20 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_1_0 (170546.0.0)
+08/01/16 10:07:20 Number of idle job procs: 1
+08/01/16 10:07:20 Event: ULOG_EXECUTE for Condor Node clean_up_local_level_4_1 (170547.0.0)
+08/01/16 10:07:20 Number of idle job procs: 0
+08/01/16 10:07:30 Currently monitoring 1 Condor log file(s)
+08/01/16 10:07:30 Event: ULOG_JOB_TERMINATED for Condor Node clean_up_local_level_4_1 (170547.0.0)
+08/01/16 10:07:30 Number of idle job procs: 0
+08/01/16 10:07:30 Node clean_up_local_level_4_1 job proc (170547.0.0) completed successfully.
+08/01/16 10:07:30 Node clean_up_local_level_4_1 job completed
+08/01/16 10:07:30 Running POST script of Node clean_up_local_level_4_1...
+08/01/16 10:07:30 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:07:30 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:07:30 Of 86 nodes total:
+08/01/16 10:07:30  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:07:30   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:07:30    19       0        2       1       0         64        0
+08/01/16 10:07:30 0 job proc(s) currently held
+08/01/16 10:07:30 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170547.0.0)
+08/01/16 10:07:35 Currently monitoring 1 Condor log file(s)
+08/01/16 10:07:35 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node clean_up_local_level_4_1 (170547.0.0)
+08/01/16 10:07:35 POST Script of Node clean_up_local_level_4_1 completed successfully.
+08/01/16 10:07:35 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:07:35 Of 86 nodes total:
+08/01/16 10:07:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:07:35   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:07:35    20       0        2       0       0         64        0
+08/01/16 10:07:35 0 job proc(s) currently held
+08/01/16 10:09:55 Currently monitoring 1 Condor log file(s)
+08/01/16 10:09:55 Event: ULOG_JOB_TERMINATED for Condor Node e.filters1.2_ID0000008 (170539.0.0)
+08/01/16 10:09:55 Number of idle job procs: 0
+08/01/16 10:09:55 Node e.filters1.2_ID0000008 job proc (170539.0.0) completed successfully.
+08/01/16 10:09:55 Node e.filters1.2_ID0000008 job completed
+08/01/16 10:09:55 Running POST script of Node e.filters1.2_ID0000008...
+08/01/16 10:09:55 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:09:55 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:09:55 Of 86 nodes total:
+08/01/16 10:09:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:09:55   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:09:55    20       0        1       1       0         64        0
+08/01/16 10:09:55 0 job proc(s) currently held
+08/01/16 10:09:56 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170539.0.0)
+08/01/16 10:10:01 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:01 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.filters1.2_ID0000008 (170539.0.0)
+08/01/16 10:10:01 POST Script of Node e.filters1.2_ID0000008 completed successfully.
+08/01/16 10:10:01 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:01 Of 86 nodes total:
+08/01/16 10:10:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:01   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:01    21       0        1       0       3         61        0
+08/01/16 10:10:01 0 job proc(s) currently held
+08/01/16 10:10:06 Submitting Condor Node e.lowabundance1.1_ID0000010 job(s)...
+08/01/16 10:10:06 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:06 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:06 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:06 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.lowabundance1.1_ID0000010 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.lowabundance1.1_ID0000010 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.filters1.1_ID0000007,e.filters1.2_ID0000008" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.lowabundance1.1_ID0000010.sub
+08/01/16 10:10:12 From submit: Submitting job(s).
+08/01/16 10:10:12 From submit: 1 job(s) submitted to cluster 170548.
+08/01/16 10:10:12 	assigned Condor ID (170548.0.0)
+08/01/16 10:10:12 Submitting Condor Node stage_out_local_local_1_1 job(s)...
+08/01/16 10:10:12 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:12 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:12 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:12 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_1_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_1_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.qc1.1_ID0000003,e.qc2.1_ID0000005,e.filters1.2_ID0000008,e.qc1.2_ID0000004,e.qc2.2_ID0000006" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_1_1.sub
+08/01/16 10:10:12 From submit: Submitting job(s).
+08/01/16 10:10:12 From submit: 1 job(s) submitted to cluster 170549.
+08/01/16 10:10:12 	assigned Condor ID (170549.0.0)
+08/01/16 10:10:12 Submitting Condor Node clean_up_local_level_4_0 job(s)...
+08/01/16 10:10:12 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:12 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:12 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:12 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_4_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_4_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.qc1.1_ID0000003,e.qc2.1_ID0000005,e.filters1.1_ID0000007,e.filters1.2_ID0000008,e.qc1.2_ID0000004,e.qc2.2_ID0000006" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never clean_up_local_level_4_0.sub
+08/01/16 10:10:12 From submit: Submitting job(s).
+08/01/16 10:10:12 From submit: 1 job(s) submitted to cluster 170550.
+08/01/16 10:10:12 	assigned Condor ID (170550.0.0)
+08/01/16 10:10:12 Just submitted 3 jobs this cycle...
+08/01/16 10:10:12 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:12 Reassigning the id of job e.lowabundance1.1_ID0000010 from (170548.0.0) to (170548.0.0)
+08/01/16 10:10:12 Event: ULOG_SUBMIT for Condor Node e.lowabundance1.1_ID0000010 (170548.0.0)
+08/01/16 10:10:12 Number of idle job procs: 1
+08/01/16 10:10:12 Event: ULOG_EXECUTE for Condor Node e.lowabundance1.1_ID0000010 (170548.0.0)
+08/01/16 10:10:12 Number of idle job procs: 0
+08/01/16 10:10:12 Reassigning the id of job stage_out_local_local_1_1 from (170549.0.0) to (170549.0.0)
+08/01/16 10:10:12 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_1_1 (170549.0.0)
+08/01/16 10:10:12 Number of idle job procs: 1
+08/01/16 10:10:12 Reassigning the id of job clean_up_local_level_4_0 from (170550.0.0) to (170550.0.0)
+08/01/16 10:10:12 Event: ULOG_SUBMIT for Condor Node clean_up_local_level_4_0 (170550.0.0)
+08/01/16 10:10:12 Number of idle job procs: 2
+08/01/16 10:10:12 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:12 Of 86 nodes total:
+08/01/16 10:10:12  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:12   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:12    21       0        4       0       0         61        0
+08/01/16 10:10:12 0 job proc(s) currently held
+08/01/16 10:10:17 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:17 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_1_0 (170546.0.0)
+08/01/16 10:10:17 Number of idle job procs: 2
+08/01/16 10:10:17 Node stage_out_local_local_1_0 job proc (170546.0.0) failed with status 1.
+08/01/16 10:10:17 Node stage_out_local_local_1_0 job completed
+08/01/16 10:10:17 Running POST script of Node stage_out_local_local_1_0...
+08/01/16 10:10:17 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:10:17 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_1_1 (170549.0.0)
+08/01/16 10:10:17 Number of idle job procs: 1
+08/01/16 10:10:17 Event: ULOG_EXECUTE for Condor Node clean_up_local_level_4_0 (170550.0.0)
+08/01/16 10:10:17 Number of idle job procs: 0
+08/01/16 10:10:17 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:17 Of 86 nodes total:
+08/01/16 10:10:17  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:17   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:17    21       0        3       1       0         61        0
+08/01/16 10:10:17 0 job proc(s) currently held
+08/01/16 10:10:17 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170546.0.0)
+08/01/16 10:10:22 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:22 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_1_0 (170546.0.0)
+08/01/16 10:10:22 POST Script of Node stage_out_local_local_1_0 failed with status 1
+08/01/16 10:10:22 POST for Node stage_out_local_local_1_0 returned 1
+08/01/16 10:10:22 Retrying node stage_out_local_local_1_0 (retry #1 of 1)...
+08/01/16 10:10:22 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_1_1 (170549.0.0)
+08/01/16 10:10:22 Number of idle job procs: 0
+08/01/16 10:10:22 Node stage_out_local_local_1_1 job proc (170549.0.0) completed successfully.
+08/01/16 10:10:22 Node stage_out_local_local_1_1 job completed
+08/01/16 10:10:22 Running POST script of Node stage_out_local_local_1_1...
+08/01/16 10:10:22 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:10:22 Event: ULOG_JOB_TERMINATED for Condor Node clean_up_local_level_4_0 (170550.0.0)
+08/01/16 10:10:22 Number of idle job procs: 0
+08/01/16 10:10:22 Node clean_up_local_level_4_0 job proc (170550.0.0) completed successfully.
+08/01/16 10:10:22 Node clean_up_local_level_4_0 job completed
+08/01/16 10:10:22 Running POST script of Node clean_up_local_level_4_0...
+08/01/16 10:10:22 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:10:22 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:22 Of 86 nodes total:
+08/01/16 10:10:22  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:22   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:22    21       0        1       2       1         61        0
+08/01/16 10:10:22 0 job proc(s) currently held
+08/01/16 10:10:22 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170549.0.0)
+08/01/16 10:10:23 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170550.0.0)
+08/01/16 10:10:27 Reassigning the id of job stage_out_local_local_1_0 from (170546.0.0) to (-1.-1.-1)
+08/01/16 10:10:27 Submitting Condor Node stage_out_local_local_1_0 job(s)...
+08/01/16 10:10:27 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:27 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:27 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:27 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_1_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_1_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.qc1.1_ID0000003,e.qc2.1_ID0000005,e.filters1.1_ID0000007,e.qc1.2_ID0000004,e.qc2.2_ID0000006" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_1_0.sub
+08/01/16 10:10:27 From submit: Submitting job(s).
+08/01/16 10:10:27 From submit: 1 job(s) submitted to cluster 170551.
+08/01/16 10:10:27 	assigned Condor ID (170551.0.0)
+08/01/16 10:10:27 Just submitted 1 job this cycle...
+08/01/16 10:10:27 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:27 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_1_1 (170549.0.0)
+08/01/16 10:10:27 POST Script of Node stage_out_local_local_1_1 completed successfully.
+08/01/16 10:10:27 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node clean_up_local_level_4_0 (170550.0.0)
+08/01/16 10:10:27 POST Script of Node clean_up_local_level_4_0 completed successfully.
+08/01/16 10:10:27 Reassigning the id of job stage_out_local_local_1_0 from (170551.0.0) to (170551.0.0)
+08/01/16 10:10:27 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_1_0 (170551.0.0)
+08/01/16 10:10:27 Number of idle job procs: 1
+08/01/16 10:10:27 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:27 Of 86 nodes total:
+08/01/16 10:10:27  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:27   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:27    23       0        2       0       1         60        0
+08/01/16 10:10:27 0 job proc(s) currently held
+08/01/16 10:10:32 Submitting Condor Node register_local_1_1 job(s)...
+08/01/16 10:10:32 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:32 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:32 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:32 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'register_local_1_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'register_local_1_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.filters1.1_ID0000007,stage_out_local_local_1_1" -a notification' '=' 'never register_local_1_1.sub
+08/01/16 10:10:32 From submit: Submitting job(s).
+08/01/16 10:10:32 From submit: 1 job(s) submitted to cluster 170552.
+08/01/16 10:10:32 	assigned Condor ID (170552.0.0)
+08/01/16 10:10:32 Just submitted 1 job this cycle...
+08/01/16 10:10:32 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:32 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_1_0 (170551.0.0)
+08/01/16 10:10:32 Number of idle job procs: 0
+08/01/16 10:10:32 Reassigning the id of job register_local_1_1 from (170552.0.0) to (170552.0.0)
+08/01/16 10:10:32 Event: ULOG_SUBMIT for Condor Node register_local_1_1 (170552.0.0)
+08/01/16 10:10:32 Number of idle job procs: 1
+08/01/16 10:10:32 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:32 Of 86 nodes total:
+08/01/16 10:10:32  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:32   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:32    23       0        3       0       0         60        0
+08/01/16 10:10:32 0 job proc(s) currently held
+08/01/16 10:10:37 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:37 Event: ULOG_EXECUTE for Condor Node register_local_1_1 (170552.0.0)
+08/01/16 10:10:37 Number of idle job procs: 0
+08/01/16 10:10:37 Event: ULOG_JOB_TERMINATED for Condor Node register_local_1_1 (170552.0.0)
+08/01/16 10:10:37 Number of idle job procs: 0
+08/01/16 10:10:37 Node register_local_1_1 job proc (170552.0.0) completed successfully.
+08/01/16 10:10:37 Node register_local_1_1 job completed
+08/01/16 10:10:37 Running POST script of Node register_local_1_1...
+08/01/16 10:10:37 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:10:37 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:37 Of 86 nodes total:
+08/01/16 10:10:37  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:37   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:37    23       0        2       1       0         60        0
+08/01/16 10:10:37 0 job proc(s) currently held
+08/01/16 10:10:37 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170552.0.0)
+08/01/16 10:10:43 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:43 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node register_local_1_1 (170552.0.0)
+08/01/16 10:10:43 POST Script of Node register_local_1_1 completed successfully.
+08/01/16 10:10:43 Event: ULOG_JOB_TERMINATED for Condor Node e.lowabundance1.1_ID0000010 (170548.0.0)
+08/01/16 10:10:43 Number of idle job procs: 0
+08/01/16 10:10:43 Node e.lowabundance1.1_ID0000010 job proc (170548.0.0) completed successfully.
+08/01/16 10:10:43 Node e.lowabundance1.1_ID0000010 job completed
+08/01/16 10:10:43 Running POST script of Node e.lowabundance1.1_ID0000010...
+08/01/16 10:10:43 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:10:43 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:43 Of 86 nodes total:
+08/01/16 10:10:43  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:43   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:43    24       0        1       1       0         60        0
+08/01/16 10:10:43 0 job proc(s) currently held
+08/01/16 10:10:43 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170548.0.0)
+08/01/16 10:10:48 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:48 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.lowabundance1.1_ID0000010 (170548.0.0)
+08/01/16 10:10:48 POST Script of Node e.lowabundance1.1_ID0000010 completed successfully.
+08/01/16 10:10:48 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:48 Of 86 nodes total:
+08/01/16 10:10:48  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:48   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:48    25       0        1       0       5         55        0
+08/01/16 10:10:48 0 job proc(s) currently held
+08/01/16 10:10:53 Submitting Condor Node e.normalize.2_ID0000012 job(s)...
+08/01/16 10:10:53 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:53 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:53 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:53 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.normalize.2_ID0000012 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.normalize.2_ID0000012 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000010" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.normalize.2_ID0000012.sub
+08/01/16 10:10:53 From submit: Submitting job(s).
+08/01/16 10:10:53 From submit: 1 job(s) submitted to cluster 170553.
+08/01/16 10:10:53 	assigned Condor ID (170553.0.0)
+08/01/16 10:10:53 Submitting Condor Node e.normalize.1_ID0000011 job(s)...
+08/01/16 10:10:53 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:53 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:53 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:53 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.normalize.1_ID0000011 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.normalize.1_ID0000011 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000009,e.lowabundance1.1_ID0000010" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.normalize.1_ID0000011.sub
+08/01/16 10:10:53 From submit: Submitting job(s).
+08/01/16 10:10:53 From submit: 1 job(s) submitted to cluster 170554.
+08/01/16 10:10:53 	assigned Condor ID (170554.0.0)
+08/01/16 10:10:53 Submitting Condor Node stage_out_local_local_2_1 job(s)...
+08/01/16 10:10:53 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:53 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:53 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:53 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_2_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_2_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000009,e.lowabundance1.1_ID0000010" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_2_1.sub
+08/01/16 10:10:53 From submit: Submitting job(s).
+08/01/16 10:10:53 From submit: 1 job(s) submitted to cluster 170555.
+08/01/16 10:10:53 	assigned Condor ID (170555.0.0)
+08/01/16 10:10:53 Submitting Condor Node stage_out_local_local_2_0 job(s)...
+08/01/16 10:10:53 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:53 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:53 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:53 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_2_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_2_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000009,e.lowabundance1.1_ID0000010" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_2_0.sub
+08/01/16 10:10:53 From submit: Submitting job(s).
+08/01/16 10:10:53 From submit: 1 job(s) submitted to cluster 170556.
+08/01/16 10:10:53 	assigned Condor ID (170556.0.0)
+08/01/16 10:10:53 Submitting Condor Node clean_up_local_level_5_0 job(s)...
+08/01/16 10:10:53 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:10:53 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:10:53 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:10:53 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_5_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_5_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000009,e.lowabundance1.1_ID0000010,stage_out_local_local_1_1" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never clean_up_local_level_5_0.sub
+08/01/16 10:10:53 From submit: Submitting job(s).
+08/01/16 10:10:53 From submit: 1 job(s) submitted to cluster 170557.
+08/01/16 10:10:53 	assigned Condor ID (170557.0.0)
+08/01/16 10:10:53 Just submitted 5 jobs this cycle...
+08/01/16 10:10:53 Currently monitoring 1 Condor log file(s)
+08/01/16 10:10:53 Reassigning the id of job e.normalize.2_ID0000012 from (170553.0.0) to (170553.0.0)
+08/01/16 10:10:53 Event: ULOG_SUBMIT for Condor Node e.normalize.2_ID0000012 (170553.0.0)
+08/01/16 10:10:53 Number of idle job procs: 1
+08/01/16 10:10:53 Event: ULOG_EXECUTE for Condor Node e.normalize.2_ID0000012 (170553.0.0)
+08/01/16 10:10:53 Number of idle job procs: 0
+08/01/16 10:10:53 Reassigning the id of job e.normalize.1_ID0000011 from (170554.0.0) to (170554.0.0)
+08/01/16 10:10:53 Event: ULOG_SUBMIT for Condor Node e.normalize.1_ID0000011 (170554.0.0)
+08/01/16 10:10:53 Number of idle job procs: 1
+08/01/16 10:10:53 Reassigning the id of job stage_out_local_local_2_1 from (170555.0.0) to (170555.0.0)
+08/01/16 10:10:53 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_2_1 (170555.0.0)
+08/01/16 10:10:53 Number of idle job procs: 2
+08/01/16 10:10:53 Reassigning the id of job stage_out_local_local_2_0 from (170556.0.0) to (170556.0.0)
+08/01/16 10:10:53 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_2_0 (170556.0.0)
+08/01/16 10:10:53 Number of idle job procs: 3
+08/01/16 10:10:54 Reassigning the id of job clean_up_local_level_5_0 from (170557.0.0) to (170557.0.0)
+08/01/16 10:10:54 Event: ULOG_SUBMIT for Condor Node clean_up_local_level_5_0 (170557.0.0)
+08/01/16 10:10:54 Number of idle job procs: 4
+08/01/16 10:10:54 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:10:54 Of 86 nodes total:
+08/01/16 10:10:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:10:54   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:10:54    25       0        6       0       0         55        0
+08/01/16 10:10:54 0 job proc(s) currently held
+08/01/16 10:11:04 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:04 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_2_1 (170555.0.0)
+08/01/16 10:11:04 Number of idle job procs: 3
+08/01/16 10:11:04 Event: ULOG_EXECUTE for Condor Node e.normalize.1_ID0000011 (170554.0.0)
+08/01/16 10:11:04 Number of idle job procs: 2
+08/01/16 10:11:04 Event: ULOG_EXECUTE for Condor Node clean_up_local_level_5_0 (170557.0.0)
+08/01/16 10:11:04 Number of idle job procs: 1
+08/01/16 10:11:04 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_2_0 (170556.0.0)
+08/01/16 10:11:04 Number of idle job procs: 0
+08/01/16 10:11:04 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_2_0 (170556.0.0)
+08/01/16 10:11:04 Number of idle job procs: 0
+08/01/16 10:11:04 Node stage_out_local_local_2_0 job proc (170556.0.0) completed successfully.
+08/01/16 10:11:04 Node stage_out_local_local_2_0 job completed
+08/01/16 10:11:04 Running POST script of Node stage_out_local_local_2_0...
+08/01/16 10:11:04 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:04 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:11:04 Of 86 nodes total:
+08/01/16 10:11:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:04   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:04    25       0        5       1       0         55        0
+08/01/16 10:11:04 0 job proc(s) currently held
+08/01/16 10:11:04 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170556.0.0)
+08/01/16 10:11:09 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:09 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_2_0 (170556.0.0)
+08/01/16 10:11:09 POST Script of Node stage_out_local_local_2_0 completed successfully.
+08/01/16 10:11:09 Event: ULOG_JOB_TERMINATED for Condor Node e.normalize.2_ID0000012 (170553.0.0)
+08/01/16 10:11:09 Number of idle job procs: 0
+08/01/16 10:11:09 Node e.normalize.2_ID0000012 job proc (170553.0.0) failed with status 1.
+08/01/16 10:11:09 Node e.normalize.2_ID0000012 job completed
+08/01/16 10:11:09 Running POST script of Node e.normalize.2_ID0000012...
+08/01/16 10:11:09 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:09 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:11:09 Of 86 nodes total:
+08/01/16 10:11:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:09   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:09    26       0        4       1       1         54        0
+08/01/16 10:11:09 0 job proc(s) currently held
+08/01/16 10:11:09 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170553.0.0)
+08/01/16 10:11:14 Submitting Condor Node register_local_2_0 job(s)...
+08/01/16 10:11:14 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:11:14 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:11:14 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:11:14 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'register_local_2_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'register_local_2_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000009,e.lowabundance1.1_ID0000010,stage_out_local_local_2_0" -a notification' '=' 'never register_local_2_0.sub
+08/01/16 10:11:14 From submit: Submitting job(s).
+08/01/16 10:11:14 From submit: 1 job(s) submitted to cluster 170558.
+08/01/16 10:11:14 	assigned Condor ID (170558.0.0)
+08/01/16 10:11:14 Just submitted 1 job this cycle...
+08/01/16 10:11:14 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:14 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.normalize.2_ID0000012 (170553.0.0)
+08/01/16 10:11:14 POST Script of Node e.normalize.2_ID0000012 failed with status 1
+08/01/16 10:11:14 POST for Node e.normalize.2_ID0000012 returned 1
+08/01/16 10:11:14 Retrying node e.normalize.2_ID0000012 (retry #1 of 1)...
+08/01/16 10:11:14 Event: ULOG_JOB_TERMINATED for Condor Node clean_up_local_level_5_0 (170557.0.0)
+08/01/16 10:11:14 Number of idle job procs: 0
+08/01/16 10:11:14 Node clean_up_local_level_5_0 job proc (170557.0.0) completed successfully.
+08/01/16 10:11:14 Node clean_up_local_level_5_0 job completed
+08/01/16 10:11:14 Running POST script of Node clean_up_local_level_5_0...
+08/01/16 10:11:14 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:14 Reassigning the id of job register_local_2_0 from (170558.0.0) to (170558.0.0)
+08/01/16 10:11:14 Event: ULOG_SUBMIT for Condor Node register_local_2_0 (170558.0.0)
+08/01/16 10:11:14 Number of idle job procs: 1
+08/01/16 10:11:14 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170557.0.0)
+08/01/16 10:11:19 Reassigning the id of job e.normalize.2_ID0000012 from (170553.0.0) to (-1.-1.-1)
+08/01/16 10:11:19 Submitting Condor Node e.normalize.2_ID0000012 job(s)...
+08/01/16 10:11:19 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:11:19 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:11:19 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:11:19 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.normalize.2_ID0000012 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.normalize.2_ID0000012 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000010" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.normalize.2_ID0000012.sub
+08/01/16 10:11:19 From submit: Submitting job(s).
+08/01/16 10:11:19 From submit: 1 job(s) submitted to cluster 170559.
+08/01/16 10:11:19 	assigned Condor ID (170559.0.0)
+08/01/16 10:11:19 Just submitted 1 job this cycle...
+08/01/16 10:11:19 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:19 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node clean_up_local_level_5_0 (170557.0.0)
+08/01/16 10:11:19 POST Script of Node clean_up_local_level_5_0 completed successfully.
+08/01/16 10:11:19 Event: ULOG_EXECUTE for Condor Node register_local_2_0 (170558.0.0)
+08/01/16 10:11:19 Number of idle job procs: 0
+08/01/16 10:11:19 Event: ULOG_JOB_TERMINATED for Condor Node register_local_2_0 (170558.0.0)
+08/01/16 10:11:19 Number of idle job procs: 0
+08/01/16 10:11:19 Node register_local_2_0 job proc (170558.0.0) completed successfully.
+08/01/16 10:11:19 Node register_local_2_0 job completed
+08/01/16 10:11:19 Running POST script of Node register_local_2_0...
+08/01/16 10:11:19 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:19 Reassigning the id of job e.normalize.2_ID0000012 from (170559.0.0) to (170559.0.0)
+08/01/16 10:11:19 Event: ULOG_SUBMIT for Condor Node e.normalize.2_ID0000012 (170559.0.0)
+08/01/16 10:11:19 Number of idle job procs: 1
+08/01/16 10:11:19 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:11:19 Of 86 nodes total:
+08/01/16 10:11:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:19   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:19    27       0        4       1       0         54        0
+08/01/16 10:11:19 0 job proc(s) currently held
+08/01/16 10:11:19 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170558.0.0)
+08/01/16 10:11:24 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:24 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node register_local_2_0 (170558.0.0)
+08/01/16 10:11:24 POST Script of Node register_local_2_0 completed successfully.
+08/01/16 10:11:24 Event: ULOG_EXECUTE for Condor Node e.normalize.2_ID0000012 (170559.0.0)
+08/01/16 10:11:24 Number of idle job procs: 0
+08/01/16 10:11:24 Event: ULOG_JOB_TERMINATED for Condor Node e.normalize.1_ID0000011 (170554.0.0)
+08/01/16 10:11:24 Number of idle job procs: 0
+08/01/16 10:11:24 Node e.normalize.1_ID0000011 job proc (170554.0.0) completed successfully.
+08/01/16 10:11:24 Node e.normalize.1_ID0000011 job completed
+08/01/16 10:11:24 Running POST script of Node e.normalize.1_ID0000011...
+08/01/16 10:11:24 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:24 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:11:24 Of 86 nodes total:
+08/01/16 10:11:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:24   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:24    28       0        3       1       0         54        0
+08/01/16 10:11:24 0 job proc(s) currently held
+08/01/16 10:11:24 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170554.0.0)
+08/01/16 10:11:29 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:29 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.normalize.1_ID0000011 (170554.0.0)
+08/01/16 10:11:29 POST Script of Node e.normalize.1_ID0000011 completed successfully.
+08/01/16 10:11:29 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:11:29 Of 86 nodes total:
+08/01/16 10:11:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:29   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:29    29       0        3       0       4         50        0
+08/01/16 10:11:29 0 job proc(s) currently held
+08/01/16 10:11:35 Submitting Condor Node e.reduction_ID0000013 job(s)...
+08/01/16 10:11:35 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:11:35 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:11:35 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:11:35 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.reduction_ID0000013 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.reduction_ID0000013 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.reduction_ID0000013.sub
+08/01/16 10:11:35 From submit: Submitting job(s).
+08/01/16 10:11:35 From submit: 1 job(s) submitted to cluster 170560.
+08/01/16 10:11:35 	assigned Condor ID (170560.0.0)
+08/01/16 10:11:35 Submitting Condor Node stage_out_local_local_3_0 job(s)...
+08/01/16 10:11:35 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:11:35 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:11:35 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:11:35 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_3_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_3_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_3_0.sub
+08/01/16 10:11:35 From submit: Submitting job(s).
+08/01/16 10:11:35 From submit: 1 job(s) submitted to cluster 170561.
+08/01/16 10:11:35 	assigned Condor ID (170561.0.0)
+08/01/16 10:11:35 Submitting Condor Node e.cellCyc1.1_ID0000014 job(s)...
+08/01/16 10:11:35 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:11:35 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:11:35 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:11:35 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.cellCyc1.1_ID0000014 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.cellCyc1.1_ID0000014 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.cellCyc1.1_ID0000014.sub
+08/01/16 10:11:35 From submit: Submitting job(s).
+08/01/16 10:11:35 From submit: 1 job(s) submitted to cluster 170562.
+08/01/16 10:11:35 	assigned Condor ID (170562.0.0)
+08/01/16 10:11:35 Submitting Condor Node e.hvgs1_ID0000016 job(s)...
+08/01/16 10:11:35 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:11:35 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:11:35 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:11:35 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.hvgs1_ID0000016 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.hvgs1_ID0000016 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.hvgs1_ID0000016.sub
+08/01/16 10:11:35 From submit: Submitting job(s).
+08/01/16 10:11:35 From submit: 1 job(s) submitted to cluster 170563.
+08/01/16 10:11:35 	assigned Condor ID (170563.0.0)
+08/01/16 10:11:35 Just submitted 4 jobs this cycle...
+08/01/16 10:11:35 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:35 Event: ULOG_JOB_TERMINATED for Condor Node e.normalize.2_ID0000012 (170559.0.0)
+08/01/16 10:11:35 Number of idle job procs: 0
+08/01/16 10:11:35 Node e.normalize.2_ID0000012 job proc (170559.0.0) failed with status 1.
+08/01/16 10:11:35 Node e.normalize.2_ID0000012 job completed
+08/01/16 10:11:35 Running POST script of Node e.normalize.2_ID0000012...
+08/01/16 10:11:35 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:35 Reassigning the id of job e.reduction_ID0000013 from (170560.0.0) to (170560.0.0)
+08/01/16 10:11:35 Event: ULOG_SUBMIT for Condor Node e.reduction_ID0000013 (170560.0.0)
+08/01/16 10:11:35 Number of idle job procs: 1
+08/01/16 10:11:35 Event: ULOG_EXECUTE for Condor Node e.reduction_ID0000013 (170560.0.0)
+08/01/16 10:11:35 Number of idle job procs: 0
+08/01/16 10:11:35 Reassigning the id of job stage_out_local_local_3_0 from (170561.0.0) to (170561.0.0)
+08/01/16 10:11:35 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_3_0 (170561.0.0)
+08/01/16 10:11:35 Number of idle job procs: 1
+08/01/16 10:11:35 Reassigning the id of job e.cellCyc1.1_ID0000014 from (170562.0.0) to (170562.0.0)
+08/01/16 10:11:35 Event: ULOG_SUBMIT for Condor Node e.cellCyc1.1_ID0000014 (170562.0.0)
+08/01/16 10:11:35 Number of idle job procs: 2
+08/01/16 10:11:35 Reassigning the id of job e.hvgs1_ID0000016 from (170563.0.0) to (170563.0.0)
+08/01/16 10:11:35 Event: ULOG_SUBMIT for Condor Node e.hvgs1_ID0000016 (170563.0.0)
+08/01/16 10:11:35 Number of idle job procs: 3
+08/01/16 10:11:35 DAG status: 0 (DAG_STATUS_OK)
+08/01/16 10:11:35 Of 86 nodes total:
+08/01/16 10:11:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:35   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:35    29       0        6       1       0         50        0
+08/01/16 10:11:35 0 job proc(s) currently held
+08/01/16 10:11:35 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170559.0.0)
+08/01/16 10:11:40 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:40 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.normalize.2_ID0000012 (170559.0.0)
+08/01/16 10:11:40 POST Script of Node e.normalize.2_ID0000012 failed with status 1
+08/01/16 10:11:40 POST for Node e.normalize.2_ID0000012 returned 1
+08/01/16 10:11:40 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:11:40 Of 86 nodes total:
+08/01/16 10:11:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:40   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:40    29       0        6       0       0         50        1
+08/01/16 10:11:40 0 job proc(s) currently held
+08/01/16 10:11:46 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:46 Event: ULOG_EXECUTE for Condor Node e.cellCyc1.1_ID0000014 (170562.0.0)
+08/01/16 10:11:46 Number of idle job procs: 2
+08/01/16 10:11:46 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_3_0 (170561.0.0)
+08/01/16 10:11:46 Number of idle job procs: 1
+08/01/16 10:11:46 Event: ULOG_EXECUTE for Condor Node e.hvgs1_ID0000016 (170563.0.0)
+08/01/16 10:11:46 Number of idle job procs: 0
+08/01/16 10:11:46 Event: ULOG_JOB_TERMINATED for Condor Node e.reduction_ID0000013 (170560.0.0)
+08/01/16 10:11:46 Number of idle job procs: 0
+08/01/16 10:11:46 Node e.reduction_ID0000013 job proc (170560.0.0) failed with status 1.
+08/01/16 10:11:46 Node e.reduction_ID0000013 job completed
+08/01/16 10:11:46 Running POST script of Node e.reduction_ID0000013...
+08/01/16 10:11:46 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:46 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:11:46 Of 86 nodes total:
+08/01/16 10:11:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:46   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:46    29       0        5       1       0         50        1
+08/01/16 10:11:46 0 job proc(s) currently held
+08/01/16 10:11:46 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170560.0.0)
+08/01/16 10:11:51 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:51 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.reduction_ID0000013 (170560.0.0)
+08/01/16 10:11:51 POST Script of Node e.reduction_ID0000013 failed with status 1
+08/01/16 10:11:51 POST for Node e.reduction_ID0000013 returned 1
+08/01/16 10:11:51 Retrying node e.reduction_ID0000013 (retry #1 of 1)...
+08/01/16 10:11:51 Event: ULOG_JOB_TERMINATED for Condor Node e.cellCyc1.1_ID0000014 (170562.0.0)
+08/01/16 10:11:51 Number of idle job procs: 0
+08/01/16 10:11:51 Node e.cellCyc1.1_ID0000014 job proc (170562.0.0) failed with status 1.
+08/01/16 10:11:51 Node e.cellCyc1.1_ID0000014 job completed
+08/01/16 10:11:51 Running POST script of Node e.cellCyc1.1_ID0000014...
+08/01/16 10:11:51 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:11:51 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:11:51 Of 86 nodes total:
+08/01/16 10:11:51  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:51   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:51    29       0        4       1       1         50        1
+08/01/16 10:11:51 0 job proc(s) currently held
+08/01/16 10:11:51 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170562.0.0)
+08/01/16 10:11:56 Reassigning the id of job e.reduction_ID0000013 from (170560.0.0) to (-1.-1.-1)
+08/01/16 10:11:56 Submitting Condor Node e.reduction_ID0000013 job(s)...
+08/01/16 10:11:56 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:11:56 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:11:56 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:11:56 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.reduction_ID0000013 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.reduction_ID0000013 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '2 -a FAILED_COUNT' '=' '1 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.reduction_ID0000013.sub
+08/01/16 10:11:56 From submit: Submitting job(s).
+08/01/16 10:11:56 From submit: 1 job(s) submitted to cluster 170564.
+08/01/16 10:11:56 	assigned Condor ID (170564.0.0)
+08/01/16 10:11:56 Just submitted 1 job this cycle...
+08/01/16 10:11:56 Currently monitoring 1 Condor log file(s)
+08/01/16 10:11:56 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.cellCyc1.1_ID0000014 (170562.0.0)
+08/01/16 10:11:56 POST Script of Node e.cellCyc1.1_ID0000014 failed with status 1
+08/01/16 10:11:56 POST for Node e.cellCyc1.1_ID0000014 returned 1
+08/01/16 10:11:56 Retrying node e.cellCyc1.1_ID0000014 (retry #1 of 1)...
+08/01/16 10:11:56 Reassigning the id of job e.reduction_ID0000013 from (170564.0.0) to (170564.0.0)
+08/01/16 10:11:56 Event: ULOG_SUBMIT for Condor Node e.reduction_ID0000013 (170564.0.0)
+08/01/16 10:11:56 Number of idle job procs: 1
+08/01/16 10:11:56 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:11:56 Of 86 nodes total:
+08/01/16 10:11:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:11:56   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:11:56    29       0        5       0       1         50        1
+08/01/16 10:11:56 0 job proc(s) currently held
+08/01/16 10:12:01 Reassigning the id of job e.cellCyc1.1_ID0000014 from (170562.0.0) to (-1.-1.-1)
+08/01/16 10:12:01 Submitting Condor Node e.cellCyc1.1_ID0000014 job(s)...
+08/01/16 10:12:01 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:12:01 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:12:01 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:12:01 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.cellCyc1.1_ID0000014 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.cellCyc1.1_ID0000014 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '2 -a FAILED_COUNT' '=' '1 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.cellCyc1.1_ID0000014.sub
+08/01/16 10:12:01 From submit: Submitting job(s).
+08/01/16 10:12:01 From submit: 1 job(s) submitted to cluster 170565.
+08/01/16 10:12:01 	assigned Condor ID (170565.0.0)
+08/01/16 10:12:01 Just submitted 1 job this cycle...
+08/01/16 10:12:01 Currently monitoring 1 Condor log file(s)
+08/01/16 10:12:01 Event: ULOG_EXECUTE for Condor Node e.reduction_ID0000013 (170564.0.0)
+08/01/16 10:12:01 Number of idle job procs: 0
+08/01/16 10:12:01 Event: ULOG_JOB_TERMINATED for Condor Node e.hvgs1_ID0000016 (170563.0.0)
+08/01/16 10:12:01 Number of idle job procs: 0
+08/01/16 10:12:01 Node e.hvgs1_ID0000016 job proc (170563.0.0) failed with status 1.
+08/01/16 10:12:01 Node e.hvgs1_ID0000016 job completed
+08/01/16 10:12:01 Running POST script of Node e.hvgs1_ID0000016...
+08/01/16 10:12:01 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:12:01 Reassigning the id of job e.cellCyc1.1_ID0000014 from (170565.0.0) to (170565.0.0)
+08/01/16 10:12:01 Event: ULOG_SUBMIT for Condor Node e.cellCyc1.1_ID0000014 (170565.0.0)
+08/01/16 10:12:01 Number of idle job procs: 1
+08/01/16 10:12:01 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:12:01 Of 86 nodes total:
+08/01/16 10:12:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:12:01   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:12:01    29       0        5       1       0         50        1
+08/01/16 10:12:01 0 job proc(s) currently held
+08/01/16 10:12:01 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170563.0.0)
+08/01/16 10:12:06 Currently monitoring 1 Condor log file(s)
+08/01/16 10:12:06 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.hvgs1_ID0000016 (170563.0.0)
+08/01/16 10:12:06 POST Script of Node e.hvgs1_ID0000016 failed with status 1
+08/01/16 10:12:06 POST for Node e.hvgs1_ID0000016 returned 1
+08/01/16 10:12:06 Retrying node e.hvgs1_ID0000016 (retry #1 of 1)...
+08/01/16 10:12:06 Event: ULOG_EXECUTE for Condor Node e.cellCyc1.1_ID0000014 (170565.0.0)
+08/01/16 10:12:06 Number of idle job procs: 0
+08/01/16 10:12:06 Event: ULOG_JOB_TERMINATED for Condor Node e.reduction_ID0000013 (170564.0.0)
+08/01/16 10:12:06 Number of idle job procs: 0
+08/01/16 10:12:06 Node e.reduction_ID0000013 job proc (170564.0.0) failed with status 1.
+08/01/16 10:12:06 Node e.reduction_ID0000013 job completed
+08/01/16 10:12:06 Running POST script of Node e.reduction_ID0000013...
+08/01/16 10:12:06 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:12:06 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:12:06 Of 86 nodes total:
+08/01/16 10:12:06  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:12:06   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:12:06    29       0        4       1       1         50        1
+08/01/16 10:12:06 0 job proc(s) currently held
+08/01/16 10:12:07 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170564.0.0)
+08/01/16 10:12:12 Reassigning the id of job e.hvgs1_ID0000016 from (170563.0.0) to (-1.-1.-1)
+08/01/16 10:12:12 Submitting Condor Node e.hvgs1_ID0000016 job(s)...
+08/01/16 10:12:12 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:12:12 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:12:12 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:12:12 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'e.hvgs1_ID0000016 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'e.hvgs1_ID0000016 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '2 -a FAILED_COUNT' '=' '1 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never e.hvgs1_ID0000016.sub
+08/01/16 10:12:12 From submit: Submitting job(s).
+08/01/16 10:12:12 From submit: 1 job(s) submitted to cluster 170566.
+08/01/16 10:12:12 	assigned Condor ID (170566.0.0)
+08/01/16 10:12:12 Just submitted 1 job this cycle...
+08/01/16 10:12:12 Currently monitoring 1 Condor log file(s)
+08/01/16 10:12:12 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.reduction_ID0000013 (170564.0.0)
+08/01/16 10:12:12 POST Script of Node e.reduction_ID0000013 failed with status 1
+08/01/16 10:12:12 POST for Node e.reduction_ID0000013 returned 1
+08/01/16 10:12:12 Event: ULOG_JOB_TERMINATED for Condor Node e.cellCyc1.1_ID0000014 (170565.0.0)
+08/01/16 10:12:12 Number of idle job procs: 0
+08/01/16 10:12:12 Node e.cellCyc1.1_ID0000014 job proc (170565.0.0) failed with status 1.
+08/01/16 10:12:12 Node e.cellCyc1.1_ID0000014 job completed
+08/01/16 10:12:12 Running POST script of Node e.cellCyc1.1_ID0000014...
+08/01/16 10:12:12 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:12:12 Reassigning the id of job e.hvgs1_ID0000016 from (170566.0.0) to (170566.0.0)
+08/01/16 10:12:12 Event: ULOG_SUBMIT for Condor Node e.hvgs1_ID0000016 (170566.0.0)
+08/01/16 10:12:12 Number of idle job procs: 1
+08/01/16 10:12:12 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:12:12 Of 86 nodes total:
+08/01/16 10:12:12  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:12:12   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:12:12    29       0        4       1       0         50        2
+08/01/16 10:12:12 0 job proc(s) currently held
+08/01/16 10:12:12 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170565.0.0)
+08/01/16 10:12:17 Currently monitoring 1 Condor log file(s)
+08/01/16 10:12:17 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.cellCyc1.1_ID0000014 (170565.0.0)
+08/01/16 10:12:17 POST Script of Node e.cellCyc1.1_ID0000014 failed with status 1
+08/01/16 10:12:17 POST for Node e.cellCyc1.1_ID0000014 returned 1
+08/01/16 10:12:17 Event: ULOG_EXECUTE for Condor Node e.hvgs1_ID0000016 (170566.0.0)
+08/01/16 10:12:17 Number of idle job procs: 0
+08/01/16 10:12:17 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:12:17 Of 86 nodes total:
+08/01/16 10:12:17  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:12:17   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:12:17    29       0        4       0       0         50        3
+08/01/16 10:12:17 0 job proc(s) currently held
+08/01/16 10:12:27 Currently monitoring 1 Condor log file(s)
+08/01/16 10:12:27 Event: ULOG_JOB_TERMINATED for Condor Node e.hvgs1_ID0000016 (170566.0.0)
+08/01/16 10:12:27 Number of idle job procs: 0
+08/01/16 10:12:27 Node e.hvgs1_ID0000016 job proc (170566.0.0) failed with status 1.
+08/01/16 10:12:27 Node e.hvgs1_ID0000016 job completed
+08/01/16 10:12:27 Running POST script of Node e.hvgs1_ID0000016...
+08/01/16 10:12:27 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:12:27 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:12:27 Of 86 nodes total:
+08/01/16 10:12:27  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:12:27   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:12:27    29       0        3       1       0         50        3
+08/01/16 10:12:27 0 job proc(s) currently held
+08/01/16 10:12:27 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170566.0.0)
+08/01/16 10:12:32 Currently monitoring 1 Condor log file(s)
+08/01/16 10:12:32 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node e.hvgs1_ID0000016 (170566.0.0)
+08/01/16 10:12:32 POST Script of Node e.hvgs1_ID0000016 failed with status 1
+08/01/16 10:12:32 POST for Node e.hvgs1_ID0000016 returned 1
+08/01/16 10:12:32 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:12:32 Of 86 nodes total:
+08/01/16 10:12:32  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:12:32   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:12:32    29       0        3       0       0         50        4
+08/01/16 10:12:32 0 job proc(s) currently held
+08/01/16 10:13:27 Currently monitoring 1 Condor log file(s)
+08/01/16 10:13:27 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_1_0 (170551.0.0)
+08/01/16 10:13:27 Number of idle job procs: 0
+08/01/16 10:13:27 Node stage_out_local_local_1_0 job proc (170551.0.0) failed with status 1.
+08/01/16 10:13:27 Node stage_out_local_local_1_0 job completed
+08/01/16 10:13:27 Running POST script of Node stage_out_local_local_1_0...
+08/01/16 10:13:27 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:13:27 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:13:27 Of 86 nodes total:
+08/01/16 10:13:27  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:13:27   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:13:27    29       0        2       1       0         50        4
+08/01/16 10:13:27 0 job proc(s) currently held
+08/01/16 10:13:27 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170551.0.0)
+08/01/16 10:13:32 Currently monitoring 1 Condor log file(s)
+08/01/16 10:13:32 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_1_0 (170551.0.0)
+08/01/16 10:13:32 POST Script of Node stage_out_local_local_1_0 failed with status 1
+08/01/16 10:13:32 POST for Node stage_out_local_local_1_0 returned 1
+08/01/16 10:13:32 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:13:32 Of 86 nodes total:
+08/01/16 10:13:32  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:13:32   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:13:32    29       0        2       0       0         50        5
+08/01/16 10:13:32 0 job proc(s) currently held
+08/01/16 10:13:52 Currently monitoring 1 Condor log file(s)
+08/01/16 10:13:52 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_2_1 (170555.0.0)
+08/01/16 10:13:52 Number of idle job procs: 0
+08/01/16 10:13:52 Node stage_out_local_local_2_1 job proc (170555.0.0) failed with status 1.
+08/01/16 10:13:52 Node stage_out_local_local_2_1 job completed
+08/01/16 10:13:52 Running POST script of Node stage_out_local_local_2_1...
+08/01/16 10:13:52 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:13:52 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:13:52 Of 86 nodes total:
+08/01/16 10:13:52  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:13:52   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:13:52    29       0        1       1       0         50        5
+08/01/16 10:13:52 0 job proc(s) currently held
+08/01/16 10:13:52 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170555.0.0)
+08/01/16 10:13:58 Currently monitoring 1 Condor log file(s)
+08/01/16 10:13:58 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_2_1 (170555.0.0)
+08/01/16 10:13:58 POST Script of Node stage_out_local_local_2_1 failed with status 1
+08/01/16 10:13:58 POST for Node stage_out_local_local_2_1 returned 1
+08/01/16 10:13:58 Retrying node stage_out_local_local_2_1 (retry #1 of 1)...
+08/01/16 10:13:58 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:13:58 Of 86 nodes total:
+08/01/16 10:13:58  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:13:58   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:13:58    29       0        1       0       1         50        5
+08/01/16 10:13:58 0 job proc(s) currently held
+08/01/16 10:14:03 Reassigning the id of job stage_out_local_local_2_1 from (170555.0.0) to (-1.-1.-1)
+08/01/16 10:14:03 Submitting Condor Node stage_out_local_local_2_1 job(s)...
+08/01/16 10:14:03 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:14:03 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:14:03 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:14:03 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_2_1 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_2_1 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '2 -a FAILED_COUNT' '=' '5 -a +DAGParentNodeNames' '=' '"e.lowabundance1.1_ID0000009,e.lowabundance1.1_ID0000010" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_2_1.sub
+08/01/16 10:14:03 From submit: Submitting job(s).
+08/01/16 10:14:03 From submit: 1 job(s) submitted to cluster 170567.
+08/01/16 10:14:03 	assigned Condor ID (170567.0.0)
+08/01/16 10:14:03 Just submitted 1 job this cycle...
+08/01/16 10:14:03 Currently monitoring 1 Condor log file(s)
+08/01/16 10:14:03 Reassigning the id of job stage_out_local_local_2_1 from (170567.0.0) to (170567.0.0)
+08/01/16 10:14:03 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_2_1 (170567.0.0)
+08/01/16 10:14:03 Number of idle job procs: 1
+08/01/16 10:14:03 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:14:03 Of 86 nodes total:
+08/01/16 10:14:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:14:03   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:14:03    29       0        2       0       0         50        5
+08/01/16 10:14:03 0 job proc(s) currently held
+08/01/16 10:14:08 Currently monitoring 1 Condor log file(s)
+08/01/16 10:14:08 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_2_1 (170567.0.0)
+08/01/16 10:14:08 Number of idle job procs: 0
+08/01/16 10:14:28 Currently monitoring 1 Condor log file(s)
+08/01/16 10:14:28 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_3_0 (170561.0.0)
+08/01/16 10:14:28 Number of idle job procs: 0
+08/01/16 10:14:28 Node stage_out_local_local_3_0 job proc (170561.0.0) failed with status 1.
+08/01/16 10:14:28 Node stage_out_local_local_3_0 job completed
+08/01/16 10:14:28 Running POST script of Node stage_out_local_local_3_0...
+08/01/16 10:14:28 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:14:28 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:14:28 Of 86 nodes total:
+08/01/16 10:14:28  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:14:28   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:14:28    29       0        1       1       0         50        5
+08/01/16 10:14:28 0 job proc(s) currently held
+08/01/16 10:14:28 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170561.0.0)
+08/01/16 10:14:33 Currently monitoring 1 Condor log file(s)
+08/01/16 10:14:33 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_3_0 (170561.0.0)
+08/01/16 10:14:33 POST Script of Node stage_out_local_local_3_0 failed with status 1
+08/01/16 10:14:33 POST for Node stage_out_local_local_3_0 returned 1
+08/01/16 10:14:33 Retrying node stage_out_local_local_3_0 (retry #1 of 1)...
+08/01/16 10:14:33 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:14:33 Of 86 nodes total:
+08/01/16 10:14:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:14:33   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:14:33    29       0        1       0       1         50        5
+08/01/16 10:14:33 0 job proc(s) currently held
+08/01/16 10:14:38 Reassigning the id of job stage_out_local_local_3_0 from (170561.0.0) to (-1.-1.-1)
+08/01/16 10:14:38 Submitting Condor Node stage_out_local_local_3_0 job(s)...
+08/01/16 10:14:38 Adding a DAGMan workflow log /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log
+08/01/16 10:14:38 Masking the events recorded in the DAGMAN workflow log
+08/01/16 10:14:38 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+08/01/16 10:14:38 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_3_0 -a +DAGManJobId' '=' '170525 -a DAGManJobId' '=' '170525 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_3_0 -a dagman_log' '=' '/scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '2 -a FAILED_COUNT' '=' '5 -a +DAGParentNodeNames' '=' '"e.normalize.1_ID0000011" -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never stage_out_local_local_3_0.sub
+08/01/16 10:14:38 From submit: Submitting job(s).
+08/01/16 10:14:38 From submit: 1 job(s) submitted to cluster 170568.
+08/01/16 10:14:38 	assigned Condor ID (170568.0.0)
+08/01/16 10:14:38 Just submitted 1 job this cycle...
+08/01/16 10:14:38 Currently monitoring 1 Condor log file(s)
+08/01/16 10:14:38 Reassigning the id of job stage_out_local_local_3_0 from (170568.0.0) to (170568.0.0)
+08/01/16 10:14:38 Event: ULOG_SUBMIT for Condor Node stage_out_local_local_3_0 (170568.0.0)
+08/01/16 10:14:38 Number of idle job procs: 1
+08/01/16 10:14:38 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:14:38 Of 86 nodes total:
+08/01/16 10:14:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:14:38   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:14:38    29       0        2       0       0         50        5
+08/01/16 10:14:38 0 job proc(s) currently held
+08/01/16 10:14:43 Currently monitoring 1 Condor log file(s)
+08/01/16 10:14:43 Event: ULOG_EXECUTE for Condor Node stage_out_local_local_3_0 (170568.0.0)
+08/01/16 10:14:43 Number of idle job procs: 0
+08/01/16 10:17:09 Currently monitoring 1 Condor log file(s)
+08/01/16 10:17:09 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_2_1 (170567.0.0)
+08/01/16 10:17:09 Number of idle job procs: 0
+08/01/16 10:17:09 Node stage_out_local_local_2_1 job proc (170567.0.0) failed with status 1.
+08/01/16 10:17:09 Node stage_out_local_local_2_1 job completed
+08/01/16 10:17:09 Running POST script of Node stage_out_local_local_2_1...
+08/01/16 10:17:09 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:17:09 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:17:09 Of 86 nodes total:
+08/01/16 10:17:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:17:09   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:17:09    29       0        1       1       0         50        5
+08/01/16 10:17:09 0 job proc(s) currently held
+08/01/16 10:17:09 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170567.0.0)
+08/01/16 10:17:14 Currently monitoring 1 Condor log file(s)
+08/01/16 10:17:14 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_2_1 (170567.0.0)
+08/01/16 10:17:14 POST Script of Node stage_out_local_local_2_1 failed with status 1
+08/01/16 10:17:14 POST for Node stage_out_local_local_2_1 returned 1
+08/01/16 10:17:14 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:17:14 Of 86 nodes total:
+08/01/16 10:17:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:17:14   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:17:14    29       0        1       0       0         50        6
+08/01/16 10:17:14 0 job proc(s) currently held
+08/01/16 10:17:24 Currently monitoring 1 Condor log file(s)
+08/01/16 10:17:24 Event: ULOG_JOB_TERMINATED for Condor Node stage_out_local_local_3_0 (170568.0.0)
+08/01/16 10:17:24 Number of idle job procs: 0
+08/01/16 10:17:24 Node stage_out_local_local_3_0 job proc (170568.0.0) failed with status 1.
+08/01/16 10:17:24 Node stage_out_local_local_3_0 job completed
+08/01/16 10:17:24 Running POST script of Node stage_out_local_local_3_0...
+08/01/16 10:17:24 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:17:24 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:17:24 Of 86 nodes total:
+08/01/16 10:17:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:17:24   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:17:24    29       0        0       1       0         50        6
+08/01/16 10:17:24 0 job proc(s) currently held
+08/01/16 10:17:24 Initializing user log writer for /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/./advanced_bioconductor_workflow-0.dag.nodes.log, (170568.0.0)
+08/01/16 10:17:29 Currently monitoring 1 Condor log file(s)
+08/01/16 10:17:29 Event: ULOG_POST_SCRIPT_TERMINATED for Condor Node stage_out_local_local_3_0 (170568.0.0)
+08/01/16 10:17:29 POST Script of Node stage_out_local_local_3_0 failed with status 1
+08/01/16 10:17:29 POST for Node stage_out_local_local_3_0 returned 1
+08/01/16 10:17:29 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:17:29 Of 86 nodes total:
+08/01/16 10:17:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:17:29   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:17:29    29       0        0       0       0         50        7
+08/01/16 10:17:29 0 job proc(s) currently held
+08/01/16 10:17:29 ERROR: the following job(s) failed:
+08/01/16 10:17:29 ---------------------- Job ----------------------
+08/01/16 10:17:29       Node Name: stage_out_local_local_1_0
+08/01/16 10:17:29            Noop: false
+08/01/16 10:17:29          NodeID: 22
+08/01/16 10:17:29     Node Status: STATUS_ERROR    
+08/01/16 10:17:29 Node return val: 1
+08/01/16 10:17:29           Error: Job exited with status 1 and POST Script failed with status 1 (after 1 node retries)
+08/01/16 10:17:29 Job Submit File: stage_out_local_local_1_0.sub
+08/01/16 10:17:29     POST Script: /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/stage_out_local_local_1_0.out
+08/01/16 10:17:29           Retry: 1
+08/01/16 10:17:29   Condor Job ID: (170551.0.0)
+08/01/16 10:17:29       Q_PARENTS: e.qc1.1_ID0000003, e.qc2.1_ID0000005, e.filters1.1_ID0000007, e.qc1.2_ID0000004, e.qc2.2_ID0000006, <END>
+08/01/16 10:17:29       Q_WAITING: <END>
+08/01/16 10:17:29      Q_CHILDREN: register_local_1_0, clean_up_local_level_5_1, <END>
+08/01/16 10:17:29 ---------------------- Job ----------------------
+08/01/16 10:17:29       Node Name: e.normalize.2_ID0000012
+08/01/16 10:17:29            Noop: false
+08/01/16 10:17:29          NodeID: 25
+08/01/16 10:17:29     Node Status: STATUS_ERROR    
+08/01/16 10:17:29 Node return val: 1
+08/01/16 10:17:29           Error: Job exited with status 1 and POST Script failed with status 1 (after 1 node retries)
+08/01/16 10:17:29 Job Submit File: e.normalize.2_ID0000012.sub
+08/01/16 10:17:29     POST Script: /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/e.normalize.2_ID0000012.out
+08/01/16 10:17:29           Retry: 1
+08/01/16 10:17:29   Condor Job ID: (170559.0.0)
+08/01/16 10:17:29       Q_PARENTS: e.lowabundance1.1_ID0000010, <END>
+08/01/16 10:17:29       Q_WAITING: <END>
+08/01/16 10:17:29      Q_CHILDREN: e.hvgs2_ID0000017, stage_out_local_local_3_1, e.cellCyc1.2_ID0000015, clean_up_local_level_6_0, register_local_3_0, <END>
+08/01/16 10:17:29 ---------------------- Job ----------------------
+08/01/16 10:17:29       Node Name: stage_out_local_local_2_1
+08/01/16 10:17:29            Noop: false
+08/01/16 10:17:29          NodeID: 27
+08/01/16 10:17:29     Node Status: STATUS_ERROR    
+08/01/16 10:17:29 Node return val: 1
+08/01/16 10:17:29           Error: Job exited with status 1 and POST Script failed with status 1 (after 1 node retries)
+08/01/16 10:17:29 Job Submit File: stage_out_local_local_2_1.sub
+08/01/16 10:17:29     POST Script: /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/stage_out_local_local_2_1.out
+08/01/16 10:17:29           Retry: 1
+08/01/16 10:17:29   Condor Job ID: (170567.0.0)
+08/01/16 10:17:29       Q_PARENTS: e.lowabundance1.1_ID0000009, e.lowabundance1.1_ID0000010, <END>
+08/01/16 10:17:29       Q_WAITING: <END>
+08/01/16 10:17:29      Q_CHILDREN: register_local_2_1, clean_up_local_level_6_1, <END>
+08/01/16 10:17:29 ---------------------- Job ----------------------
+08/01/16 10:17:29       Node Name: e.reduction_ID0000013
+08/01/16 10:17:29            Noop: false
+08/01/16 10:17:29          NodeID: 36
+08/01/16 10:17:29     Node Status: STATUS_ERROR    
+08/01/16 10:17:29 Node return val: 1
+08/01/16 10:17:29           Error: Job exited with status 1 and POST Script failed with status 1 (after 1 node retries)
+08/01/16 10:17:29 Job Submit File: e.reduction_ID0000013.sub
+08/01/16 10:17:29     POST Script: /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/e.reduction_ID0000013.out
+08/01/16 10:17:29           Retry: 1
+08/01/16 10:17:29   Condor Job ID: (170564.0.0)
+08/01/16 10:17:29       Q_PARENTS: e.normalize.1_ID0000011, <END>
+08/01/16 10:17:29       Q_WAITING: <END>
+08/01/16 10:17:29      Q_CHILDREN: stage_out_local_local_4_1, stage_out_local_local_4_0, clean_up_local_level_7_0, <END>
+08/01/16 10:17:29 ---------------------- Job ----------------------
+08/01/16 10:17:29       Node Name: stage_out_local_local_3_0
+08/01/16 10:17:29            Noop: false
+08/01/16 10:17:29          NodeID: 37
+08/01/16 10:17:29     Node Status: STATUS_ERROR    
+08/01/16 10:17:29 Node return val: 1
+08/01/16 10:17:29           Error: Job exited with status 1 and POST Script failed with status 1 (after 1 node retries)
+08/01/16 10:17:29 Job Submit File: stage_out_local_local_3_0.sub
+08/01/16 10:17:29     POST Script: /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/stage_out_local_local_3_0.out
+08/01/16 10:17:29           Retry: 1
+08/01/16 10:17:29   Condor Job ID: (170568.0.0)
+08/01/16 10:17:29       Q_PARENTS: e.normalize.1_ID0000011, <END>
+08/01/16 10:17:29       Q_WAITING: <END>
+08/01/16 10:17:29      Q_CHILDREN: register_local_3_0, clean_up_local_level_7_0, <END>
+08/01/16 10:17:29 ---------------------- Job ----------------------
+08/01/16 10:17:29       Node Name: e.cellCyc1.1_ID0000014
+08/01/16 10:17:29            Noop: false
+08/01/16 10:17:29          NodeID: 38
+08/01/16 10:17:29     Node Status: STATUS_ERROR    
+08/01/16 10:17:29 Node return val: 1
+08/01/16 10:17:29           Error: Job exited with status 1 and POST Script failed with status 1 (after 1 node retries)
+08/01/16 10:17:29 Job Submit File: e.cellCyc1.1_ID0000014.sub
+08/01/16 10:17:29     POST Script: /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/e.cellCyc1.1_ID0000014.out
+08/01/16 10:17:29           Retry: 1
+08/01/16 10:17:29   Condor Job ID: (170565.0.0)
+08/01/16 10:17:29       Q_PARENTS: e.normalize.1_ID0000011, <END>
+08/01/16 10:17:29       Q_WAITING: <END>
+08/01/16 10:17:29      Q_CHILDREN: stage_out_local_local_4_1, clean_up_local_level_7_0, <END>
+08/01/16 10:17:29 ---------------------- Job ----------------------
+08/01/16 10:17:29       Node Name: e.hvgs1_ID0000016
+08/01/16 10:17:29            Noop: false
+08/01/16 10:17:29          NodeID: 40
+08/01/16 10:17:29     Node Status: STATUS_ERROR    
+08/01/16 10:17:29 Node return val: 1
+08/01/16 10:17:29           Error: Job exited with status 1 and POST Script failed with status 1 (after 1 node retries)
+08/01/16 10:17:29 Job Submit File: e.hvgs1_ID0000016.sub
+08/01/16 10:17:29     POST Script: /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0003/e.hvgs1_ID0000016.out
+08/01/16 10:17:29           Retry: 1
+08/01/16 10:17:29   Condor Job ID: (170566.0.0)
+08/01/16 10:17:29       Q_PARENTS: e.normalize.1_ID0000011, <END>
+08/01/16 10:17:29       Q_WAITING: <END>
+08/01/16 10:17:29      Q_CHILDREN: stage_out_local_local_4_1, stage_out_local_local_4_0, clean_up_local_level_7_0, e.logExp1_ID0000018, register_local_4_1, e.corPairs1_ID0000020, <END>
+08/01/16 10:17:29 ---------------------------------------	<END>
+08/01/16 10:17:29 Aborting DAG...
+08/01/16 10:17:29 Writing Rescue DAG to advanced_bioconductor_workflow-0.dag.rescue001...
+08/01/16 10:17:29 Removing submitted jobs...
+08/01/16 10:17:29 Removing any/all submitted Condor jobs...
+08/01/16 10:17:29 Running: /usr/bin/condor_rm -const DAGManJobId' '=?=' '170525
+08/01/16 10:17:29 Note: 0 total job deferrals because of -MaxJobs limit (0)
+08/01/16 10:17:29 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+08/01/16 10:17:29 Note: 0 total job deferrals because of node category throttles
+08/01/16 10:17:29 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+08/01/16 10:17:29 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+08/01/16 10:17:29 DAG status: 2 (DAG_STATUS_NODE_FAILED)
+08/01/16 10:17:29 Of 86 nodes total:
+08/01/16 10:17:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+08/01/16 10:17:29   ===     ===      ===     ===     ===        ===      ===
+08/01/16 10:17:29    29       0        0       0       0         50        7
+08/01/16 10:17:29 0 job proc(s) currently held
+08/01/16 10:17:29 Wrote metrics file advanced_bioconductor_workflow-0.dag.metrics.
+08/01/16 10:17:29 Reporting metrics to Pegasus metrics server(s); output is in advanced_bioconductor_workflow-0.dag.metrics.out.
+08/01/16 10:17:29 Running command </usr/libexec/condor/condor_dagman_metrics_reporter -f advanced_bioconductor_workflow-0.dag.metrics -t 100>
+08/01/16 10:17:29 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+08/01/16 10:17:29 **** condor_scheduniv_exec.170525.0 (condor_DAGMAN) pid 25878 EXITING WITH STATUS 1

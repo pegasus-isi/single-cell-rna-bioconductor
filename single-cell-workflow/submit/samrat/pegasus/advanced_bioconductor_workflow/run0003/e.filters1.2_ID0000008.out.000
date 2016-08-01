@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invocation xmlns="http://pegasus.isi.edu/schema/invocation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pegasus.isi.edu/schema/invocation http://pegasus.isi.edu/schema/iv-2.3.xsd" version="2.3" start="2016-08-01T10:04:10.346-07:00" duration="342.662" transformation="e.filters1.2" derivation="ID0000008" resource="local" wf-label="advanced_bioconductor_workflow" wf-stamp="2016-08-01T09:57:35-07:00" interface="eth0" hostaddr="128.9.132.56" hostname="dragonfly.isi.edu" pid="26851" uid="6577" user="samrat" gid="627" group="pegasus" umask="0022">
+  <mainjob start="2016-08-01T10:04:10.463-07:00" duration="342.536" pid="26854">
+    <usage utime="85.941" stime="6.179" maxrss="3534912" minflt="486886" majflt="26841" nswap="0" inblock="1566976" outblock="141224" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="29004" nivcsw="12806"/>
+    <status raw="0"><regular exitcode="0"/></status>
+    <statcall error="0">
+      <file name="/scratch/r-home/advanced_workflow/filters.R">23212F7573722F62696E2F5273637269</file>
+      <statinfo mode="0100755" size="1034" inode="1189783" nlink="1" blksize="4096" blocks="8" mtime="2016-07-26T11:26:16-07:00" atime="2016-08-01T09:59:28-07:00" ctime="2016-07-26T11:26:16-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+    </statcall>
+    <argument-vector>
+      <arg nr="1">sce-countLoading.RData</arg>
+      <arg nr="2">sce-filters-2.RData</arg>
+      <arg nr="3">filtered-cells-2.csv</arg>
+    </argument-vector>
+  </mainjob>
+  <jobids condor="170539.0"/>
+  <cwd>/scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003</cwd>
+  <usage utime="0.005" stime="0.023" maxrss="1236" minflt="941" majflt="4" nswap="0" inblock="504" outblock="0" msgsnd="0" msgrcv="0" nsignals="0" nvcsw="11" nivcsw="8"/>
+  <machine page-size="4096">
+    <stamp>2016-08-01T10:04:10.346-07:00</stamp>
+    <uname system="linux" nodename="dragonfly.isi.edu" release="2.6.32-642.1.1.el6.x86_64" machine="x86_64">#1 SMP Tue May 31 21:57:07 UTC 2016</uname>
+    <linux>
+      <ram total="3921792" free="3252680" shared="0" buffer="10572"/>
+      <swap total="4063228" free="3914712"/>
+      <boot idle="948501.220">2016-07-29T15:58:58.906-07:00</boot>
+      <cpu count="4" speed="1603" vendor="GenuineIntel">Intel(R) Core(TM)2 Quad CPU Q6600 @ 2.40GHz</cpu>
+      <load min1="3.60" min5="3.11" min15="1.62"/>
+      <procs total="216" running="2" sleeping="213" waiting="1" vmsize="17726740" rss="359400"/>
+      <task total="312" running="2" sleeping="309" waiting="1"/>
+    </linux>
+  </machine>
+  <statcall error="0" id="final" lfn="sce-filters-2.RData">
+    <file name="/scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/sce-filters-2.RData">1F8B0800000000000003ECF9EDAEF55B</file>
+    <statinfo mode="0100644" size="72286608" inode="1198191" nlink="1" blksize="4096" blocks="141192" mtime="2016-08-01T10:09:49-07:00" atime="2016-08-01T10:08:56-07:00" ctime="2016-08-01T10:09:49-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+  <statcall error="0" id="final" lfn="filtered-cells-2.csv">
+    <file name="/scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/filtered-cells-2.csv">2242794C696253697A65222022427946</file>
+    <statinfo mode="0100644" size="79" inode="1198193" nlink="1" blksize="4096" blocks="8" mtime="2016-08-01T10:09:50-07:00" atime="2016-08-01T10:09:50-07:00" ctime="2016-08-01T10:09:50-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+  <statcall error="0" id="stdin">
+    <file name="/dev/null"/>
+    <statinfo mode="020666" size="0" inode="3857" nlink="1" blksize="4096" blocks="0" mtime="2016-07-29T15:59:03-07:00" atime="2016-07-29T15:59:03-07:00" ctime="2016-07-29T15:59:03-07:00" uid="0" user="root" gid="0" group="root"/>
+  </statcall>
+  <statcall error="0" id="stdout">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_26849/ks.out.Q0GCdg" descriptor="3"/>
+    <statinfo mode="0100600" size="0" inode="1981904" nlink="1" blksize="4096" blocks="0" mtime="2016-08-01T10:04:10-07:00" atime="2016-08-01T10:04:10-07:00" ctime="2016-08-01T10:04:10-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+  </statcall>
+  <statcall error="0" id="stderr">
+    <temporary name="/var/lib/condor/spool/local_univ_execute/dir_26849/ks.err.D9PjbU" descriptor="4"/>
+    <statinfo mode="0100600" size="3102" inode="1981905" nlink="1" blksize="4096" blocks="8" mtime="2016-08-01T10:04:29-07:00" atime="2016-08-01T10:04:10-07:00" ctime="2016-08-01T10:04:29-07:00" uid="6577" user="samrat" gid="627" group="pegasus"/>
+    <data>Loading required package: BiocParallel
+Loading required package: methods
+Loading required package: scater
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: &apos;BiocGenerics&apos;
+
+The following objects are masked from &apos;package:parallel&apos;:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from &apos;package:stats&apos;:
+
+    IQR, mad, xtabs
+
+The following objects are masked from &apos;package:base&apos;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, append,
+    as.data.frame, cbind, colnames, do.call, duplicated, eval, evalq,
+    get, grep, grepl, intersect, is.unsorted, lapply, lengths, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int, rank,
+    rbind, rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &apos;browseVignettes()&apos;. To cite Bioconductor, see
+    &apos;citation(&quot;Biobase&quot;)&apos;, and for packages &apos;citation(&quot;pkgname&quot;)&apos;.
+
+Loading required package: ggplot2
+
+Attaching package: &apos;scater&apos;
+
+The following object is masked from &apos;package:stats&apos;:
+
+    filter
+
+Loading required package: limma
+
+Attaching package: &apos;limma&apos;
+
+The following object is masked from &apos;package:scater&apos;:
+
+    plotMDS
+
+The following object is masked from &apos;package:BiocGenerics&apos;:
+
+    plotMA
+
+
+Attaching package: &apos;edgeR&apos;
+
+The following object is masked from &apos;package:scater&apos;:
+
+    cpm
+
+Loading required package: sgeostat
+sROC 0.1-2 loaded
+
+Attaching package: &apos;gplots&apos;
+
+The following object is masked from &apos;package:stats&apos;:
+
+    lowess
+
+Loading required package: R.oo
+Loading required package: R.methodsS3
+R.methodsS3 v1.7.1 (2016-02-15) successfully loaded. See ?R.methodsS3 for help.
+R.oo v1.20.0 (2016-02-17) successfully loaded. See ?R.oo for help.
+
+Attaching package: &apos;R.oo&apos;
+
+The following objects are masked from &apos;package:methods&apos;:
+
+    getClasses, getMethods
+
+The following objects are masked from &apos;package:base&apos;:
+
+    attach, detach, gc, load, save
+
+R.utils v2.3.0 (2016-04-13) successfully loaded. See ?R.utils for help.
+
+Attaching package: &apos;R.utils&apos;
+
+The following object is masked from &apos;package:utils&apos;:
+
+    timestamp
+
+The following objects are masked from &apos;package:base&apos;:
+
+    cat, commandArgs, getOption, inherits, isOpen, parse, warnings
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: &apos;S4Vectors&apos;
+
+The following object is masked from &apos;package:gplots&apos;:
+
+    space
+
+The following object is masked from &apos;package:scater&apos;:
+
+    rename
+
+The following objects are masked from &apos;package:base&apos;:
+
+    colMeans, colSums, expand.grid, rowMeans, rowSums
+
+
+Attaching package: &apos;IRanges&apos;
+
+The following object is masked from &apos;package:R.oo&apos;:
+
+    trim
+
+
+Loading required package: GenomicFeatures
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+</data>
+  </statcall>
+</invocation>

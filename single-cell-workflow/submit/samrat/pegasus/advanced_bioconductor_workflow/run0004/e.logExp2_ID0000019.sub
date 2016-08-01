@@ -1,0 +1,40 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : advanced_bioconductor_workflow, Index = 0, Count = 1
+# SUBMIT FILE NAME : e.logExp2_ID0000019.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=9ff49b0e-c6a8-4608-93e9-0e114b8641d3 PEGASUS_WF_LABEL=advanced_bioconductor_workflow PEGASUS_DAG_JOB_ID=e.logExp2_ID0000019 PEGASUS_SITE=local "
+arguments = " -n e.logExp2 -N ID0000019 -R local  -s normalized-log-expression-2.jpg=normalized-log-expression-2.jpg -s correlated-genes-2.csv=correlated-genes-2.csv -s log-expression-2.jpg=log-expression-2.jpg -s brain-hvg.tsv=brain-hvg.tsv -s sig.cor.RData=sig.cor.RData -s var.cor.RData=var.cor.RData -s top-hvgs-2.csv=top-hvgs-2.csv -s gene-pairs-2.csv=gene-pairs-2.csv -s brain-cor.tsv=brain-cor.tsv -L advanced_bioconductor_workflow -T 2016-08-01T10:22:29-07:00 /scratch/r-home/advanced_workflow/log-expression-2.R  hvgs-setup-2.sce.RData "
+copy_to_spool = false
+error = /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.logExp2_ID0000019.err
+executable = /usr/bin/../bin/pegasus-kickstart
+initialdir = /scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004
+log = /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/advanced_bioconductor_workflow-0.log
+notification = NEVER
+output = /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.logExp2_ID0000019.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 70
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "9ff49b0e-c6a8-4608-93e9-0e114b8641d3"
++pegasus_wf_uuid = "9ff49b0e-c6a8-4608-93e9-0e114b8641d3"
++pegasus_version = "4.6.1"
++pegasus_wf_name = "advanced_bioconductor_workflow-0"
++pegasus_wf_time = "20160801T102233-0700"
++pegasus_wf_xformation = "e.logExp2"
++pegasus_wf_dax_job_id = "ID0000019"
++pegasus_wf_dag_job_id = "e.logExp2_ID0000019"
++pegasus_job_class = 1
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

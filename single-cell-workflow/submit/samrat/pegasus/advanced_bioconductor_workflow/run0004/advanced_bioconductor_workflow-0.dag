@@ -1,0 +1,593 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG advanced_bioconductor_workflow
+# Index = 0, Count = 1
+######################################################################
+MAXJOBS registration 1
+MAXJOBS cleanup 4
+
+JOB create_dir_advanced_bioconductor_workflow_0_local create_dir_advanced_bioconductor_workflow_0_local.sub
+SCRIPT POST create_dir_advanced_bioconductor_workflow_0_local /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/create_dir_advanced_bioconductor_workflow_0_local.out
+RETRY create_dir_advanced_bioconductor_workflow_0_local 1
+
+JOB stage_in_remote_local_0_1 stage_in_remote_local_0_1.sub
+SCRIPT POST stage_in_remote_local_0_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_in_remote_local_0_1.out
+RETRY stage_in_remote_local_0_1 1
+CATEGORY stage_in_remote_local_0_1 stage-in
+
+JOB stage_in_remote_local_0_0 stage_in_remote_local_0_0.sub
+SCRIPT POST stage_in_remote_local_0_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_in_remote_local_0_0.out
+RETRY stage_in_remote_local_0_0 1
+CATEGORY stage_in_remote_local_0_0 stage-in
+
+JOB stage_in_remote_local_8_0 stage_in_remote_local_8_0.sub
+SCRIPT POST stage_in_remote_local_8_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_in_remote_local_8_0.out
+RETRY stage_in_remote_local_8_0 1
+CATEGORY stage_in_remote_local_8_0 stage-in
+
+JOB stage_in_remote_local_7_0 stage_in_remote_local_7_0.sub
+SCRIPT POST stage_in_remote_local_7_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_in_remote_local_7_0.out
+RETRY stage_in_remote_local_7_0 1
+CATEGORY stage_in_remote_local_7_0 stage-in
+
+JOB e.preprocess_ID0000001 e.preprocess_ID0000001.sub
+SCRIPT POST e.preprocess_ID0000001 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.preprocess_ID0000001.out
+RETRY e.preprocess_ID0000001 1
+
+JOB e.count_ID0000002 e.count_ID0000002.sub
+SCRIPT POST e.count_ID0000002 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.count_ID0000002.out
+RETRY e.count_ID0000002 1
+
+JOB e.qc1.1_ID0000003 e.qc1.1_ID0000003.sub
+SCRIPT POST e.qc1.1_ID0000003 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.qc1.1_ID0000003.out
+RETRY e.qc1.1_ID0000003 1
+
+JOB e.qc2.1_ID0000005 e.qc2.1_ID0000005.sub
+SCRIPT POST e.qc2.1_ID0000005 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.qc2.1_ID0000005.out
+RETRY e.qc2.1_ID0000005 1
+
+JOB e.filters1.1_ID0000007 e.filters1.1_ID0000007.sub
+SCRIPT POST e.filters1.1_ID0000007 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.filters1.1_ID0000007.out
+RETRY e.filters1.1_ID0000007 1
+
+JOB stage_out_local_local_0_1 stage_out_local_local_0_1.sub
+SCRIPT POST stage_out_local_local_0_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_0_1.out
+RETRY stage_out_local_local_0_1 1
+CATEGORY stage_out_local_local_0_1 stage-out
+
+JOB clean_up_local_level_3_1 clean_up_local_level_3_1.sub
+SCRIPT POST clean_up_local_level_3_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_3_1.out
+RETRY clean_up_local_level_3_1 1
+CATEGORY clean_up_local_level_3_1 cleanup
+
+JOB e.filters1.2_ID0000008 e.filters1.2_ID0000008.sub
+SCRIPT POST e.filters1.2_ID0000008 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.filters1.2_ID0000008.out
+RETRY e.filters1.2_ID0000008 1
+
+JOB e.qc1.2_ID0000004 e.qc1.2_ID0000004.sub
+SCRIPT POST e.qc1.2_ID0000004 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.qc1.2_ID0000004.out
+RETRY e.qc1.2_ID0000004 1
+
+JOB clean_up_local_level_3_0 clean_up_local_level_3_0.sub
+SCRIPT POST clean_up_local_level_3_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_3_0.out
+RETRY clean_up_local_level_3_0 1
+CATEGORY clean_up_local_level_3_0 cleanup
+
+JOB stage_out_local_local_0_0 stage_out_local_local_0_0.sub
+SCRIPT POST stage_out_local_local_0_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_0_0.out
+RETRY stage_out_local_local_0_0 1
+CATEGORY stage_out_local_local_0_0 stage-out
+
+JOB e.qc2.2_ID0000006 e.qc2.2_ID0000006.sub
+SCRIPT POST e.qc2.2_ID0000006 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.qc2.2_ID0000006.out
+RETRY e.qc2.2_ID0000006 1
+
+JOB e.lowabundance1.1_ID0000009 e.lowabundance1.1_ID0000009.sub
+SCRIPT POST e.lowabundance1.1_ID0000009 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.lowabundance1.1_ID0000009.out
+RETRY e.lowabundance1.1_ID0000009 1
+
+JOB register_local_0_1 register_local_0_1.sub
+SCRIPT POST register_local_0_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_0_1.out
+RETRY register_local_0_1 1
+CATEGORY register_local_0_1 registration
+
+JOB e.lowabundance1.1_ID0000010 e.lowabundance1.1_ID0000010.sub
+SCRIPT POST e.lowabundance1.1_ID0000010 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.lowabundance1.1_ID0000010.out
+RETRY e.lowabundance1.1_ID0000010 1
+
+JOB register_local_0_0 register_local_0_0.sub
+SCRIPT POST register_local_0_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_0_0.out
+RETRY register_local_0_0 1
+CATEGORY register_local_0_0 registration
+
+JOB stage_out_local_local_1_1 stage_out_local_local_1_1.sub
+SCRIPT POST stage_out_local_local_1_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_1_1.out
+RETRY stage_out_local_local_1_1 1
+CATEGORY stage_out_local_local_1_1 stage-out
+
+JOB stage_out_local_local_1_0 stage_out_local_local_1_0.sub
+SCRIPT POST stage_out_local_local_1_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_1_0.out
+RETRY stage_out_local_local_1_0 1
+CATEGORY stage_out_local_local_1_0 stage-out
+
+JOB clean_up_local_level_4_0 clean_up_local_level_4_0.sub
+SCRIPT POST clean_up_local_level_4_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_4_0.out
+RETRY clean_up_local_level_4_0 1
+CATEGORY clean_up_local_level_4_0 cleanup
+
+JOB clean_up_local_level_4_1 clean_up_local_level_4_1.sub
+SCRIPT POST clean_up_local_level_4_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_4_1.out
+RETRY clean_up_local_level_4_1 1
+CATEGORY clean_up_local_level_4_1 cleanup
+
+JOB e.normalize.2_ID0000012 e.normalize.2_ID0000012.sub
+SCRIPT POST e.normalize.2_ID0000012 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.normalize.2_ID0000012.out
+RETRY e.normalize.2_ID0000012 1
+
+JOB e.normalize.1_ID0000011 e.normalize.1_ID0000011.sub
+SCRIPT POST e.normalize.1_ID0000011 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.normalize.1_ID0000011.out
+RETRY e.normalize.1_ID0000011 1
+
+JOB stage_out_local_local_2_1 stage_out_local_local_2_1.sub
+SCRIPT POST stage_out_local_local_2_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_2_1.out
+RETRY stage_out_local_local_2_1 1
+CATEGORY stage_out_local_local_2_1 stage-out
+
+JOB stage_out_local_local_2_0 stage_out_local_local_2_0.sub
+SCRIPT POST stage_out_local_local_2_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_2_0.out
+RETRY stage_out_local_local_2_0 1
+CATEGORY stage_out_local_local_2_0 stage-out
+
+JOB register_local_1_1 register_local_1_1.sub
+SCRIPT POST register_local_1_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_1_1.out
+RETRY register_local_1_1 1
+CATEGORY register_local_1_1 registration
+
+JOB clean_up_local_level_5_0 clean_up_local_level_5_0.sub
+SCRIPT POST clean_up_local_level_5_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_5_0.out
+RETRY clean_up_local_level_5_0 1
+CATEGORY clean_up_local_level_5_0 cleanup
+
+JOB register_local_1_0 register_local_1_0.sub
+SCRIPT POST register_local_1_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_1_0.out
+RETRY register_local_1_0 1
+CATEGORY register_local_1_0 registration
+
+JOB clean_up_local_level_5_1 clean_up_local_level_5_1.sub
+SCRIPT POST clean_up_local_level_5_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_5_1.out
+RETRY clean_up_local_level_5_1 1
+CATEGORY clean_up_local_level_5_1 cleanup
+
+JOB e.hvgs2_ID0000017 e.hvgs2_ID0000017.sub
+SCRIPT POST e.hvgs2_ID0000017 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.hvgs2_ID0000017.out
+RETRY e.hvgs2_ID0000017 1
+
+JOB stage_out_local_local_3_1 stage_out_local_local_3_1.sub
+SCRIPT POST stage_out_local_local_3_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_3_1.out
+RETRY stage_out_local_local_3_1 1
+CATEGORY stage_out_local_local_3_1 stage-out
+
+JOB e.cellCyc1.2_ID0000015 e.cellCyc1.2_ID0000015.sub
+SCRIPT POST e.cellCyc1.2_ID0000015 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.cellCyc1.2_ID0000015.out
+RETRY e.cellCyc1.2_ID0000015 1
+
+JOB e.reduction_ID0000013 e.reduction_ID0000013.sub
+SCRIPT POST e.reduction_ID0000013 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.reduction_ID0000013.out
+RETRY e.reduction_ID0000013 1
+
+JOB stage_out_local_local_3_0 stage_out_local_local_3_0.sub
+SCRIPT POST stage_out_local_local_3_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_3_0.out
+RETRY stage_out_local_local_3_0 1
+CATEGORY stage_out_local_local_3_0 stage-out
+
+JOB e.cellCyc1.1_ID0000014 e.cellCyc1.1_ID0000014.sub
+SCRIPT POST e.cellCyc1.1_ID0000014 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.cellCyc1.1_ID0000014.out
+RETRY e.cellCyc1.1_ID0000014 1
+
+JOB clean_up_local_level_6_0 clean_up_local_level_6_0.sub
+SCRIPT POST clean_up_local_level_6_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_6_0.out
+RETRY clean_up_local_level_6_0 1
+CATEGORY clean_up_local_level_6_0 cleanup
+
+JOB e.hvgs1_ID0000016 e.hvgs1_ID0000016.sub
+SCRIPT POST e.hvgs1_ID0000016 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.hvgs1_ID0000016.out
+RETRY e.hvgs1_ID0000016 1
+
+JOB register_local_2_1 register_local_2_1.sub
+SCRIPT POST register_local_2_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_2_1.out
+RETRY register_local_2_1 1
+CATEGORY register_local_2_1 registration
+
+JOB register_local_2_0 register_local_2_0.sub
+SCRIPT POST register_local_2_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_2_0.out
+RETRY register_local_2_0 1
+CATEGORY register_local_2_0 registration
+
+JOB clean_up_local_level_6_1 clean_up_local_level_6_1.sub
+SCRIPT POST clean_up_local_level_6_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_6_1.out
+RETRY clean_up_local_level_6_1 1
+CATEGORY clean_up_local_level_6_1 cleanup
+
+JOB e.logExp2_ID0000019 e.logExp2_ID0000019.sub
+SCRIPT POST e.logExp2_ID0000019 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.logExp2_ID0000019.out
+RETRY e.logExp2_ID0000019 1
+
+JOB register_local_3_1 register_local_3_1.sub
+SCRIPT POST register_local_3_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_3_1.out
+RETRY register_local_3_1 1
+CATEGORY register_local_3_1 registration
+
+JOB register_local_3_0 register_local_3_0.sub
+SCRIPT POST register_local_3_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_3_0.out
+RETRY register_local_3_0 1
+CATEGORY register_local_3_0 registration
+
+JOB stage_out_local_local_4_1 stage_out_local_local_4_1.sub
+SCRIPT POST stage_out_local_local_4_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_4_1.out
+RETRY stage_out_local_local_4_1 1
+CATEGORY stage_out_local_local_4_1 stage-out
+
+JOB stage_out_local_local_4_0 stage_out_local_local_4_0.sub
+SCRIPT POST stage_out_local_local_4_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_4_0.out
+RETRY stage_out_local_local_4_0 1
+CATEGORY stage_out_local_local_4_0 stage-out
+
+JOB clean_up_local_level_7_0 clean_up_local_level_7_0.sub
+SCRIPT POST clean_up_local_level_7_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_7_0.out
+RETRY clean_up_local_level_7_0 1
+CATEGORY clean_up_local_level_7_0 cleanup
+
+JOB e.logExp1_ID0000018 e.logExp1_ID0000018.sub
+SCRIPT POST e.logExp1_ID0000018 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.logExp1_ID0000018.out
+RETRY e.logExp1_ID0000018 1
+
+JOB e.corPairs2_ID0000021 e.corPairs2_ID0000021.sub
+SCRIPT POST e.corPairs2_ID0000021 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.corPairs2_ID0000021.out
+RETRY e.corPairs2_ID0000021 1
+
+JOB register_local_4_1 register_local_4_1.sub
+SCRIPT POST register_local_4_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_4_1.out
+RETRY register_local_4_1 1
+CATEGORY register_local_4_1 registration
+
+JOB register_local_4_0 register_local_4_0.sub
+SCRIPT POST register_local_4_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_4_0.out
+RETRY register_local_4_0 1
+CATEGORY register_local_4_0 registration
+
+JOB stage_out_local_local_5_1 stage_out_local_local_5_1.sub
+SCRIPT POST stage_out_local_local_5_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_5_1.out
+RETRY stage_out_local_local_5_1 1
+CATEGORY stage_out_local_local_5_1 stage-out
+
+JOB stage_out_local_local_5_0 stage_out_local_local_5_0.sub
+SCRIPT POST stage_out_local_local_5_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_5_0.out
+RETRY stage_out_local_local_5_0 1
+CATEGORY stage_out_local_local_5_0 stage-out
+
+JOB clean_up_local_level_8_0 clean_up_local_level_8_0.sub
+SCRIPT POST clean_up_local_level_8_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_8_0.out
+RETRY clean_up_local_level_8_0 1
+CATEGORY clean_up_local_level_8_0 cleanup
+
+JOB clean_up_local_level_8_1 clean_up_local_level_8_1.sub
+SCRIPT POST clean_up_local_level_8_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_8_1.out
+RETRY clean_up_local_level_8_1 1
+CATEGORY clean_up_local_level_8_1 cleanup
+
+JOB e.corPairs1_ID0000020 e.corPairs1_ID0000020.sub
+SCRIPT POST e.corPairs1_ID0000020 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.corPairs1_ID0000020.out
+RETRY e.corPairs1_ID0000020 1
+
+JOB e.log_ID0000025 e.log_ID0000025.sub
+SCRIPT POST e.log_ID0000025 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.log_ID0000025.out
+RETRY e.log_ID0000025 1
+
+JOB e.lrt_ID0000024 e.lrt_ID0000024.sub
+SCRIPT POST e.lrt_ID0000024 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.lrt_ID0000024.out
+RETRY e.lrt_ID0000024 1
+
+JOB register_local_5_1 register_local_5_1.sub
+SCRIPT POST register_local_5_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_5_1.out
+RETRY register_local_5_1 1
+CATEGORY register_local_5_1 registration
+
+JOB clean_up_local_level_9_0 clean_up_local_level_9_0.sub
+SCRIPT POST clean_up_local_level_9_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_9_0.out
+RETRY clean_up_local_level_9_0 1
+CATEGORY clean_up_local_level_9_0 cleanup
+
+JOB register_local_5_0 register_local_5_0.sub
+SCRIPT POST register_local_5_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_5_0.out
+RETRY register_local_5_0 1
+CATEGORY register_local_5_0 registration
+
+JOB stage_out_local_local_6_1 stage_out_local_local_6_1.sub
+SCRIPT POST stage_out_local_local_6_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_6_1.out
+RETRY stage_out_local_local_6_1 1
+CATEGORY stage_out_local_local_6_1 stage-out
+
+JOB stage_out_local_local_6_0 stage_out_local_local_6_0.sub
+SCRIPT POST stage_out_local_local_6_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_6_0.out
+RETRY stage_out_local_local_6_0 1
+CATEGORY stage_out_local_local_6_0 stage-out
+
+JOB e.cellBlock_ID0000022 e.cellBlock_ID0000022.sub
+SCRIPT POST e.cellBlock_ID0000022 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.cellBlock_ID0000022.out
+RETRY e.cellBlock_ID0000022 1
+
+JOB clean_up_local_level_9_1 clean_up_local_level_9_1.sub
+SCRIPT POST clean_up_local_level_9_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_9_1.out
+RETRY clean_up_local_level_9_1 1
+CATEGORY clean_up_local_level_9_1 cleanup
+
+JOB clean_up_local_level_10_1 clean_up_local_level_10_1.sub
+SCRIPT POST clean_up_local_level_10_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_10_1.out
+RETRY clean_up_local_level_10_1 1
+CATEGORY clean_up_local_level_10_1 cleanup
+
+JOB register_local_6_1 register_local_6_1.sub
+SCRIPT POST register_local_6_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_6_1.out
+RETRY register_local_6_1 1
+CATEGORY register_local_6_1 registration
+
+JOB register_local_6_0 register_local_6_0.sub
+SCRIPT POST register_local_6_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_6_0.out
+RETRY register_local_6_0 1
+CATEGORY register_local_6_0 registration
+
+JOB stage_out_local_local_7_1 stage_out_local_local_7_1.sub
+SCRIPT POST stage_out_local_local_7_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_7_1.out
+RETRY stage_out_local_local_7_1 1
+CATEGORY stage_out_local_local_7_1 stage-out
+
+JOB stage_out_local_local_7_0 stage_out_local_local_7_0.sub
+SCRIPT POST stage_out_local_local_7_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_7_0.out
+RETRY stage_out_local_local_7_0 1
+CATEGORY stage_out_local_local_7_0 stage-out
+
+JOB clean_up_local_level_10_0 clean_up_local_level_10_0.sub
+SCRIPT POST clean_up_local_level_10_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_10_0.out
+RETRY clean_up_local_level_10_0 1
+CATEGORY clean_up_local_level_10_0 cleanup
+
+JOB e.extract_ID0000023 e.extract_ID0000023.sub
+SCRIPT POST e.extract_ID0000023 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/e.extract_ID0000023.out
+RETRY e.extract_ID0000023 1
+
+JOB register_local_7_1 register_local_7_1.sub
+SCRIPT POST register_local_7_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_7_1.out
+RETRY register_local_7_1 1
+CATEGORY register_local_7_1 registration
+
+JOB clean_up_local_level_11_0 clean_up_local_level_11_0.sub
+SCRIPT POST clean_up_local_level_11_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_11_0.out
+RETRY clean_up_local_level_11_0 1
+CATEGORY clean_up_local_level_11_0 cleanup
+
+JOB register_local_7_0 register_local_7_0.sub
+SCRIPT POST register_local_7_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_7_0.out
+RETRY register_local_7_0 1
+CATEGORY register_local_7_0 registration
+
+JOB stage_out_local_local_8_0 stage_out_local_local_8_0.sub
+SCRIPT POST stage_out_local_local_8_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_8_0.out
+RETRY stage_out_local_local_8_0 1
+CATEGORY stage_out_local_local_8_0 stage-out
+
+JOB clean_up_local_level_11_1 clean_up_local_level_11_1.sub
+SCRIPT POST clean_up_local_level_11_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_11_1.out
+RETRY clean_up_local_level_11_1 1
+CATEGORY clean_up_local_level_11_1 cleanup
+
+JOB stage_out_local_local_8_1 stage_out_local_local_8_1.sub
+SCRIPT POST stage_out_local_local_8_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/stage_out_local_local_8_1.out
+RETRY stage_out_local_local_8_1 1
+CATEGORY stage_out_local_local_8_1 stage-out
+
+JOB clean_up_local_level_12_0 clean_up_local_level_12_0.sub
+SCRIPT POST clean_up_local_level_12_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_12_0.out
+RETRY clean_up_local_level_12_0 1
+CATEGORY clean_up_local_level_12_0 cleanup
+
+JOB register_local_8_0 register_local_8_0.sub
+SCRIPT POST register_local_8_0 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_8_0.out
+RETRY register_local_8_0 1
+CATEGORY register_local_8_0 registration
+
+JOB clean_up_local_level_12_1 clean_up_local_level_12_1.sub
+SCRIPT POST clean_up_local_level_12_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/clean_up_local_level_12_1.out
+RETRY clean_up_local_level_12_1 1
+CATEGORY clean_up_local_level_12_1 cleanup
+
+JOB register_local_8_1 register_local_8_1.sub
+SCRIPT POST register_local_8_1 /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/register_local_8_1.out
+RETRY register_local_8_1 1
+CATEGORY register_local_8_1 registration
+
+JOB cleanup_advanced_bioconductor_workflow_0_local cleanup_advanced_bioconductor_workflow_0_local.sub
+SCRIPT POST cleanup_advanced_bioconductor_workflow_0_local /usr/bin/pegasus-exitcode   /scratch/advanced_bioconductor_workflow/submit/samrat/pegasus/advanced_bioconductor_workflow/run0004/cleanup_advanced_bioconductor_workflow_0_local.out
+RETRY cleanup_advanced_bioconductor_workflow_0_local 1
+
+PARENT  stage_in_remote_local_0_1 CHILD e.count_ID0000002
+PARENT  stage_in_remote_local_0_1 CHILD e.preprocess_ID0000001
+PARENT  stage_in_remote_local_0_0 CHILD e.count_ID0000002
+PARENT  e.count_ID0000002 CHILD e.filters1.2_ID0000008
+PARENT  e.count_ID0000002 CHILD e.qc1.2_ID0000004
+PARENT  e.count_ID0000002 CHILD register_local_0_1
+PARENT  e.count_ID0000002 CHILD clean_up_local_level_3_0
+PARENT  e.count_ID0000002 CHILD stage_out_local_local_0_0
+PARENT  e.count_ID0000002 CHILD e.qc2.2_ID0000006
+PARENT  clean_up_local_level_4_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_4_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_6_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_6_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  e.lrt_ID0000024 CHILD stage_out_local_local_7_1
+PARENT  e.lrt_ID0000024 CHILD stage_out_local_local_7_0
+PARENT  e.lrt_ID0000024 CHILD clean_up_local_level_10_1
+PARENT  clean_up_local_level_8_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_8_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  e.extract_ID0000023 CHILD stage_out_local_local_8_0
+PARENT  e.extract_ID0000023 CHILD clean_up_local_level_11_1
+PARENT  e.extract_ID0000023 CHILD stage_out_local_local_8_1
+PARENT  e.qc1.1_ID0000003 CHILD stage_out_local_local_1_1
+PARENT  e.qc1.1_ID0000003 CHILD stage_out_local_local_1_0
+PARENT  e.qc1.1_ID0000003 CHILD clean_up_local_level_4_0
+PARENT  e.qc2.1_ID0000005 CHILD stage_out_local_local_1_1
+PARENT  e.qc2.1_ID0000005 CHILD stage_out_local_local_1_0
+PARENT  e.qc2.1_ID0000005 CHILD clean_up_local_level_4_0
+PARENT  e.filters1.2_ID0000008 CHILD register_local_1_0
+PARENT  e.filters1.2_ID0000008 CHILD stage_out_local_local_1_1
+PARENT  e.filters1.2_ID0000008 CHILD clean_up_local_level_4_0
+PARENT  e.filters1.2_ID0000008 CHILD e.lowabundance1.1_ID0000010
+PARENT  e.filters1.1_ID0000007 CHILD e.lowabundance1.1_ID0000009
+PARENT  e.filters1.1_ID0000007 CHILD register_local_1_1
+PARENT  e.filters1.1_ID0000007 CHILD stage_out_local_local_1_0
+PARENT  e.filters1.1_ID0000007 CHILD clean_up_local_level_4_0
+PARENT  e.filters1.1_ID0000007 CHILD e.lowabundance1.1_ID0000010
+PARENT  clean_up_local_level_11_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_11_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  stage_in_remote_local_8_0 CHILD e.extract_ID0000023
+PARENT  e.logExp1_ID0000018 CHILD register_local_5_0
+PARENT  e.logExp1_ID0000018 CHILD stage_out_local_local_5_1
+PARENT  e.logExp1_ID0000018 CHILD stage_out_local_local_5_0
+PARENT  e.logExp1_ID0000018 CHILD clean_up_local_level_8_0
+PARENT  e.logExp1_ID0000018 CHILD clean_up_local_level_8_1
+PARENT  e.logExp1_ID0000018 CHILD e.corPairs1_ID0000020
+PARENT  stage_out_local_local_8_0 CHILD clean_up_local_level_12_0
+PARENT  stage_out_local_local_8_0 CHILD register_local_8_0
+PARENT  stage_out_local_local_6_1 CHILD clean_up_local_level_10_0
+PARENT  stage_out_local_local_6_1 CHILD register_local_6_1
+PARENT  stage_out_local_local_6_0 CHILD register_local_6_0
+PARENT  stage_out_local_local_6_0 CHILD clean_up_local_level_10_0
+PARENT  stage_out_local_local_4_1 CHILD register_local_4_1
+PARENT  stage_out_local_local_4_1 CHILD clean_up_local_level_8_0
+PARENT  e.reduction_ID0000013 CHILD stage_out_local_local_4_1
+PARENT  e.reduction_ID0000013 CHILD stage_out_local_local_4_0
+PARENT  e.reduction_ID0000013 CHILD clean_up_local_level_7_0
+PARENT  stage_out_local_local_4_0 CHILD register_local_4_0
+PARENT  stage_out_local_local_4_0 CHILD clean_up_local_level_8_0
+PARENT  stage_out_local_local_2_1 CHILD register_local_2_1
+PARENT  stage_out_local_local_2_1 CHILD clean_up_local_level_6_1
+PARENT  stage_out_local_local_2_0 CHILD register_local_2_0
+PARENT  stage_out_local_local_2_0 CHILD clean_up_local_level_6_1
+PARENT  stage_out_local_local_0_1 CHILD register_local_0_1
+PARENT  stage_out_local_local_0_1 CHILD clean_up_local_level_4_1
+PARENT  stage_out_local_local_0_0 CHILD register_local_0_0
+PARENT  stage_out_local_local_0_0 CHILD clean_up_local_level_4_1
+PARENT  create_dir_advanced_bioconductor_workflow_0_local CHILD stage_in_remote_local_0_1
+PARENT  create_dir_advanced_bioconductor_workflow_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_advanced_bioconductor_workflow_0_local CHILD stage_in_remote_local_8_0
+PARENT  create_dir_advanced_bioconductor_workflow_0_local CHILD stage_in_remote_local_7_0
+PARENT  e.lowabundance1.1_ID0000010 CHILD e.normalize.2_ID0000012
+PARENT  e.lowabundance1.1_ID0000010 CHILD e.normalize.1_ID0000011
+PARENT  e.lowabundance1.1_ID0000010 CHILD register_local_2_0
+PARENT  e.lowabundance1.1_ID0000010 CHILD stage_out_local_local_2_1
+PARENT  e.lowabundance1.1_ID0000010 CHILD stage_out_local_local_2_0
+PARENT  e.lowabundance1.1_ID0000010 CHILD clean_up_local_level_5_0
+PARENT  e.lowabundance1.1_ID0000010 CHILD clean_up_local_level_5_1
+PARENT  e.lowabundance1.1_ID0000009 CHILD e.normalize.1_ID0000011
+PARENT  e.lowabundance1.1_ID0000009 CHILD register_local_2_0
+PARENT  e.lowabundance1.1_ID0000009 CHILD stage_out_local_local_2_1
+PARENT  e.lowabundance1.1_ID0000009 CHILD stage_out_local_local_2_0
+PARENT  e.lowabundance1.1_ID0000009 CHILD clean_up_local_level_5_0
+PARENT  e.qc1.2_ID0000004 CHILD stage_out_local_local_1_1
+PARENT  e.qc1.2_ID0000004 CHILD stage_out_local_local_1_0
+PARENT  e.qc1.2_ID0000004 CHILD clean_up_local_level_4_0
+PARENT  e.qc2.2_ID0000006 CHILD stage_out_local_local_1_1
+PARENT  e.qc2.2_ID0000006 CHILD stage_out_local_local_1_0
+PARENT  e.qc2.2_ID0000006 CHILD clean_up_local_level_4_0
+PARENT  e.qc2.2_ID0000006 CHILD clean_up_local_level_4_1
+PARENT  e.corPairs1_ID0000020 CHILD stage_out_local_local_6_1
+PARENT  e.corPairs1_ID0000020 CHILD stage_out_local_local_6_0
+PARENT  e.corPairs1_ID0000020 CHILD e.cellBlock_ID0000022
+PARENT  e.corPairs1_ID0000020 CHILD clean_up_local_level_9_1
+PARENT  stage_out_local_local_8_1 CHILD clean_up_local_level_12_1
+PARENT  stage_out_local_local_8_1 CHILD register_local_8_1
+PARENT  e.normalize.1_ID0000011 CHILD register_local_3_1
+PARENT  e.normalize.1_ID0000011 CHILD e.reduction_ID0000013
+PARENT  e.normalize.1_ID0000011 CHILD stage_out_local_local_3_0
+PARENT  e.normalize.1_ID0000011 CHILD e.cellCyc1.1_ID0000014
+PARENT  e.normalize.1_ID0000011 CHILD clean_up_local_level_6_0
+PARENT  e.normalize.1_ID0000011 CHILD e.hvgs1_ID0000016
+PARENT  clean_up_local_level_12_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_3_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_3_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  e.cellBlock_ID0000022 CHILD stage_out_local_local_7_1
+PARENT  e.cellBlock_ID0000022 CHILD stage_out_local_local_7_0
+PARENT  e.cellBlock_ID0000022 CHILD clean_up_local_level_10_0
+PARENT  e.cellBlock_ID0000022 CHILD e.extract_ID0000023
+PARENT  e.cellBlock_ID0000022 CHILD register_local_7_0
+PARENT  clean_up_local_level_5_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  e.preprocess_ID0000001 CHILD e.qc1.1_ID0000003
+PARENT  e.preprocess_ID0000001 CHILD e.qc2.1_ID0000005
+PARENT  e.preprocess_ID0000001 CHILD e.filters1.1_ID0000007
+PARENT  e.preprocess_ID0000001 CHILD register_local_0_0
+PARENT  e.preprocess_ID0000001 CHILD stage_out_local_local_0_1
+PARENT  e.preprocess_ID0000001 CHILD stage_out_local_local_0_0
+PARENT  e.preprocess_ID0000001 CHILD clean_up_local_level_3_1
+PARENT  clean_up_local_level_5_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_7_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_9_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_9_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  e.hvgs1_ID0000016 CHILD register_local_4_1
+PARENT  e.hvgs1_ID0000016 CHILD stage_out_local_local_4_1
+PARENT  e.hvgs1_ID0000016 CHILD stage_out_local_local_4_0
+PARENT  e.hvgs1_ID0000016 CHILD clean_up_local_level_7_0
+PARENT  e.hvgs1_ID0000016 CHILD e.corPairs1_ID0000020
+PARENT  e.hvgs1_ID0000016 CHILD e.logExp1_ID0000018
+PARENT  e.corPairs2_ID0000021 CHILD register_local_6_0
+PARENT  e.corPairs2_ID0000021 CHILD stage_out_local_local_6_1
+PARENT  e.corPairs2_ID0000021 CHILD stage_out_local_local_6_0
+PARENT  e.corPairs2_ID0000021 CHILD e.log_ID0000025
+PARENT  e.corPairs2_ID0000021 CHILD e.lrt_ID0000024
+PARENT  e.corPairs2_ID0000021 CHILD clean_up_local_level_9_0
+PARENT  e.corPairs2_ID0000021 CHILD register_local_6_1
+PARENT  clean_up_local_level_10_1 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  clean_up_local_level_12_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  e.cellCyc1.2_ID0000015 CHILD stage_out_local_local_4_0
+PARENT  e.cellCyc1.2_ID0000015 CHILD clean_up_local_level_7_0
+PARENT  stage_in_remote_local_7_0 CHILD e.cellBlock_ID0000022
+PARENT  clean_up_local_level_10_0 CHILD cleanup_advanced_bioconductor_workflow_0_local
+PARENT  e.hvgs2_ID0000017 CHILD e.corPairs2_ID0000021
+PARENT  e.hvgs2_ID0000017 CHILD register_local_4_1
+PARENT  e.hvgs2_ID0000017 CHILD register_local_4_0
+PARENT  e.hvgs2_ID0000017 CHILD stage_out_local_local_4_1
+PARENT  e.hvgs2_ID0000017 CHILD stage_out_local_local_4_0
+PARENT  e.hvgs2_ID0000017 CHILD e.logExp2_ID0000019
+PARENT  e.hvgs2_ID0000017 CHILD clean_up_local_level_7_0
+PARENT  e.hvgs2_ID0000017 CHILD e.lrt_ID0000024
+PARENT  stage_out_local_local_7_1 CHILD clean_up_local_level_11_0
+PARENT  stage_out_local_local_7_1 CHILD register_local_7_1
+PARENT  e.normalize.2_ID0000012 CHILD e.hvgs2_ID0000017
+PARENT  e.normalize.2_ID0000012 CHILD register_local_3_0
+PARENT  e.normalize.2_ID0000012 CHILD stage_out_local_local_3_1
+PARENT  e.normalize.2_ID0000012 CHILD e.cellCyc1.2_ID0000015
+PARENT  e.normalize.2_ID0000012 CHILD clean_up_local_level_6_0
+PARENT  stage_out_local_local_7_0 CHILD clean_up_local_level_11_0
+PARENT  stage_out_local_local_7_0 CHILD register_local_7_0
+PARENT  stage_out_local_local_5_1 CHILD register_local_5_1
+PARENT  stage_out_local_local_5_1 CHILD clean_up_local_level_9_0
+PARENT  stage_out_local_local_5_0 CHILD register_local_5_0
+PARENT  stage_out_local_local_5_0 CHILD clean_up_local_level_9_1
+PARENT  stage_out_local_local_3_1 CHILD register_local_3_1
+PARENT  stage_out_local_local_3_1 CHILD clean_up_local_level_7_0
+PARENT  stage_out_local_local_3_0 CHILD register_local_3_0
+PARENT  stage_out_local_local_3_0 CHILD clean_up_local_level_7_0
+PARENT  stage_out_local_local_1_1 CHILD register_local_1_1
+PARENT  stage_out_local_local_1_1 CHILD clean_up_local_level_5_0
+PARENT  stage_out_local_local_1_0 CHILD register_local_1_0
+PARENT  stage_out_local_local_1_0 CHILD clean_up_local_level_5_1
+PARENT  e.log_ID0000025 CHILD clean_up_local_level_10_1
+PARENT  e.log_ID0000025 CHILD register_local_7_0
+PARENT  e.logExp2_ID0000019 CHILD e.corPairs2_ID0000021
+PARENT  e.logExp2_ID0000019 CHILD register_local_5_1
+PARENT  e.logExp2_ID0000019 CHILD register_local_5_0
+PARENT  e.logExp2_ID0000019 CHILD stage_out_local_local_5_1
+PARENT  e.logExp2_ID0000019 CHILD stage_out_local_local_5_0
+PARENT  e.logExp2_ID0000019 CHILD clean_up_local_level_8_1
+PARENT  e.cellCyc1.1_ID0000014 CHILD stage_out_local_local_4_1
+PARENT  e.cellCyc1.1_ID0000014 CHILD clean_up_local_level_7_0
+######################################################################
+# End of DAG
+######################################################################

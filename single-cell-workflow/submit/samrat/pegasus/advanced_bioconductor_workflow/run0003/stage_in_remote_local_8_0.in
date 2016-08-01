@@ -1,0 +1,10 @@
+[
+ { "type": "transfer",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///scratch/r-home/advanced_workflow/counttable_es.csv", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/counttable_es.csv" }
+   ] }
+]

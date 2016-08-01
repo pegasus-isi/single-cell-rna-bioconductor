@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/normalize2-sce.RData", "recursive": "False" } }
+  ,
+  {
+    "id": 2,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/normalize1-sce.RData", "recursive": "False" } }
+  ,
+  {
+    "id": 3,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/libSize-vs-sizeFactors-2.jpg", "recursive": "False" } }
+  ,
+  {
+    "id": 4,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/size-factors.txt", "recursive": "False" } }
+  ,
+  {
+    "id": 5,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/libSize-vs-sizeFactors-1.jpg", "recursive": "False" } }
+]
