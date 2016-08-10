@@ -8,12 +8,13 @@ library(mvoutlier)
 library(destiny)
 library(gplots)
 library(gdata)
-library(openxlsx)
 library(R.utils)
 library(org.Mm.eg.db)
-library(TxDb.Mmusculus.UCSC.mm10.ensGene)
+
+args <- commandArgs(TRUE)
 
 sce <- readRDS("normalize-1.sce.RData")
+assignments <- readRDS(args[1])
 
 g1.only <- assignments$score$G1 > 0.5
 sce <- sce[,g1.only]

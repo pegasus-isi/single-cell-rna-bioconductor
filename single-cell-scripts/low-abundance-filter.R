@@ -37,7 +37,7 @@ if(length(args) == 3){
   ## ----geneplothsc, Frequency of expression against the mean expression for each gene. Circles represent endogenous genes and triangles represent spike-in transcripts or mitochondrial genes. The bars on each axis represent the location of each gene on that axis. Genes with expression frequencies higher than the dropout rate are defined as those above a non-linear trend fitted to the spike-in transcripts."----
   jpeg(args[5])
   fontsize <- theme(axis.text=element_text(size=12), axis.title=element_text(size=16))
-  plotQC(sce, type = "exprs-freq-vs-mean") + fontsize
+  print(plotQC(sce, type = "exprs-freq-vs-mean") + fontsize)
   dev.off()
 }
 

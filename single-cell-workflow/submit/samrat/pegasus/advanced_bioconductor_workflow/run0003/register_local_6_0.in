@@ -1,8 +1,0 @@
-dispersion-summary.csv file:///scratch/advanced_bioconductor_workflow/output/dispersion-summary.csv site="local"
-clust.col.Rdata file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/clust.col.Rdata site="local"
-my.tree.Rdata file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/my.tree.Rdata site="local"
-design.Rdata file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/design.Rdata site="local"
-my.clusters.Rdata file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0003/my.clusters.Rdata site="local"
-hsc-data.rds file:///scratch/advanced_bioconductor_workflow/output/hsc-data.rds site="local"
-heatmap.jpg file:///scratch/advanced_bioconductor_workflow/output/heatmap.jpg site="local"
-gene-pairs-1.csv file:///scratch/advanced_bioconductor_workflow/output/gene-pairs-1.csv site="local"

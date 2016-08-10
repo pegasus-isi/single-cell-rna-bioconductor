@@ -27,7 +27,7 @@ plot(sizeFactors(sce), deconv.sf, pch=16, log="xy", xlab="Size factor (spike-in)
 dev.off()
 
 ## ------------------------------------------------------------------------
-incoming <- read.csv("nbt.3102-S7.xlsx", sheet=1, rowNames=TRUE)
+incoming <- read.csv("nbt.3102-S7.csv", row.names = 1, header = TRUE)
 incoming <- incoming[,!duplicated(colnames(incoming))] # Remove duplicated genes.
 sce <- newSCESet(exprsData=t(incoming))
 

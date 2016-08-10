@@ -1,7 +1,0 @@
-correlated-genes-2.csv file:///scratch/advanced_bioconductor_workflow/output/correlated-genes-2.csv site="local"
-brain-hvg.tsv file:///scratch/advanced_bioconductor_workflow/output/brain-hvg.tsv site="local"
-var.cor.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0001/var.cor.RData site="local"
-gene-pairs-2.csv file:///scratch/advanced_bioconductor_workflow/output/gene-pairs-2.csv site="local"
-top-hvgs.csv file:///scratch/advanced_bioconductor_workflow/output/top-hvgs.csv site="local"
-normalized-log-expression.jpg file:///scratch/advanced_bioconductor_workflow/output/normalized-log-expression.jpg site="local"
-log-expression-1.jpg file:///scratch/advanced_bioconductor_workflow/output/log-expression-1.jpg site="local"

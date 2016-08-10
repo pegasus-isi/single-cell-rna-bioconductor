@@ -14,7 +14,7 @@ library(org.Mm.eg.db)
 library(TxDb.Mmusculus.UCSC.mm10.ensGene)
 
 sce <- readRDS("hvgs-setup-1.sce.RData")
-top.hvgs <- readRDS("top.hvgs.RData")
+top.hvgs <- readRDS("top-hvgs.RData")
 
 ## ------------------------------------------------------------------------
 set.seed(100)
@@ -49,6 +49,7 @@ my.tree <- hclust(my.dist, method="ward.D2")
 
 ## ------------------------------------------------------------------------
 my.clusters <- unname(cutree(my.tree, h=50))
+fontsize <- theme(axis.text=element_text(size=12), axis.title=element_text(size=16))
 
 ## ----heatmaphsc, message=FALSE, fig.width=7, fig.height=7, fig.cap="**Figure 11:** Heatmap of mean-centred normalized log-expression values for correlated HVGs in the HSC data set. Dendrograms are formed by hierarchical clustering on the Euclidean distances between genes (row) or cells (column). Column colours represent the cluster to which each cell is assigned after a tree cut."----
 library(gplots)

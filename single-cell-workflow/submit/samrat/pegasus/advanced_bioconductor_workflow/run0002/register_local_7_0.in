@@ -1,5 +1,0 @@
-DE-genes.csv file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/DE-genes.csv site="local"
-markers.csv file:///scratch/advanced_bioconductor_workflow/output/markers.csv site="local"
-phase-scores.jpg file:///scratch/advanced_bioconductor_workflow/output/phase-scores.jpg site="local"
-normalization-vs-deconvolution.jpg file:///scratch/advanced_bioconductor_workflow/output/normalization-vs-deconvolution.jpg site="local"
-cell.cycle.blocking.sce.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/cell.cycle.blocking.sce.RData site="local"

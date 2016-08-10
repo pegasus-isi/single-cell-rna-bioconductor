@@ -1,6 +1,0 @@
-filtered-cells-2.csv file:///scratch/advanced_bioconductor_workflow/output/filtered-cells-2.csv site="local"
-expressed-genes-2.jpg file:///scratch/advanced_bioconductor_workflow/output/expressed-genes-2.jpg site="local"
-mito-proportion-2.jpg file:///scratch/advanced_bioconductor_workflow/output/mito-proportion-2.jpg site="local"
-expressed-genes-1.1.jpg file:///scratch/advanced_bioconductor_workflow/output/expressed-genes-1.1.jpg site="local"
-mito-proportion-1.jpg file:///scratch/advanced_bioconductor_workflow/output/mito-proportion-1.jpg site="local"
-sce-filters-1.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0004/sce-filters-1.RData site="local"

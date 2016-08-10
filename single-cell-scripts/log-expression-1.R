@@ -29,7 +29,7 @@ lines(var.out2$mean[o], var.out2$tech[o], col="dodgerblue", lwd=2)
 dev.off()
 
 top.hvgs <- order(var.out2$bio, decreasing=TRUE)
-saveRDS("top-hvgs.RData")
+saveRDS(top.hvgs, "top-hvgs.RData")
 write.table(file="hsc-hvg.tsv", var.out2[top.hvgs,], sep="\t", quote=FALSE, col.names=NA)
 sink("top-hvgs.csv")
 head(var.out2[top.hvgs,])

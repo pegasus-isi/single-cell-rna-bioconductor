@@ -9,7 +9,7 @@ library(destiny)
 library(gplots)
 library(R.utils)
 library(org.Mm.eg.db)
-library(TxDb.Mmusculus.UCSC.mm10.ensGene)
+# library(TxDb.Mmusculus.UCSC.mm10.ensGene)
 
 ## Fix arguments 
 args <- commandArgs(TRUE)
@@ -34,26 +34,26 @@ mito.data <- readFormat("expression_mito_17-Aug-2014.txt")
 m <- match(endo.data$metadata$cell_id, mito.data$metadata$cell_id)
 mito.data$metadata <- mito.data$metadata[m,]
 mito.data$counts <- mito.data$counts[,m]
-
-## ---- echo=FALSE---------------------------------------------------------
+# 
+# ## ---- echo=FALSE---------------------------------------------------------
 stopifnot(identical(endo.data$metadata$cell_id, spike.data$metadata$cell_id)) # should be the same.
 stopifnot(all(endo.data$metadata$cell_id==mito.data$metadata$cell_id)) # should now be the same.
 
 ## ------------------------------------------------------------------------
-all.counts <- rbind(endo.data$counts, mito.data$counts, spike.data$counts)
-metadata <- AnnotatedDataFrame(endo.data$metadata)
-sce <- newSCESet(countData=all.counts, phenoData=metadata)
-sink("sce-countLoading-dims.csv")
-dim(sce)
-sink()
+# all.counts <- rbind(endo.data$counts, mito.data$counts, spike.data$counts)
+# metadata <- AnnotatedDataFrame(endo.data$metadata)
+# sce <- newSCESet(countData=all.counts, phenoData=metadata)
+# sink("sce-countLoading-dims.csv")
+# dim(sce)
+# sink()
 
-## ------------------------------------------------------------------------
-nrows <- c(nrow(endo.data$counts), nrow(mito.data$counts), nrow(spike.data$counts))
-is.spike <- rep(c(FALSE, FALSE, TRUE), nrows)
-isSpike(sce) <- is.spike
-is.mito <- rep(c(FALSE, TRUE, FALSE), nrows)
-
-## ------------------------------------------------------------------------
-sce <- calculateQCMetrics(sce, feature_controls=list(Spike=is.spike, Mt=is.mito)) 
-
-saveRDS(sce, "sce-countLoading.RData")
+# ## ------------------------------------------------------------------------
+# nrows <- c(nrow(endo.data$counts), nrow(mito.data$counts), nrow(spike.data$counts))
+# is.spike <- rep(c(FALSE, FALSE, TRUE), nrows)
+# isSpike(sce) <- is.spike
+# is.mito <- rep(c(FALSE, TRUE, FALSE), nrows)
+# 
+# ## ------------------------------------------------------------------------
+# sce <- calculateQCMetrics(sce, feature_controls=list(Spike=is.spike, Mt=is.mito)) 
+# 
+# saveRDS(sce, args[2])

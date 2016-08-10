@@ -11,9 +11,10 @@ library(gdata)
 library(openxlsx)
 library(R.utils)
 library(org.Mm.eg.db)
-library(TxDb.Mmusculus.UCSC.mm10.ensGene
+library(TxDb.Mmusculus.UCSC.mm10.ensGene)
 
 sce <- readRDS("normalize-1.sce.RData")
+fontsize <- readRDS("normalize-1.fontsize.RData")
 
 ## ----pcaplothsc,PCA plot constructed from normalized log-expression values, where each point represents a cell in the HSC data set. First and second components are shown, along with the percentage of variance explained. Bars represent the coordinates of the cells on each axis. None of the cells are controls (e.g., empty wells) so the legend can be ignored."----
 jpeg("pca-normalized.jpg")

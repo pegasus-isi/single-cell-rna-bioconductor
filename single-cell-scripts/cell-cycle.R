@@ -1,8 +1,14 @@
 #!/usr/bin/Rscript
 
-library(scater)
-library(gplots)
 library(scran)
+library(edgeR)
+library(scater)
+library(Rtsne)
+library(mvoutlier)
+library(destiny)
+library(gplots)
+library(gdata)
+library(R.utils)
 library(org.Mm.eg.db)
 
 args <- commandArgs(TRUE)
@@ -17,4 +23,6 @@ assignments <- cyclone(sce[keep,], mm.pairs, gene.names=ensembl[keep])
 jpeg(args[2])
 plot(assignments$score$G1, assignments$score$G2M, xlab="G1 score", ylab="G2/M score", pch=16)
 dev.off()
+
+saveRDS(assignments, args[3])
 

@@ -1,7 +1,0 @@
-sce-filters-2.RData file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/sce-filters-2.RData site="local"
-library-sizes-2.jpg file:///scratch/advanced_bioconductor_workflow/output/library-sizes-2.jpg site="local"
-ERCC-prorportion-2.jpg file:///scratch/advanced_bioconductor_workflow/output/ERCC-prorportion-2.jpg site="local"
-library-sizes-1.jpg file:///scratch/advanced_bioconductor_workflow/output/library-sizes-1.jpg site="local"
-ERCC-prorportion-1.jpg file:///scratch/advanced_bioconductor_workflow/output/ERCC-prorportion-1.jpg site="local"
-filtered-cells-1.csv file:///scratch/advanced_bioconductor_workflow/output/filtered-cells-1.csv site="local"
-pca-filter.jpg file:///scratch/advanced_bioconductor_workflow/output/pca-filter.jpg site="local"

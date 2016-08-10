@@ -1,6 +1,0 @@
-[
-  {
-    "id": 1,
-    "type": "remove",
-    "target": { "site_label": "local", "url": "file:///scratch/pegasus-scratch/samrat/pegasus/advanced_bioconductor_workflow/run0002/GSE61533_HTSEQ_count_results.csv", "recursive": "False" } }
-]

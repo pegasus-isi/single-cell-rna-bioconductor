@@ -14,7 +14,7 @@
 #
 tr e.preprocess {
 	site local {
-	   pfn "/scratch/r-home/advanced_workflow/preprocess.R"
+	   pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/preprocess.R"
 	   arch "x86_64"
 	   os "LINUX"
 	   type "INSTALLED"
@@ -23,7 +23,7 @@ tr e.preprocess {
 
 tr e.qc1.1 {
         site local {
-           pfn "/scratch/r-home/advanced_workflow/quality-control-1.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/quality-control-1.R"
            arch	"x86_64"
            os "LINUX"
            type	"INSTALLED"
@@ -42,7 +42,7 @@ tr e.qc1.2 {
 
 tr e.qc2.1 {
 	site local {
-           pfn "/scratch/r-home/advanced_workflow/quality-control-2.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/quality-control-2.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -69,7 +69,7 @@ tr e.count {
 
 tr e.filters1.1 {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/filters.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/filters.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -87,7 +87,7 @@ tr e.filters1.2 {
 
 tr e.lowabundance1.1 {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/low-abundance-filter.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/low-abundance-filter.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -105,7 +105,7 @@ tr e.lowabundance1.2 {
 
 tr e.normalize.1 {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/normalize-1.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/normalize-1.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -123,7 +123,7 @@ tr e.normalize.2 {
 
 tr e.reduction {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/reduction.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/reduction.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -132,7 +132,7 @@ tr e.reduction {
 
 tr e.cellCyc1.1 {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/cell-cycle.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/cell-cycle.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -150,7 +150,7 @@ tr e.cellCyc1.2 {
 
 tr e.hvgs1 {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/HVGs-setup-1.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/HVGs-setup-1.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -168,7 +168,7 @@ tr e.hvgs2 {
 
 tr e.logExp1 {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/log-expression-1.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/log-expression-1.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -186,7 +186,7 @@ tr e.logExp2 {
 
 tr e.corPairs1 {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/correlate-pairs-1.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/correlate-pairs-1.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -204,7 +204,7 @@ tr e.corPairs2 {
 
 tr e.cellBlock {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/cell-cycle-blocking.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/cell-cycle-blocking.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
@@ -213,7 +213,7 @@ tr e.cellBlock {
 
 tr e.extract {
   site local {
-           pfn "/scratch/r-home/advanced_workflow/extract-annotation.R"
+           pfn "/scratch/r-home/advanced_workflow/single-cell-scripts/extract-annotation.R"
            arch "x86_64"
            os "LINUX"
            type "INSTALLED"
